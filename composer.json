@@ -3,13 +3,14 @@
   "description": "An overview of where the world is looking, judging by media coverage.",
   "license": "MIT",
   "author": {
-    "name": "Christian Frattan",
+    "name": "Christian Fratta",
     "email": "christian.fratta@gmail.com",
     "homepage": "https://immortalhydra.com"
   },
   "type": "project",
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.1.0",
+    "sameer-shelavale/php-countries-array": "*"
   },
   "require-dev": {
   },
