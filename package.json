@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "gaze-of-the-world",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/HHErebus/gaze-of-the-world.git"
+  },
+  "keywords": [],
+  "author": "Christian Fratta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/HHErebus/gaze-of-the-world/issues"
+  },
+  "homepage": "https://gitlab.com/HHErebus/gaze-of-the-world#README",
+  "description": ""
+}

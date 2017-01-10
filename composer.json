@@ -10,11 +10,19 @@
   "type": "project",
   "require": {
     "php": ">=7.1.0",
-    "sameer-shelavale/php-countries-array": "*"
+    "sameer-shelavale/php-countries-array": "*",
+    "simplepie/simplepie": "^1.4"
   },
   "require-dev": {
+    "phpmd/phpmd": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ChristianFratta\\GazeOfTheWorld\\": "app/"
+    }
   },
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "config": {
     "preferred-install": "dist",
     "sort-packages": true
