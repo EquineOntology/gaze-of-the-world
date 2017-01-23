@@ -1,12 +1,13 @@
 <?php
 
-namespace ChristianFratta\GazeOfTheWorld\Feed;
+namespace GazeOfTheWorld\Feed;
 
-require "vendor/autoload.php";
+require_once "vendor/autoload.php";
 
 
 class FeedReader
 {
+    public $feeds = [];
 
     /**
      * Get all items published within the last hour from all feeds.
@@ -16,7 +17,7 @@ class FeedReader
     public function getLatestItemsFromAllFeeds()
     {
         $items = array();
-        foreach (Feeds::$feeds as $name => $feedURL) {
+        foreach ($this->feeds as $name => $feedURL) {
             $feed = new \SimplePie();
             $feed->set_feed_url($feedURL);
             $feed->init();
@@ -43,9 +44,9 @@ class FeedReader
             if ($item->get_date('U') > $anHourAgo) {
                 $items[] = [
                     "date" => $item->get_date('U'),
-                    "title" => $item->get_title(),
-                    "description" => $item->get_description(),
-                    "content" => $item->get_content(),
+                    "title" => strtolower($item->get_title()),
+                    "description" => strtolower($item->get_description()),
+                    "content" => strtolower($item->get_content()),
                     "permalink" => $item->get_permalink()
                 ];
             }

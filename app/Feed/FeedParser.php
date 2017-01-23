@@ -1,6 +1,8 @@
 <?php
 
-namespace ChristianFratta\GazeOfTheWorld\Feed;
+namespace GazeOfTheWorld\Feed;
+
+use GazeOfTheWorld\Cleaner;
 
 require "vendor/autoload.php";
 
@@ -10,13 +12,14 @@ class FeedParser
 
     /**
      * Count mentions of countries in provided items.
+     *
      * @param $feeds
      * @param $countries
      * @return array|mixed
      */
     public function sumAllCountryMentions($feeds, $countries)
     {
-        $totalMentions = array();
+        $totalMentions = [];
 
         // Make sure all keys have a value.
         $countryCodes = array_keys($countries);
@@ -24,16 +27,20 @@ class FeedParser
             $totalMentions[$code] = 0;
         }
 
-        foreach ($feeds as $item) { // The comma is there for a reason, see https://secure.php.net/manual/en/control-structures.foreach.php#control-structures.foreach.list
+        foreach ($feeds as $item) {
             $mentionsInItem = $this->countCountryMentionsInFeed($item, $countries);
             $totalMentions = $this->sumMentions($totalMentions, $mentionsInItem);
         }
+
+        arsort($totalMentions);
+
         return $totalMentions;
     }
 
 
     /**
      * Count mentions of countries in the provided feed.
+     *
      * @param $feed
      * @param $countries
      * @return array
@@ -41,7 +48,7 @@ class FeedParser
      */
     private function countCountryMentionsInFeed($feed, $countries)
     {
-        $feedMentions = array();
+        $feedMentions = [];
 
         // Make sure all keys have a value.
         $countryCodes = array_keys($countries);
@@ -50,24 +57,27 @@ class FeedParser
         }
 
         foreach ($feed as $name => $item) {
+            $item = Cleaner::cleanArticle($item);
             $mentionsInItem = $this->countCountryMentionsInItem($item, $countries);
             $feedMentions = $this->sumMentions($feedMentions, $mentionsInItem);
         }
+
         return $feedMentions;
     }
 
 
     /**
      * Count mentions of countries in the provided item.
+     *
      * @param $item
      * @param $countries
      * @return array
      */
     private function countCountryMentionsInItem($item, $countries)
     {
-        $mentions = array();
+        $mentions = [];
         foreach ($countries as $key => $name) {
-            $exp = '/' . $name . '/i';
+            $exp = '/ ' . $name . ' /i';
 
             if (!array_key_exists($key, $mentions)) {
                 $mentions[$key] = 0;
@@ -81,6 +91,7 @@ class FeedParser
             }
 
         }
+
         return $mentions;
     }
 
