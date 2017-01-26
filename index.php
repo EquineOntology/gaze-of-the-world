@@ -47,7 +47,7 @@ require_once "vendor/autoload.php";
 
         foreach($analysis as $key => $item){
             if ($item > 0) {
-                echo '<b>' . $countries[$key] . '</b>: ' . $item . '<br>';
+                echo '<b>' . $countries[$key][0] . '</b>: ' . $item . '<br>';
             }
         }
         ?>

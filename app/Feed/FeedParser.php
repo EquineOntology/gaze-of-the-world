@@ -76,18 +76,28 @@ class FeedParser
     private function countCountryMentionsInItem($item, $countries)
     {
         $mentions = [];
-        foreach ($countries as $key => $name) {
-            $exp = '/ ' . $name . ' /i';
+        foreach ($countries as $key => $names) {
 
-            if (!array_key_exists($key, $mentions)) {
-                $mentions[$key] = 0;
-            }
-            if (preg_match($exp, $item["title"])) {
-                $mentions[$key] += 1;
-            } elseif (preg_match($exp, $item["content"])) {
-                $mentions[$key] += 1;
-            } elseif ($item["description"] != $item["content"] && preg_match($exp, $item["description"])) {
-                $mentions[$key] += 1;
+            foreach ($names as $name) {
+
+                $exp = '/ ' . $name . ' /i';
+
+                if (!array_key_exists($key, $mentions)) {
+                    $mentions[$key] = 0;
+                }
+                if (preg_match($exp, $item["title"])) {
+                    $mentions[$key] += 1;
+                    break;
+
+                } elseif (preg_match($exp, $item["content"])) {
+                    $mentions[$key] += 1;
+                    break;
+
+                } elseif ($item["description"] != $item["content"] && preg_match($exp, $item["description"])) {
+                    $mentions[$key] += 1;
+                    break;
+
+                }
             }
 
         }
