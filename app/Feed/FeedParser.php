@@ -4,7 +4,7 @@ namespace GazeOfTheWorld\Feed;
 
 use GazeOfTheWorld\Cleaner;
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 
 class FeedParser

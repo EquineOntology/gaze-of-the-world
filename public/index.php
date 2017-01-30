@@ -5,7 +5,7 @@ use GazeOfTheWorld\Countries;
 use GazeOfTheWorld\Feed\FeedParser;
 use GazeOfTheWorld\Feed\FeedReader;
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
 
 ?>
@@ -18,7 +18,7 @@ require_once "vendor/autoload.php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gaze of the World</title>
 
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="../favicon.png">
 
     <link rel="stylesheet" href="css/app.css"/>
 

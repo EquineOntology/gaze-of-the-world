@@ -3,7 +3,7 @@
 
 namespace GazeOfTheWorld;
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use GazeOfTheWorld\Feed\Feeds;
 use PHPHtmlParser\Dom;

@@ -2,7 +2,7 @@
 
 namespace GazeOfTheWorld\Feed;
 
-require_once "vendor/autoload.php";
+require_once "../vendor/autoload.php";
 
 
 class FeedReader
@@ -20,6 +20,7 @@ class FeedReader
         foreach ($this->feeds as $name => $feedURL) {
             $feed = new \SimplePie();
             $feed->set_feed_url($feedURL);
+            $feed->set_cache_location('../cache');
             $feed->init();
 
             $items[$name] = $this->getLatestItemsFromFeed($feed);
