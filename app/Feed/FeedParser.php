@@ -1,11 +1,10 @@
 <?php
 
-namespace GazeOfTheWorld\Feed;
+namespace ChristianFratta\GazeOfTheWorld\Feed;
 
-use GazeOfTheWorld\Cleaner;
+require "vendor/autoload.php";
 
-require "../vendor/autoload.php";
-
+use ChristianFratta\GazeOfTheWorld\Cleaner;
 
 class FeedParser
 {

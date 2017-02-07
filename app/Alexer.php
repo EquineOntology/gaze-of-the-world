@@ -1,27 +1,25 @@
 <?php
 
 
-namespace GazeOfTheWorld;
+namespace ChristianFratta\GazeOfTheWorld;
 
-require_once '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
-use GazeOfTheWorld\Feed\Feeds;
+use ChristianFratta\GazeOfTheWorld\Feed\Feeds;
 use PHPHtmlParser\Dom;
 
 class Alexer
 {
-
-
     public function getTopNewsSites()
     {
         $dom = new Dom();
 
         $urls = [];
-        for ($i = 0; $i < 4; $i++) {
+        for ($i = 0; $i < 2; $i++) {
             $dom->loadFromUrl('http://www.alexa.com/topsites/category;' . $i . '/Top/News');
-            $content = $dom->find('.desc-paragraph > a');
+            $content = $dom->find('.DescriptionCell > p > a');
 
-            // We don't want 4 sub-arrays with 25links each.
+            // We don't want $i sub-arrays with N links each.
             $urls = array_merge($urls, $this->getURLs($content));
         }
 

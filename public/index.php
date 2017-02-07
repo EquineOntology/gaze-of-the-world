@@ -1,11 +1,12 @@
 <?php
 
-use GazeOfTheWorld\Alexer;
-use GazeOfTheWorld\Countries;
-use GazeOfTheWorld\Feed\FeedParser;
-use GazeOfTheWorld\Feed\FeedReader;
 
-require_once "../vendor/autoload.php";
+use ChristianFratta\GazeOfTheWorld\Alexer;
+use ChristianFratta\GazeOfTheWorld\Countries;
+use ChristianFratta\GazeOfTheWorld\Feed\FeedParser;
+use ChristianFratta\GazeOfTheWorld\Feed\FeedReader;
+
+require "vendor/autoload.php";
 
 
 ?>

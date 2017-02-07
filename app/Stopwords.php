@@ -1,8 +1,8 @@
 <?php
 
-namespace GazeOfTheWorld;
+namespace ChristianFratta\GazeOfTheWorld;
 
-require_once "../vendor/autoload.php";
+require "vendor/autoload.php";
 
 
 class Stopwords

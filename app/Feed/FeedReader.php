@@ -1,8 +1,8 @@
 <?php
 
-namespace GazeOfTheWorld\Feed;
+namespace ChristianFratta\GazeOfTheWorld\Feed;
 
-require_once "../vendor/autoload.php";
+require "vendor/autoload.php";
 
 
 class FeedReader

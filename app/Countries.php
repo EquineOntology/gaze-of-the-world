@@ -10,9 +10,9 @@
  * Modified by Christian Fratta
  */
 
-namespace GazeOfTheWorld;
+namespace ChristianFratta\GazeOfTheWorld;
 
-require_once "../vendor/autoload.php";
+require "vendor/autoload.php";
 
 
 class Countries
