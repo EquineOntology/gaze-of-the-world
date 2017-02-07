@@ -2,7 +2,7 @@
 
 namespace ChristianFratta\GazeOfTheWorld\Feed;
 
-require "vendor/autoload.php";
+require('../vendor/autoload.php');
 
 
 class Feeds

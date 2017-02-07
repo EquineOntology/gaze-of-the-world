@@ -12,7 +12,7 @@
 
 namespace ChristianFratta\GazeOfTheWorld;
 
-require "vendor/autoload.php";
+require('../vendor/autoload.php');
 
 
 class Countries
