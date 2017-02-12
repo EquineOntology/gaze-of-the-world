@@ -123,3 +123,4 @@ fabric.properties
 cache/
 .idea/
 phpmd.html
+.env
