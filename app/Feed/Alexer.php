@@ -1,11 +1,9 @@
 <?php
 
-
-namespace ChristianFratta\GazeOfTheWorld;
+namespace ChristianFratta\GazeOfTheWorld\Feed;
 
 require('../vendor/autoload.php');
 
-use ChristianFratta\GazeOfTheWorld\Feed\Feeds;
 use PHPHtmlParser\Dom;
 
 class Alexer

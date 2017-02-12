@@ -1,13 +1,8 @@
 <?php
 
+use ChristianFratta\GazeOfTheWorld\App;
 
-use ChristianFratta\GazeOfTheWorld\Alexer;
-use ChristianFratta\GazeOfTheWorld\Countries;
-use ChristianFratta\GazeOfTheWorld\Feed\FeedParser;
-use ChristianFratta\GazeOfTheWorld\Feed\FeedReader;
-
-require "vendor/autoload.php";
-
+require("../vendor/autoload.php");
 
 ?>
 
@@ -28,29 +23,7 @@ require "vendor/autoload.php";
 <div id="wrap">
     <div id="mainContent">
         <?php
-        $countries = Countries::get();
-
-        $alexer = new Alexer();
-        $sites = $alexer->getTopNewsSites();
-
-        $reader = new FeedReader();
-
-        $reader->feeds = $sites;
-        $latestItems = $reader->getLatestItemsFromAllFeeds();
-
-        $parser = new FeedParser();
-        $analysis = $parser->sumAllCountryMentions($latestItems, $countries);
-
-//        echo '<pre>';
-//        print_r($sites);
-//        echo '</pre>';
-//        die();
-
-        foreach($analysis as $key => $item){
-            if ($item > 0) {
-                echo '<b>' . $countries[$key][0] . '</b>: ' . $item . '<br>';
-            }
-        }
+            App::assimilateFeeds();
         ?>
     </div>
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ChristianFratta\GazeOfTheWorld;
+namespace ChristianFratta\GazeOfTheWorld\Cleaning;
 
 require('../vendor/autoload.php');
 

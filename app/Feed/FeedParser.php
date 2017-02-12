@@ -4,7 +4,7 @@ namespace ChristianFratta\GazeOfTheWorld\Feed;
 
 require('../vendor/autoload.php');
 
-use ChristianFratta\GazeOfTheWorld\Cleaner;
+use ChristianFratta\GazeOfTheWorld\Cleaning\Cleaner;
 
 class FeedParser
 {
