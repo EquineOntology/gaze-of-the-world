@@ -23,6 +23,8 @@ require("../vendor/autoload.php");
 <div id="wrap">
     <div id="mainContent">
         <?php
+            App::boot();
+
             App::assimilateFeeds();
         ?>
     </div>

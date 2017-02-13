@@ -38,7 +38,7 @@ class FeedReader
      */
     private function getLatestItemsFromFeed(\SimplePie $feed)
     {
-        $anHourAgo = time() - (24 * 60 * 60); //TODO: reduce to 60 * 60
+        $anHourAgo = time() - (24 * 60 * 60);
 
         $items = array();
         foreach ($feed->get_items() as $item) {

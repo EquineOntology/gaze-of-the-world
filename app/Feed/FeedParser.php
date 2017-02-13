@@ -31,8 +31,6 @@ class FeedParser
             $totalMentions = $this->sumMentions($totalMentions, $mentionsInItem);
         }
 
-        arsort($totalMentions);
-
         return $totalMentions;
     }
 

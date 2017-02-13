@@ -6,11 +6,22 @@ use ChristianFratta\GazeOfTheWorld\Database\DBController;
 use ChristianFratta\GazeOfTheWorld\Feed\Alexer;
 use ChristianFratta\GazeOfTheWorld\Feed\FeedParser;
 use ChristianFratta\GazeOfTheWorld\Feed\FeedReader;
+use Dotenv\Dotenv;
 
 require('../vendor/autoload.php');
 
 class App
 {
+    static $pdo;
+
+    public static function boot() {
+        $dotenv = new Dotenv(__DIR__ . '/../');
+        $dotenv->load();
+
+        self::$pdo = DBController::connect();
+    }
+
+
     public static function assimilateFeeds() {
         $countries = Countries::get();
 
@@ -25,15 +36,10 @@ class App
         $analysis = $parser->sumAllCountryMentions($latestItems, $countries);
 
         DBController::saveToDatabase($analysis);
-//        foreach ($analysis as $key => $item) {
-//            if ($item > 0) {
-//                echo '<b>' . $countries[$key][0] . '</b>: ' . $item . '<br>';
-//            }
-//        }
+//
     }
 
     public static function retrieveInformation() {
         DBController::getFromDatabase();
-
     }
 }
