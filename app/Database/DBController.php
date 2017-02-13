@@ -21,9 +21,13 @@ class DBController
         $prepared->execute($completeData);
     }
 
-    public static function getFromDatabase()
+    public static function getByDate($date)
     {
-
+        $statement = self::createSelectStatement('date=:date');
+        $prepared = App::$pdo->prepare($statement);
+        $prepared->bindValue(':date', $date);
+        $prepared->execute();
+        return $prepared->fetchAll();
     }
 
     public static function connect()
@@ -44,6 +48,8 @@ class DBController
     }
 
 
+
+
     private static function createInsertStatement(array $data)
     {
         $statement = 'INSERT INTO news_data';
@@ -53,5 +59,10 @@ class DBController
         $values = 'VALUES (:date,:' . implode(',:', $data) . ')';
 
         return $statement . $keys . $values;
+    }
+
+    private static function createSelectStatement(string $where)
+    {
+        return "SELECT * FROM news_data WHERE $where";
     }
 }

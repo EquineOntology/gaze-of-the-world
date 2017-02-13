@@ -39,7 +39,11 @@ class App
 //
     }
 
-    public static function retrieveInformation() {
-        DBController::getFromDatabase();
+    public static function retrieveInformation(string $info) {
+        switch($info) {
+            case 'today':
+                DBController::getByDate(date('Y-m-d'));
+                break;
+        }
     }
 }

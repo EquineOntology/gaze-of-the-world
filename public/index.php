@@ -25,8 +25,11 @@ require("../vendor/autoload.php");
         <?php
             App::boot();
 
-            App::assimilateFeeds();
+//            App::assimilateFeeds();
+            App::retrieveInformation('today');
         ?>
+        <form action="GET"
+        <input type="date" value=>
     </div>
 
 </div>
