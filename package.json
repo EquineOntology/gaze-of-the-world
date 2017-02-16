@@ -2,7 +2,9 @@
   "private": true,
   "name": "gaze-of-the-world",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "semantic-ui": "^2.2.7"
+  },
   "devDependencies": {
     "gulp": "^3.9.1"
   },

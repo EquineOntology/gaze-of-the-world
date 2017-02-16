@@ -4,6 +4,12 @@ use ChristianFratta\GazeOfTheWorld\App;
 
 require("../vendor/autoload.php");
 
+App::loadEnv();
+
+//App::assimilateFeeds();
+
+App::retrieveInformation('today');
+
 ?>
 
 <!DOCTYPE html>
@@ -16,23 +22,71 @@ require("../vendor/autoload.php");
 
     <link rel="icon" type="image/png" href="../favicon.png">
 
-    <link rel="stylesheet" href="css/app.css"/>
-
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/semantic.min.js"></script>
 </head>
 <body>
-<div id="wrap">
-    <div id="mainContent">
-        <?php
-            App::boot();
+<button onclick="requestData()">Press</button>
+<script type="text/javascript">
+    function requestData() {
+        $.ajax({
+            type: 'POST',
+            url: 'endpoint.php',
+            data: {
+                getCurrentInfo: true
+            },
+            success: function (response) {
+                var data = $.parseJSON(response)[0];
 
-//            App::assimilateFeeds();
-            App::retrieveInformation('today');
-        ?>
-        <form action="GET"
-        <input type="date" value=>
-    </div>
+                data = sortObjectToArray(data);
 
-</div>
-<script src="app.js"></script>
+                createGrid(data);
+            }
+        });
+    }
+
+    function sortObjectToArray(obj) {
+        var tmp  = [];
+        for (var country in obj) {
+            tmp.push([country, obj[country]]);
+        }
+
+        tmp.sort(function(a, b) {
+            return b[1] - a[1];
+        });
+
+        var result = [];
+        for(var i = 0; i < tmp.length; i++) {
+            result[tmp[i][0]] = tmp[i][1];
+        }
+        return result;
+    }
+
+    function createGrid(data) {
+        var keys = Object.keys(data);
+        var grid = '';
+        grid += '<div class="ui grid">';
+        grid += '<div class="row">';
+        grid += '<div class="four wide column"></div>';
+        grid += '<div class="four wide column">Country</div>';
+        grid += '<div class="four wide column">Mentions</div>';
+        grid += '<div class="four wide column"></div>';
+        grid += '</div>';
+
+        for (var i = 1; i < 11; i++) {
+            grid += '<div class="row">';
+            grid += '<div class="four wide column"></div>';
+            grid += '<div class="four wide column">' + keys[i] + '</div>';
+            grid += '<div class="four wide column">' + data[keys[i]] + '</div>';
+            grid += '<div class="four wide column"></div>';
+            grid += '</div>';
+        }
+        grid += '</div>';
+
+        $('body').html(grid);
+    }
+</script>
 </body>
 </html>

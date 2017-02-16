@@ -4,15 +4,23 @@ namespace ChristianFratta\GazeOfTheWorld\Database;
 
 use ChristianFratta\GazeOfTheWorld\App;
 use PDO;
-use PDOStatement;
 
 class DBController
 {
+    /**
+     * @var  PDO  pdo
+     */
+    private static $pdo;
+
     public static function saveToDatabase(array $data)
     {
+        if(self::$pdo == null) {
+            self::$pdo = self::connect();
+        }
+
         $countryCodes = array_keys($data);
         $statement = self::createInsertStatement($countryCodes);
-        $prepared = App::$pdo->prepare($statement);
+        $prepared = self::$pdo->prepare($statement);
 
         // Add date in front of the array to complete the dataset.
         $today = date('Y-m-d');
@@ -23,8 +31,12 @@ class DBController
 
     public static function getByDate($date)
     {
+        if(self::$pdo == null) {
+            self::$pdo = self::connect();
+        }
+
         $statement = self::createSelectStatement('date=:date');
-        $prepared = App::$pdo->prepare($statement);
+        $prepared = self::$pdo->prepare($statement);
         $prepared->bindValue(':date', $date);
         $prepared->execute();
         return $prepared->fetchAll();
@@ -32,6 +44,8 @@ class DBController
 
     public static function connect()
     {
+        App::loadEnv();
+
         $host = getenv('DB_HOST');
         $db = getenv('DB_NAME');
         $user = getenv('DB_USER');
@@ -46,9 +60,6 @@ class DBController
 
         return new PDO($dsn, $user, $pass, $opt);
     }
-
-
-
 
     private static function createInsertStatement(array $data)
     {

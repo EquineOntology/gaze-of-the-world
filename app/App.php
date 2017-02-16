@@ -12,13 +12,9 @@ require('../vendor/autoload.php');
 
 class App
 {
-    static $pdo;
-
-    public static function boot() {
+    public static function loadEnv() {
         $dotenv = new Dotenv(__DIR__ . '/../');
         $dotenv->load();
-
-        self::$pdo = DBController::connect();
     }
 
 
@@ -36,14 +32,16 @@ class App
         $analysis = $parser->sumAllCountryMentions($latestItems, $countries);
 
         DBController::saveToDatabase($analysis);
-//
     }
 
     public static function retrieveInformation(string $info) {
+
         switch($info) {
             case 'today':
-                DBController::getByDate(date('Y-m-d'));
+                $result = DBController::getByDate(date('Y-m-d'));
                 break;
         }
+
+        return $result;
     }
 }
