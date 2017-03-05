@@ -1,92 +1,58 @@
 <?php
 
-use ChristianFratta\GazeOfTheWorld\App;
+/**
+ * Laravel - A PHP Framework For Web Artisans
+ *
+ * @package  Laravel
+ * @author   Taylor Otwell <taylor@laravel.com>
+ */
 
-require("../vendor/autoload.php");
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our application. We just need to utilize it! We'll simply require it
+| into the script here so that we don't have to worry about manual
+| loading any of our classes later on. It feels nice to relax.
+|
+*/
 
-App::loadEnv();
+require __DIR__.'/../bootstrap/autoload.php';
 
-//App::assimilateFeeds();
+/*
+|--------------------------------------------------------------------------
+| Turn On The Lights
+|--------------------------------------------------------------------------
+|
+| We need to illuminate PHP development, so let us turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight our users.
+|
+*/
 
-App::retrieveInformation('today');
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-?>
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request
+| through the kernel, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gaze of the World</title>
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
-    <link rel="icon" type="image/png" href="../favicon.png">
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
 
-    <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/semantic.min.js"></script>
-</head>
-<body>
-<button onclick="requestData()">Press</button>
-<script type="text/javascript">
-    function requestData() {
-        $.ajax({
-            type: 'POST',
-            url: 'endpoint.php',
-            data: {
-                getCurrentInfo: true
-            },
-            success: function (response) {
-                var data = $.parseJSON(response)[0];
+$response->send();
 
-                data = sortObjectToArray(data);
-
-                createGrid(data);
-            }
-        });
-    }
-
-    function sortObjectToArray(obj) {
-        var tmp  = [];
-        for (var country in obj) {
-            tmp.push([country, obj[country]]);
-        }
-
-        tmp.sort(function(a, b) {
-            return b[1] - a[1];
-        });
-
-        var result = [];
-        for(var i = 0; i < tmp.length; i++) {
-            result[tmp[i][0]] = tmp[i][1];
-        }
-        return result;
-    }
-
-    function createGrid(data) {
-        var keys = Object.keys(data);
-        var grid = '';
-        grid += '<div class="ui grid">';
-        grid += '<div class="row">';
-        grid += '<div class="four wide column"></div>';
-        grid += '<div class="four wide column">Country</div>';
-        grid += '<div class="four wide column">Mentions</div>';
-        grid += '<div class="four wide column"></div>';
-        grid += '</div>';
-
-        for (var i = 1; i < 11; i++) {
-            grid += '<div class="row">';
-            grid += '<div class="four wide column"></div>';
-            grid += '<div class="four wide column">' + keys[i] + '</div>';
-            grid += '<div class="four wide column">' + data[keys[i]] + '</div>';
-            grid += '<div class="four wide column"></div>';
-            grid += '</div>';
-        }
-        grid += '</div>';
-
-        $('body').html(grid);
-    }
-</script>
-</body>
-</html>
+$kernel->terminate($request, $response);

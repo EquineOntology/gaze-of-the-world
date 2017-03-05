@@ -10,10 +10,7 @@
  * Modified by Christian Fratta
  */
 
-namespace ChristianFratta\GazeOfTheWorld;
-
-require('../vendor/autoload.php');
-
+namespace CFratta\GazeOfTheWorld;
 
 class Countries
 {

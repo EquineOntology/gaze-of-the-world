@@ -1,32 +1,54 @@
 {
-  "name": "Gaze of the world",
-  "description": "An overview of where the world is looking, judging by media coverage.",
-  "license": "MIT",
-  "author": {
-    "name": "Christian Fratta",
-    "email": "christian.fratta@gmail.com",
-    "homepage": "https://immortalhydra.com"
-  },
-  "type": "project",
-  "require": {
-    "php": ">=7.1.0",
-    "paquettg/php-html-parser": "^1.7",
-    "simplepie/simplepie": "^1.4",
-    "vlucas/phpdotenv": "^2.4"
-  },
-  "require-dev": {
-    "phpmd/phpmd": "^2.5",
-    "symfony/var-dumper": "^3.2"
-  },
-  "autoload": {
-    "psr-4": {
-      "ChristianFratta\\GazeOfTheWorld\\": "./app/"
+    "name": "cfratta/gazeoftheworld",
+    "description": "See where the world is looking, judging by media coverage.",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
+        "paquettg/php-html-parser": "^1.7",
+        "simplepie/simplepie": "^1.4"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.3",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "CFratta\\GazeOfTheWorld\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
+            "php artisan optimize"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true
-  }
 }
