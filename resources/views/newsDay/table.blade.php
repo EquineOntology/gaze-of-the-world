@@ -12,7 +12,6 @@
             <tbody>
             @foreach($mentions as $country => $amount)
                 <tr>
-                    {{--{{ dd($countries) }}--}}
                     <td>{{ $countries[$country]["name"][0] }}</td>
                     <td>{{ $amount }}</td>
                 </tr>

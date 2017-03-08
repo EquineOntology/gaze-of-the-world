@@ -35,11 +35,29 @@ class NewsDayController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the top 10 countries as of the latest feed reading.
      *
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function showTop10()
+    {
+        $mentions = $this->getOrderedMentions();
+        return view('newsDay.table')->with('mentions', array_slice($mentions, 0, 10));
+    }
+
+    /**
+     * Display all countries as of the latest feed reading.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showAll()
+    {
+        $mentions = $this->getOrderedMentions();
+        return view('newsDay.table')->with('mentions', $mentions);
+    }
+
+
+    private function getOrderedMentions()
     {
         $mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
 
@@ -50,6 +68,6 @@ class NewsDayController extends Controller
 
         arsort($mentions);
 
-        return view('newsDay.top10')->with('mentions', array_slice($mentions, 0, 10));
+        return $mentions;
     }
 }

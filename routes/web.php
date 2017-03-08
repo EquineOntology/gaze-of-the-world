@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', 'NewsDayController@show');
+Route::get('/', 'NewsDayController@showTop10');
+Route::get('/all', 'NewsDayController@showAll');
 
 Route::get('/assimilate', 'GazeController@assimilateFeeds');
