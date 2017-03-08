@@ -85,36 +85,4 @@ class WebsitesController extends Controller
         return $totalMentions;
     }
 
-
-
-    /**
-     * Get all items published within the last hour from all feeds.
-     *
-     * @param  $sites
-     * @return array
-     */
-    public static function getLatestItemsFromAllSites($sites)
-    {
-        $feeds = self::initFeeds($sites);
-
-        $items = self::getLatestItemsFromFeeds($feeds);
-
-    }
-
-
-
-
-
-    private static function getLatestItemsFromFeeds($feeds)
-    {
-        $items = [];
-        dd($feeds);
-        foreach ($feeds as $feed) {
-            dd($feed);
-//            $items[$name] = $this->getLatestItemsFromFeed($feed);
-        }
-    }
-
-
-
 }

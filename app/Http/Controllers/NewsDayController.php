@@ -18,7 +18,6 @@ class NewsDayController extends Controller
         //
     }
 
-
     /**
      * Display the specified resource.
      *
@@ -26,25 +25,13 @@ class NewsDayController extends Controller
      */
     public function show()
     {
-        $mentions = DB::table('news_data')->orderBy('date')->first();
+        $mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
 
         $mentions = (array)$mentions;
         unset($mentions['recordId']);
         unset($mentions['date']);
         return view('newsDay.top10')->with('mentions', $mentions);
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \CFratta\GazeOfTheWorld\NewsDay  $newsDay
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(NewsDay $newsDay)
-    {
-        //
-    }
-
 
     /**
      * Save the current news day to the database.
