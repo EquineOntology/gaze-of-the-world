@@ -12,14 +12,18 @@ const { mix } = require('laravel-mix');
  */
 
 mix.scripts([
-        'resources/assets/js/vendor/jquery-3.2.0.slim.min.js',
+        'resources/assets/js/vendor/jquery-3.2.0.min.js',
         'resources/assets/js/vendor/tether.min.js',
-        'resources/assets/js/vendor/bootstrap.js'
+        'resources/assets/js/vendor/bootstrap.js',
+        'resources/assets/js/vendor/highcharts.min.js',
+        'resources/assets/js/gaze.js'
     ], 'public/js/app.js')
 
     .styles([
+        'resources/assets/css/gaze.css',
         'resources/assets/css/vendor/tether.min.css',
-        'resources/assets/css/vendor/bootstrap.css'
+        'resources/assets/css/vendor/bootstrap.css',
+        'resources/assets/css/vendor/highcharts.css'
     ], 'public/css/app.css')
 
     .version();

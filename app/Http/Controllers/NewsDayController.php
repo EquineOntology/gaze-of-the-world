@@ -6,68 +6,98 @@ use Carbon\Carbon;
 use CFratta\GazeOfTheWorld\NewsDay;
 use Illuminate\Support\Facades\DB;
 
-class NewsDayController extends Controller
-{
-    /**
-     * Save the current news day to the database.
-     *
-     * @param  $mentions
-     */
-    public static function saveNewsDay($mentions)
-    {
-        $newsDay = new NewsDay();
-        $newsDay->setAttribute('date', Carbon::today()->toDateString());
-        foreach ($mentions as $code => $number) {
-            $newsDay->$code = $number;
-        }
+class NewsDayController extends Controller {
 
-        $newsDay->save();
+	/**
+	 * Save the current news day to the database.
+	 *
+	 * @param  $mentions
+	 */
+	public static function saveNewsDay($mentions)
+	{
+		$newsDay = new NewsDay();
+		$newsDay->setAttribute('date', Carbon::today()->toDateString());
+		foreach ($mentions as $code => $number)
+		{
+			$newsDay->$code = $number;
+		}
+
+		$newsDay->save();
+	}
+
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index()
+	{
+		//
+	}
+
+	/**
+	 * Display the top 10 countries as of the latest feed reading.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function showTop10()
+	{
+		$mentions = $this->getOrderedMentions();
+
+		$latest = array_slice($this->getLatestMentions($mentions), 0, 10);
+
+		$countriesInTop10 = array_keys($latest);
+		$timeSeries = $mentions->all();
+		foreach ($timeSeries as $day => $data)
+		{
+			foreach ($data as $key => $value)
+			{
+				if (!in_array($key, $countriesInTop10) && $key != 'date')
+				{
+					unset($data->$key);
+				}
+			}
+		}
+
+		return view('newsDay.table')
+			->with('latest', $latest)
+			->with('timeSeries', $timeSeries);
     }
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
+	private function getOrderedMentions()
+	{
+		return DB::table('news_data')->orderBy('date', 'desc')->get();
+	}
 
-    /**
-     * Display the top 10 countries as of the latest feed reading.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function showTop10()
-    {
-        $mentions = $this->getOrderedMentions();
-        return view('newsDay.table')->with('mentions', array_slice($mentions, 0, 10));
-    }
+	private function getLatestMentions($mentions)
+	{
+		$mentions = $mentions->first();
+		$mentions = (array) $mentions;
 
-    /**
-     * Display all countries as of the latest feed reading.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function showAll()
-    {
-        $mentions = $this->getOrderedMentions();
-        return view('newsDay.table')->with('mentions', $mentions);
-    }
+		unset($mentions['recordId']);
+		unset($mentions['date']);
 
+		arsort($mentions);
 
-    private function getOrderedMentions()
-    {
-        $mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
+		return $mentions;
+	}
 
-        $mentions = (array)$mentions;
+	/**
+	 * Display all countries as of the latest feed reading.
+	 *
+	 */
+	public function showAll()
+	{
+		$timeSeries = $this->getOrderedMentions();
+		$latest = $this->getLatestMentions($timeSeries);
 
-        unset($mentions['recordId']);
-        unset($mentions['date']);
+		return view('newsDay.table')
+			->with('latest', $latest)
+			->with('timeSeries', $timeSeries);
+	}
 
-        arsort($mentions);
-
-        return $mentions;
-    }
+	private function getLastWeek($country)
+	{
+		$mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
+	}
 }
