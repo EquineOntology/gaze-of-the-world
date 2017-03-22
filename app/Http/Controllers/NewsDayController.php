@@ -47,8 +47,8 @@ class NewsDayController extends Controller {
 		$latest = array_slice($this->getLatestMentions($mentions), 0, 10);
 
 		$countriesInTop10 = array_keys($latest);
-		$timeSeries = $mentions->all();
-		foreach ($timeSeries as $day => $data)
+		$allMentions = $mentions->all();
+		foreach ($allMentions as $day => $data)
 		{
 			foreach ($data as $key => $value)
 			{
@@ -56,6 +56,17 @@ class NewsDayController extends Controller {
 				{
 					unset($data->$key);
 				}
+			}
+		}
+
+		$timeSeries = [];
+		foreach($allMentions as $mention) {
+			foreach($mention as $country => $count) {
+				if($country == 'date') {
+					continue;
+				}
+
+				$timeSeries[$country][$mention->date] = $count;
 			}
 		}
 

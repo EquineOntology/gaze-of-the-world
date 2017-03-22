@@ -2,14 +2,6 @@ h1 {
     padding: 40px;
 }
 
-.large {
-    width: 100% !important;
-}
-
 .medium {
     width: 75% !important;
-}
-
-.small {
-    width: 50% !important;
 }

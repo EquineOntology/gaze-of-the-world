@@ -40,6 +40,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
+						<div id="{{ $country }}Chart" ></div>
 						<table>
 							<thead>
 							<tr>
@@ -48,10 +49,10 @@
 							</tr>
 							</thead>
 							<tbody>
-							@foreach($timeSeries as $index => $data)
+							@foreach($timeSeries[$country] as $key => $data)
 								<tr>
-									<td class="col-2">{{ $data->date }}</td>
-									<td class="col-2">{{ $data->$country }}</td>
+									<td class="col-2">{{ $key }}</td>
+									<td class="col-2">{{ $data }}</td>
 								</tr>
 							@endforeach
 							</tbody>
@@ -59,6 +60,12 @@
 					</div>
 				</div>
 			</div>
+			<script>
+                document.addEventListener("DOMContentLoaded", function (event) {
+					{{--{{ dd($timeSeries[$country]) }}--}}
+                    createChart('{{ $country }}', '{!! json_encode($timeSeries[$country]) !!}');
+                });
+			</script>
 		</div>
 	@endforeach
 @endsection
