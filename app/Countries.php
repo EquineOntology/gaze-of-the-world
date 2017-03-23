@@ -278,10 +278,7 @@ class Countries
         "CF" => [
             'alpha2' => 'CF',
             'alpha3' => 'CAF',
-            "name" => [
-                "Central African Republic",
-                "CAR",
-            ],
+            "name" => [ "Central African Republic" ],
             "continent" => "Africa"
         ],
         "TD" => [
@@ -635,7 +632,7 @@ class Countries
             "continent" => "North America"
         ],
         "HK" => [
-            'alpha2' => 'HK',
+            'alpha2' => 'hk',
             'alpha3' => 'HKG',
             "name" => ["Hong Kong"],
             "continent" => "Asia"
