@@ -41,88 +41,131 @@
 					</div>
 					<div class="modal-body">
 						<ul class="nav nav-tabs" data-tabs="tabs">
-							<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#{{ $country }}-7Days">7 days</a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-30Days">30 days</a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-90Days">90 days</a></li>
-							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-150Days">150 days</a></li>
+							<li class="nav-item"><a class="nav-link active" data-toggle="tab"
+													href="#{{ $country }}-7Days">7 days</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-30Days">30
+									days</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-90Days">90
+									days</a></li>
+							<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#{{ $country }}-150Days">150
+									days</a></li>
 						</ul>
-
 						<div class="tab-content">
 							<div id="{{ $country }}-7Days" class="tab-pane active" role="tabpanel">
 								<div id="{{ $country }}-7Days-chart"></div>
-								<table>
-									<thead>
-									<tr>
-										<th class="col-2">Day</th>
-										<th class="col-2">Mentions</th>
-									</tr>
-									</thead>
-									<tbody>
-									@foreach($timeSeries[$country] as $key => $data)
-										<tr>
-											<td class="col-2">{{ $key }}</td>
-											<td class="col-2">{{ $data }}</td>
-										</tr>
-									@endforeach
-									</tbody>
-								</table>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" data-toggle="collapse"
+											data-target="#{{ $country }}-7Days-collapse" aria-expanded="false"
+											aria-controls="{{ $country }}-7Days-collapse">Show raw values
+									</button>
+								</div>
+								<div class="collapse" id="{{ $country }}-7Days-collapse">
+									<div class="container col-8">
+										<table>
+											<thead>
+											<tr>
+												<th class="col-8">Day</th>
+												<th class="col-4">Mentions</th>
+											</tr>
+											</thead>
+											<tbody>
+											@foreach($timeSeries[$country] as $key => $data)
+												<tr>
+													<td class="col-8">{{ $key }}</td>
+													<td class="col-4">{{ $data }}</td>
+												</tr>
+											@endforeach
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
 							<div id="{{ $country }}-30Days" class="tab-pane fade in" role="tabpanel">
 								<div id="{{ $country }}-30Days-chart"></div>
-								<table>
-									<thead>
-									<tr>
-										<th class="col-2">Day</th>
-										<th class="col-2">Mentions</th>
-									</tr>
-									</thead>
-									<tbody>
-									@foreach($timeSeries[$country] as $key => $data)
-										<tr>
-											<td class="col-2">{{ $key }}</td>
-											<td class="col-2">{{ $data }}</td>
-										</tr>
-									@endforeach
-									</tbody>
-								</table>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" data-toggle="collapse"
+											data-target="#{{ $country }}-30Days-collapse" aria-expanded="false"
+											aria-controls="{{ $country }}-30Days-collapse">Show raw values
+									</button>
+								</div>
+								<div class="collapse" id="{{ $country }}-30Days-collapse">
+									<div class="container col-8">
+										<table>
+											<thead>
+											<tr>
+												<th class="col-8">Day</th>
+												<th class="col-4">Mentions</th>
+											</tr>
+											</thead>
+											<tbody>
+											@foreach($timeSeries[$country] as $key => $data)
+												<tr>
+													<td class="col-8">{{ $key }}</td>
+													<td class="col-4">{{ $data }}</td>
+												</tr>
+											@endforeach
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
-							<div id="{{ $country }}-90Days" class="tab-pane fade in">
+							<div id="{{ $country }}-90Days" class="tab-pane fade in" role="tabpanel">
 								<div id="{{ $country }}-90Days-chart"></div>
-								<table>
-									<thead>
-									<tr>
-										<th class="col-2">Day</th>
-										<th class="col-2">Mentions</th>
-									</tr>
-									</thead>
-									<tbody>
-									@foreach($timeSeries[$country] as $key => $data)
-										<tr>
-											<td class="col-2">{{ $key }}</td>
-											<td class="col-2">{{ $data }}</td>
-										</tr>
-									@endforeach
-									</tbody>
-								</table>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" data-toggle="collapse"
+											data-target="#{{ $country }}-90Days-collapse" aria-expanded="false"
+											aria-controls="{{ $country }}-90Days-collapse">Show raw values
+									</button>
+								</div>
+								<div class="collapse" id="{{ $country }}-90Days-collapse">
+									<div class="container col-8">
+										<table>
+											<thead>
+											<tr>
+												<th class="col-8">Day</th>
+												<th class="col-4">Mentions</th>
+											</tr>
+											</thead>
+											<tbody>
+											@foreach($timeSeries[$country] as $key => $data)
+												<tr>
+													<td class="col-8">{{ $key }}</td>
+													<td class="col-4">{{ $data }}</td>
+												</tr>
+											@endforeach
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
-							<div id="{{ $country }}-150Days" class="tab-pane fade in">
+							<div id="{{ $country }}-150Days" class="tab-pane fade in" role="tabpanel">
 								<div id="{{ $country }}-150Days-chart"></div>
-								<table>
-									<thead>
-									<tr>
-										<th class="col-2">Day</th>
-										<th class="col-2">Mentions</th>
-									</tr>
-									</thead>
-									<tbody>
-									@foreach($timeSeries[$country] as $key => $data)
-										<tr>
-											<td class="col-2">{{ $key }}</td>
-											<td class="col-2">{{ $data }}</td>
-										</tr>
-									@endforeach
-									</tbody>
-								</table>
+								<div class="text-center">
+									<button type="button" class="btn btn-primary" data-toggle="collapse"
+											data-target="#{{ $country }}-150Days-collapse" aria-expanded="false"
+											aria-controls="{{ $country }}-150Days-collapse">Show raw values
+									</button>
+								</div>
+								<div class="collapse" id="{{ $country }}-150Days-collapse">
+									<div class="container col-8">
+										<table>
+											<thead>
+											<tr>
+												<th class="col-8">Day</th>
+												<th class="col-4">Mentions</th>
+											</tr>
+											</thead>
+											<tbody>
+											@foreach($timeSeries[$country] as $key => $data)
+												<tr>
+													<td class="col-8">{{ $key }}</td>
+													<td class="col-4">{{ $data }}</td>
+												</tr>
+											@endforeach
+											</tbody>
+										</table>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
