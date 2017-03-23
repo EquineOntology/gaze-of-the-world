@@ -69,7 +69,7 @@
 											</tr>
 											</thead>
 											<tbody>
-											@foreach($timeSeries[$country] as $key => $data)
+											@foreach(array_slice($timeSeries[$country], 0, 7) as $key => $data)
 												<tr>
 													<td class="col-8">{{ $key }}</td>
 													<td class="col-4">{{ $data }}</td>
@@ -98,7 +98,7 @@
 											</tr>
 											</thead>
 											<tbody>
-											@foreach($timeSeries[$country] as $key => $data)
+											@foreach(array_slice($timeSeries[$country], 0, 30) as $key => $data)
 												<tr>
 													<td class="col-8">{{ $key }}</td>
 													<td class="col-4">{{ $data }}</td>
@@ -127,7 +127,7 @@
 											</tr>
 											</thead>
 											<tbody>
-											@foreach($timeSeries[$country] as $key => $data)
+											@foreach(array_slice($timeSeries[$country], 0, 90) as $key => $data)
 												<tr>
 													<td class="col-8">{{ $key }}</td>
 													<td class="col-4">{{ $data }}</td>
@@ -156,7 +156,7 @@
 											</tr>
 											</thead>
 											<tbody>
-											@foreach($timeSeries[$country] as $key => $data)
+											@foreach(array_slice($timeSeries[$country], 0, 150) as $key => $data)
 												<tr>
 													<td class="col-8">{{ $key }}</td>
 													<td class="col-4">{{ $data }}</td>
