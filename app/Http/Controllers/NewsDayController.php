@@ -38,7 +38,6 @@ class NewsDayController extends Controller {
 	/**
 	 * Display the top 10 countries as of the latest feed reading.
 	 *
-	 * @return \Illuminate\Http\Response
 	 */
 	public function showTop10()
 	{
@@ -59,27 +58,30 @@ class NewsDayController extends Controller {
 			}
 		}
 
-		$timeSeries = [];
-		foreach($allMentions as $mention) {
-			foreach($mention as $country => $count) {
-				if($country == 'date') {
-					continue;
-				}
-
-				$timeSeries[$country][$mention->date] = $count;
-			}
-		}
+		$timeSeries = $this->populateTimeSeries($allMentions);
 
 		return view('newsDay.table')
 			->with('latest', $latest)
 			->with('timeSeries', $timeSeries);
-    }
+	}
 
+	/**
+	 * Get mentions table, ordered by date (latest first).
+	 *
+	 * @return \Illuminate\Support\Collection
+	 */
 	private function getOrderedMentions()
 	{
 		return DB::table('news_data')->orderBy('date', 'desc')->get();
 	}
 
+
+	/**
+	 * Get the latest recorded array of mentions and sort it by descending count.
+	 *
+	 * @param  $mentions
+	 * @return array
+	 */
 	private function getLatestMentions($mentions)
 	{
 		$mentions = $mentions->first();
@@ -99,16 +101,45 @@ class NewsDayController extends Controller {
 	 */
 	public function showAll()
 	{
-		$timeSeries = $this->getOrderedMentions();
-		$latest = $this->getLatestMentions($timeSeries);
+		$mentions = $this->getOrderedMentions();
+		$latest = $this->getLatestMentions($mentions);
+
+		$mentions = $mentions->all();
+		$timeSeries = $this->populateTimeSeries($mentions);
 
 		return view('newsDay.table')
 			->with('latest', $latest)
 			->with('timeSeries', $timeSeries);
+
 	}
 
 	private function getLastWeek($country)
 	{
 		$mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
+	}
+
+	/**
+	 * Create a time-series array from the given mentions.
+	 *
+	 * @param  array  $mentions
+	 * @return array
+	 */
+	private function populateTimeSeries($mentions)
+	{
+		$timeSeries = [];
+		foreach ($mentions as $mention)
+		{
+			foreach ($mention as $country => $count)
+			{
+				if ($country == 'date')
+				{
+					continue;
+				}
+
+				$timeSeries[$country][$mention->date] = $count;
+			}
+		}
+
+		return $timeSeries;
 	}
 }
