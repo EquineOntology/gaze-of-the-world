@@ -632,7 +632,7 @@ class Countries
             "continent" => "North America"
         ],
         "HK" => [
-            'alpha2' => 'hk',
+            'alpha2' => 'HK',
             'alpha3' => 'HKG',
             "name" => ["Hong Kong"],
             "continent" => "Asia"
