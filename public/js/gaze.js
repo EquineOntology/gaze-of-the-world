@@ -7,7 +7,7 @@ function createChart(country, data) {
     });
 
     arrayData.sort(function (a, b) {
-        return a[0] - b[0];
+        return b[0] - a[0];
     });
 
     var chartOptions = function(days = 7) {
