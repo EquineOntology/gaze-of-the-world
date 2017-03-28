@@ -16,7 +16,7 @@ class NewsDayController extends Controller {
 	public static function saveNewsDay($mentions)
 	{
 		$newsDay = new NewsDay();
-		$newsDay->setAttribute('date', Carbon::today()->toDateString());
+		$newsDay->setAttribute('date', Carbon::yesterday()->toDateString());
 		foreach ($mentions as $code => $number)
 		{
 			$newsDay->$code = $number;
