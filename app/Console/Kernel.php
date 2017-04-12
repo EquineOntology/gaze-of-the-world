@@ -24,8 +24,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')
-        //          ->hourly();
+	    $schedule->call('\CFratta\GazeOfTheWorld\Http\Controllers\GazeController@assimilateFeeds')
+		    ->daily()
+		    ->at('00:10');
     }
 
     /**
