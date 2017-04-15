@@ -55,14 +55,4 @@ class Alexer
 
         return $urls;
     }
-
-
-    private static function removeBlacklisted($urls)
-    {
-//        foreach (Website::$blacklist as $url) {
-//            unset($urls[$url]);
-//        }
-
-        return $urls;
-    }
 }
