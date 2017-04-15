@@ -72,6 +72,14 @@ class WebsitesSeeder extends Seeder
         'financialexpress.com' => 'http://www.financialexpress.com/market/world-markets/feed/',
         'seattletimes.com' => 'http://www.seattletimes.com/world/feed/',
         'thetimes.co.uk' => 'http://www.thetimes.co.uk/#section-news',
+        'commondreams.org' => 'https://www.commondreams.org/rss.xml',
+        'militarytimes.com' => 'https://feeds.feedburner.com/rss/category/mil-home?format=xml',
+        'rappler.com' => 'https://feeds.feedburner.com/rappler/',
+        'canoe.com' => 'http://tu9srvbirvvtosryc3muy2fub2uuy29t.g00.canoe.com/g00/2_d3d3LmNhbm9lLmNvbQ%3D%3D_/TU9SRVBIRVVTOSRodHRwOi8vcnNzLmNhbm9lLmNvbS9DTkVXUy9Xb3JsZC9ob21lLnhtbA%3D%3D_$/$/$/$',
+        'radioaustralia.net.au' => 'http://www.radioaustralia.net.au/international/feeds/news/topstories',
+        'un.org' => 'https://www.un.org/apps/news/rss/rss_top.asp',
+        'jpost.com' => 'http://www.jpost.com/Rss/RssFeedsPolitiqueetsocial.aspx',
+        'bignewsnetwork.com' => 'http://feeds.bignewsnetwork.com/category/c08dd24cec417021'
     ];
 
     private $blacklist = [
@@ -195,7 +203,16 @@ class WebsitesSeeder extends Seeder
         // Not news.
         'al.com',
         // No feeds.
-
+        'dailycaller.com',
+        // No feeds.
+        'newswise.com',
+        // No feeds.
+        'firsttoknow.com',
+        // No feeds.
+        'citizendaily.news',
+        // No feeds.
+		'namnewsnetwork.org'
+        // No feeds.
 
     ];
 }
