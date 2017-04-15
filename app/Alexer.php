@@ -28,15 +28,6 @@ class Alexer
         // So we do it instead.
         $urls = array_values(array_unique($urls));
 
-        // Set URLs as keys instead of values.
-//        $urls = array_flip($urls);
-
-        // Remove blacklisted websites.
-//        $urls = $this->removeBlacklisted($urls);
-
-        // Associate URLs with their feeds.
-//        $urls = $this->getFeeds($urls);
-
         return collect($urls);
     }
 
@@ -52,16 +43,6 @@ class Alexer
             // TODO: switch to https when deploying.
             $urls[] = $url[1];
         }
-
-        return $urls;
-    }
-
-
-    private static function removeBlacklisted($urls)
-    {
-//        foreach (Website::$blacklist as $url) {
-//            unset($urls[$url]);
-//        }
 
         return $urls;
     }
