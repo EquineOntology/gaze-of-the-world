@@ -1,18 +1,16 @@
 <?php
 
-namespace CFratta\GazeOfTheWorld\Http\Controllers;
+namespace CFratta\GazeOfTheWorld;
 
-use CFratta\GazeOfTheWorld\Countries;
-
-class GazeController extends Controller
+class Gaze
 {
     public static function assimilateFeeds()
     {
         $countries = Countries::get();
 
-        $mentions = WebsitesController::getLatestMentions($countries);
+        $mentions = \CFratta\GazeOfTheWorld\Http\Controllers\WebsitesController::getLatestMentions($countries);
 
-        NewsDayController::saveNewsDay($mentions);
+	    \CFratta\GazeOfTheWorld\Http\Controllers\NewsDayController::saveNewsDay($mentions);
     }
 
 }

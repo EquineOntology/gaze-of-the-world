@@ -14,4 +14,4 @@
 Route::get('/', 'NewsDayController@showTop10');
 Route::get('/all', 'NewsDayController@showAll');
 
-Route::get('/assimilate', 'GazeController@assimilateFeeds');
+Route::get('/assimilate', '\CFratta\GazeOfTheWorld\Gaze@assimilateFeeds');

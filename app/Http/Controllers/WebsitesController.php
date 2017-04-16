@@ -2,7 +2,7 @@
 
 namespace CFratta\GazeOfTheWorld\Http\Controllers;
 
-use CFratta\GazeOfTheWorld\Alexer;
+// use CFratta\GazeOfTheWorld\Alexer; // Alexer-related code
 use CFratta\GazeOfTheWorld\Utilities\TypeUtils;
 use CFratta\GazeOfTheWorld\Website;
 use Illuminate\Support\Facades\DB;
@@ -35,7 +35,8 @@ class WebsitesController extends Controller
      */
     private static function getTopActiveSites()
     {
-        $topSites = Alexer::getTopNewsSites();
+
+        // $topSites = Alexer::getTopNewsSites(); // Alexer-related code
 
         $sitesWithFeed = DB::table('websites')
             ->where('usable', true)
@@ -46,14 +47,19 @@ class WebsitesController extends Controller
             return [$item->name => $item->feedUrl];
         });
 
-        $topActiveSites = $sitesWithFeed->filter(function ($item, $key) use ($topSites) {
-            return $topSites->contains($key);
-        });
+	    // Alexer-related code
+        // $topActiveSites = $sitesWithFeed->filter(function ($item, $key) use ($topSites) {
+        //     return $topSites->contains($key);
+        // });
 
         $websites = [];
-        foreach ($topActiveSites as $name => $url) {
-            $websites[] = new Website($name, $url);
-        }
+	    foreach ($sitesWithFeed as $name => $url) {
+		    $websites[] = new Website($name, $url);
+	    }
+	    // Alexer-related code
+        // foreach ($topActiveSites as $name => $url) {
+	    //     $websites[] = new Website($name, $url);
+	    // }
 
         return $websites;
     }
@@ -78,7 +84,7 @@ class WebsitesController extends Controller
         }
 
         foreach ($feeds as $item) {
-            $mentionsInItem = [];//$this->countCountryMentionsInFeed($item, $countries);
+            $mentionsInItem = [];
             $totalMentions = $this->sumMentions($totalMentions, $mentionsInItem);
         }
 
