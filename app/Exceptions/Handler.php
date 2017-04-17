@@ -32,7 +32,17 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        parent::report($exception);
+	    if ($exception instanceof \Exception)
+	    {
+		    // emails.exception is the template of your email
+		    // it will have access to the $error that we are passing below
+		    Mail::send('emails.exception', ['error' => $exception->getMessage()], function ($m)
+		    {
+			    $m->to('christian.fratta@gmail.com', 'Christian Fratta')->subject('gazeofthe.world error');
+		    });
+	    }
+
+	    parent::report($exception);
     }
 
     /**
