@@ -113,10 +113,6 @@ class NewsDayController extends Controller {
 
 	}
 
-	private function getLastWeek($country)
-	{
-		$mentions = DB::table('news_data')->orderBy('date', 'desc')->first();
-	}
 
 	/**
 	 * Create a time-series array from the given mentions.

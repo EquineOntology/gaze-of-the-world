@@ -13,7 +13,6 @@
 	</title>
 
 	<!-- Styles -->
-	<link href="css/gaze.css" rel="stylesheet">
 	<link href="{{ secure_asset(mix('/css/app.css')) }}" rel="stylesheet">
 
 @yield('after_styles')
@@ -22,6 +21,9 @@
 	<script>
         window.Laravel = {!! json_encode(['csrfToken' => csrf_token()]) !!};
 	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
 	@yield('after_head_scripts')
 </head>
 <body>
@@ -31,7 +33,6 @@
 
 <!-- Scripts -->
 <script src="{{ secure_asset(mix('/js/app.js')) }}"></script>
-<script src="js/gaze.js"></script>
 @yield('after_scripts')
 </body>
 </html>

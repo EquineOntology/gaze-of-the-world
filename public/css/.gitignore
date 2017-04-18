@@ -1,4 +1,4 @@
 *
 !public/
 !.gitignore
-!gaze.css
+!../../resources/assets/css/gaze.css
