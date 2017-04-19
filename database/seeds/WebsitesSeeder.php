@@ -62,7 +62,8 @@ class WebsitesSeeder extends Seeder {
 			'http://www.jpost.com/Rss/RssFeedsPolitiqueetsocial.aspx',
 			'IL'
 		],
-		'bignewsnetwork.com'    => ['http://feeds.bignewsnetwork.com/category/c08dd24cec417021']
+		'bignewsnetwork.com'    => ['http://feeds.bignewsnetwork.com/category/c08dd24cec417021'],
+	    'news.google.com'       => ['https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=w&siidp=a892d2018e82a999047693ed29f8258ca06a&ict=ln&output=rss'],
 	];
 	private $blacklist = [
 		'reddit.com'             => '',
