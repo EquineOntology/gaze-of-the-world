@@ -5,6 +5,7 @@ namespace CFratta\GazeOfTheWorld\Exceptions;
 use Exception;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Mail;
 
 class Handler extends ExceptionHandler
 {
@@ -36,9 +37,9 @@ class Handler extends ExceptionHandler
 	    {
 		    // emails.exception is the template of your email
 		    // it will have access to the $error that we are passing below
-		    Mail::send('emails.exception', ['error' => $exception->getMessage()], function ($m)
+		    Mail::send('emails.exception', ['exception' => $exception], function ($mail)
 		    {
-			    $m->to('christian.fratta@gmail.com', 'Christian Fratta')->subject('gazeofthe.world error');
+			    $mail->to('christian.fratta@gmail.com', 'Christian Fratta')->subject('gazeofthe.world error');
 		    });
 	    }
 
