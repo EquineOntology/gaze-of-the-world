@@ -36,7 +36,7 @@ function createModal(countryName, countryData) {
         html += 'Show raw values';
         html += '</button></div>';
         html += '<div class="collapse" id="' + identifier + 'Days-collapse">';
-        html += '<div class="container col-8">';
+        html += '<div class="container col-12 col-md-8">';
         html += '<table><thead><tr>';
         html += '<th class="col-8">Day</th>';
         html += '<th class="col-4">Mentions</th>';
