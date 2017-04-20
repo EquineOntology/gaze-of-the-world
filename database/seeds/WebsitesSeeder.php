@@ -6,23 +6,47 @@ use Illuminate\Database\Seeder;
 class WebsitesSeeder extends Seeder {
 
 	private $feeds = [
-		'nytimes.com'           => ['https://rss.nytimes.com/services/xml/rss/nyt/World.xml'],
-		'theguardian.com'       => ['https://www.theguardian.com/world/rss'],
+		'nytimes.com'           => [
+			'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
+			'US'
+		],
+		'theguardian.com'       => [
+			'https://www.theguardian.com/world/rss',
+			'GB'
+		],
 		'cnn.com'               => ['https://rss.cnn.com/rss/edition_world.rss'],
-		'bbc.co.uk'             => ['https://feeds.bbci.co.uk/news/world/rss.xml?edition=uk'],
+		'bbc.co.uk'             => [
+			'https://feeds.bbci.co.uk/news/world/rss.xml?edition=uk',
+			'GB'
+		],
 		'huffingtonpost.com'    => ['https://www.huffingtonpost.com/feeds/verticals/world/index.xml'],
-		'foxnews.com'           => ['http://feeds.foxnews.com/foxnews/world'],
+		'foxnews.com'           => [
+			'http://feeds.foxnews.com/foxnews/world',
+			'US'
+		],
 		'indiatimes.com'        => ['http://timesofindia.indiatimes.com/rssfeeds/296589292.cms'],
-		'wsj.com'               => ['http://www.wsj.com/xml/rss/3_7085.xml'],
+		'wsj.com'               => [
+			'http://www.wsj.com/xml/rss/3_7085.xml',
+			'US'
+		],
 		'reuters.com'           => ['http://feeds.reuters.com/Reuters/worldNews'],
-		'indianexpress.com'     => ['http://indianexpress.com/section/world/feed/'],
+		'indianexpress.com'     => [
+			'http://indianexpress.com/section/world/feed/',
+			'IN'
+		],
 		'time.com'              => ['https://feeds2.feedburner.com/time/world'],
-		'latimes.com'           => ['http://www.latimes.com/world/rss2.0.xml'],
+		'latimes.com'           => [
+			'http://www.latimes.com/world/rss2.0.xml',
+			'US'
+		],
 		'cnbc.com'              => ['http://www.cnbc.com/id/100727362/device/rss/rss.html'],
 		'abcnews.go.com'        => ['http://feeds.abcnews.com/abcnews/internationalheadlines'],
 		'cbsnews.com'           => ['http://www.cbsnews.com/latest/rss/world'],
 		'dw.com'                => ['http://rss.dw.com/rdf/rss-en-world'],
-		'news.com.au'           => ['http://www.news.com.au/world/rss'],
+		'news.com.au'           => [
+			'http://www.news.com.au/world/rss',
+			'AU'
+		],
 		'theatlantic.com'       => ['https://www.theatlantic.com/feed/channel/international/'],
 		'cbc.ca'                => ['http://www.cbc.ca/cmlink/rss-world'],
 		'chinadaily.com.cn'     => ['http://www.chinadaily.com.cn/rss/world_rss.xml'],
@@ -40,10 +64,15 @@ class WebsitesSeeder extends Seeder {
 		'washingtontimes.com'   => ['http://www.washingtontimes.com/rss/headlines/news/world/'],
 		'thestar.com'           => ['https://www.thestar.com/feeds.articles.news.world.rss'],
 		'ctvnews.ca'            => ['http://www.ctvnews.ca/rss/ctvnews-ca-world-public-rss-1.822289'],
-		'phylly.com'            => ['http://www.philly.com/philly_news_nation.rss'],
+		'phylly.com'            => [
+			'http://www.philly.com/philly_news_nation.rss',
+			'US'
+		],
 		'financialexpress.com'  => ['http://www.financialexpress.com/market/world-markets/feed/'],
-		'seattletimes.com'      => ['http://www.seattletimes.com/world/feed/'],
-		'thetimes.co.uk'        => ['http://www.thetimes.co.uk/#section-news'],
+		'seattletimes.com'      => [
+			'http://www.seattletimes.com/world/feed/',
+			'US'
+		],
 		'commondreams.org'      => ['https://www.commondreams.org/rss.xml'],
 		'militarytimes.com'     => ['https://feeds.feedburner.com/rss/category/mil-home?format=xml'],
 		'rappler.com'           => [
@@ -63,7 +92,7 @@ class WebsitesSeeder extends Seeder {
 			'IL'
 		],
 		'bignewsnetwork.com'    => ['http://feeds.bignewsnetwork.com/category/c08dd24cec417021'],
-	    'news.google.com'       => ['https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=w&siidp=a892d2018e82a999047693ed29f8258ca06a&ict=ln&output=rss'],
+		'news.google.com'       => ['https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=w&siidp=a892d2018e82a999047693ed29f8258ca06a&ict=ln&output=rss'],
 	];
 	private $blacklist = [
 		'reddit.com'             => '',
@@ -194,8 +223,10 @@ class WebsitesSeeder extends Seeder {
 		// No feeds.
 		'citizendaily.news'      => '',
 		// No feeds.
-		'namnewsnetwork.org'     => ''
+		'namnewsnetwork.org'     => '',
 		// No feeds.
+		'thetimes.co.uk'         => 'GB',
+		// They killed their RSS.
 
 	];
 
