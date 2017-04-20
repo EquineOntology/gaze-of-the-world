@@ -1,6 +1,6 @@
 //noinspection ES6ModulesDependencies
 var cached = [];
-var timeframes = [7, 30, 90, 150];
+var timeframes = [7, 30, 90, 150, 365];
 
 function getData(country, days) {
     $.get('/v1/' + country + '/' + days, function (data) {
