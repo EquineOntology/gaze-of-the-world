@@ -62,7 +62,7 @@ class NewsDayController extends Controller {
 
 		return view('newsDay.table')
 			->with('latest', $latest)
-			->with('timeSeries', $timeSeries);
+			->with('mostMentioned', $timeSeries[key($latest)]);
 	}
 
 	/**

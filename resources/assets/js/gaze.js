@@ -69,7 +69,7 @@ function createChart(country, rawData) {
 
         return {
             chart: {
-                type: 'scatter',
+                type: 'line',
                 zoomType: 'x'
             },
             plotOptions: {
