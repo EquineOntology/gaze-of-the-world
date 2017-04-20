@@ -20,34 +20,38 @@ function createModal(countryName, countryData) {
     html += '<div class="modal-body">';
     html += '<ul class="nav nav-tabs" role="tablist">';
     timeframes.forEach(function (totalDays) {
-        html += '<li class="nav-item">';
-        html += '<a class="nav-link' + (totalDays === 7 ? ' active' : '') + '" data-toggle="tab" href="#' + countryName + '-' + totalDays + 'Days" role="tab">';
-        html += totalDays + ' days';
-        html += '</a></li>'
+        if(countryData.length >= totalDays) {
+            html += '<li class="nav-item">';
+            html += '<a class="nav-link' + (totalDays === 7 ? ' active' : '') + '" data-toggle="tab" href="#' + countryName + '-' + totalDays + 'Days" role="tab">';
+            html += totalDays + ' days';
+            html += '</a></li>'
+        }
     });
     html += '</ul>';
     html += '<div class="tab-content">';
     timeframes.forEach(function (totalDays) {
-        var identifier = countryName + '-' + totalDays;
-        html += '<div id="' + identifier + 'Days" class="tab-pane' + (totalDays === 7? ' active' : ' fade in') + '" role="tabpanel">';
-        html += '<div id="' + identifier + 'Days-chart"></div>';
-        html += '<div class="text-center">';
-        html += '<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#' + identifier + 'Days-collapse" aria-expanded="false" aria-controls="' + identifier + 'Days-collapse" >'
-        html += 'Show raw values';
-        html += '</button></div>';
-        html += '<div class="collapse" id="' + identifier + 'Days-collapse">';
-        html += '<div class="container col-12 col-md-8">';
-        html += '<table><thead><tr>';
-        html += '<th class="col-8">Day</th>';
-        html += '<th class="col-4">Mentions</th>';
-        html += '</tr></thead><tbody>';
-        countryData.slice(0, totalDays).forEach(function (day) {
-            html += '<tr>';
-            html += '<td class="col-8">' + day['date'] + '</td>';
-            html += '<td class="col-4">' + day[countryName] + '</td>';
-            html += '</tr>';
-        });
-        html += '</tbody></table></div></div></div>';
+        if (countryData.length >= totalDays) {
+            var identifier = countryName + '-' + totalDays;
+            html += '<div id="' + identifier + 'Days" class="tab-pane' + (totalDays === 7 ? ' active' : ' fade in') + '" role="tabpanel">';
+            html += '<div id="' + identifier + 'Days-chart"></div>';
+            html += '<div class="text-center">';
+            html += '<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#' + identifier + 'Days-collapse" aria-expanded="false" aria-controls="' + identifier + 'Days-collapse" >'
+            html += 'Show raw values';
+            html += '</button></div>';
+            html += '<div class="collapse" id="' + identifier + 'Days-collapse">';
+            html += '<div class="container col-12 col-md-8">';
+            html += '<table><thead><tr>';
+            html += '<th class="col-8">Day</th>';
+            html += '<th class="col-4">Mentions</th>';
+            html += '</tr></thead><tbody>';
+            countryData.slice(0, totalDays).forEach(function (day) {
+                html += '<tr>';
+                html += '<td class="col-8">' + day['date'] + '</td>';
+                html += '<td class="col-4">' + day[countryName] + '</td>';
+                html += '</tr>';
+            });
+            html += '</tbody></table></div></div></div>';
+        }
     });
     html += '</div></div></div></div></div>';
 
