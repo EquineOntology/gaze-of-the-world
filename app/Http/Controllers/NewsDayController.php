@@ -60,9 +60,12 @@ class NewsDayController extends Controller {
 
 		$timeSeries = $this->populateTimeSeries($allMentions);
 
+		$lastTwoDays = $this->getLastTwoDays($allMentions);
+
 		return view('newsDay.table')
 			->with('latest', $latest)
-			->with('mostMentioned', $timeSeries[key($latest)]);
+			->with('mostMentioned', $timeSeries[key($latest)])
+			->with('lastTwoDays', $lastTwoDays);
 	}
 
 	/**
@@ -96,28 +99,9 @@ class NewsDayController extends Controller {
 	}
 
 	/**
-	 * Display all countries as of the latest feed reading.
-	 *
-	 */
-	public function showAll()
-	{
-		$mentions = $this->getOrderedMentions();
-		$latest = $this->getLatestMentions($mentions);
-
-		$mentions = $mentions->all();
-		$timeSeries = $this->populateTimeSeries($mentions);
-
-		return view('newsDay.table')
-			->with('latest', $latest)
-			->with('timeSeries', $timeSeries);
-
-	}
-
-
-	/**
 	 * Create a time-series array from the given mentions.
 	 *
-	 * @param  array  $mentions
+	 * @param  array $mentions
 	 * @return array
 	 */
 	private function populateTimeSeries($mentions)
@@ -134,6 +118,64 @@ class NewsDayController extends Controller {
 
 				$timeSeries[$country][$mention->date] = $count;
 			}
+		}
+
+		return $timeSeries;
+	}
+
+	/**
+	 * Display all countries as of the latest feed reading.
+	 *
+	 */
+	public function showAll()
+	{
+		$mentions = $this->getOrderedMentions();
+		$latest = $this->getLatestMentions($mentions);
+
+		$mentions = $mentions->all();
+		$timeSeries = $this->populateTimeSeries($mentions);
+
+		$lastTwoDays = $this->getLastTwoDays($mentions);
+
+		return view('newsDay.table')
+			->with('latest', $latest)
+			->with('mostMentioned', $timeSeries[key($latest)])
+			->with('lastTwoDays', $lastTwoDays);
+
+	}
+
+
+	/**
+	 * Populate a timeSeries array with only the last two days.
+	 *
+	 * @param  $mentions
+	 * @return array
+	 */
+	private function getLastTwoDays($mentions)
+	{
+		$timeSeries = [];
+		$i = 0;
+		foreach ($mentions as $mention)
+		{
+			// We just want the last two days.
+			if ($i == 2)
+			{
+				break;
+			}
+
+			foreach ($mention as $country => $count)
+			{
+				if ($country == 'date')
+				{
+					continue;
+				}
+
+				if(!isset($timeSeries[$country])) {
+					$timeSeries[$country] = [];
+				}
+				array_push($timeSeries[$country], $count);
+			}
+			$i ++;
 		}
 
 		return $timeSeries;

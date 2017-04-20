@@ -2,6 +2,14 @@ h1 {
     padding: 40px;
 }
 
-.medium {
-    width: 75% !important;
+.green {
+    color: green;
+}
+
+.blue {
+    color: deepskyblue;
+}
+
+.red {
+    color: red;
 }
