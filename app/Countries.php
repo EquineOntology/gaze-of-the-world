@@ -48,1656 +48,1777 @@ class Countries {
 		"AF" => [
 			"alpha2"    => "AF",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Afghanistán",
 				"EN" => "Afghanistan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Afghanistan",
+				"PT" => "Afeganistão",
+				"DE" => "Afghanistan",
+				"SW" => "Afghanistan",
+				"IT" => "Afghanistan",
+				"TR" => "Afganistan"
 			],
 			"continent" => "Asia",
-		],
-		"AX" => [
-			"alpha2"    => "AX",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Åland Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"AL" => [
 			"alpha2"    => "AL",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Albania",
 				"EN" => "Albania",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Albanie",
+				"PT" => "Albânia",
+				"DE" => "Albanien",
+				"SW" => "Albania",
+				"IT" => "Albania",
+				"TR" => "Arnavutluk"
 			],
 			"continent" => "Europe"
 		],
 		"DZ" => [
 			"alpha2"    => "DZ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Argelia",
 				"EN" => "Algeria",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Algérie",
+				"PT" => "Argélia",
+				"DE" => "Algerien",
+				"SW" => "Algeria",
+				"IT" => "Algeria",
+				"TR" => "Cezayir"
 			],
 			"continent" => "Africa"
-		],
-		"AS" => [
-			"alpha2"    => "AS",
-			"name"      => [
-				"ES" => "",
-				"EN" => "American Samoa",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"AD" => [
 			"alpha2"    => "AD",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Andorra",
 				"EN" => "Andorra",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Andorre",
+				"PT" => "Andorra",
+				"DE" => "Andorra",
+				"SW" => "Andorra",
+				"IT" => "Andorra",
+				"TR" => "Andora"
 			],
 			"continent" => "Europe"
 		],
 		"AO" => [
 			"alpha2"    => "AO",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Angola",
 				"EN" => "Angola",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Angola",
+				"PT" => "Angola",
+				"DE" => "Angola",
+				"SW" => "Angola",
+				"IT" => "Angola",
+				"TR" => "Angola"
 			],
 			"continent" => "Africa"
-		],
-		"AI" => [
-			"alpha2"    => "AI",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Anguilla",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"AQ" => [
 			"alpha2"    => "AQ",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Antártica",
+					"Antártida"
+				],
 				"EN" => [
 					"Antarctica",
 					"Antarctic"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Antarctique",
+				"PT" => [
+					"Antártica",
+					"Antárctico"
+				],
+				"DE" => "Antarktis",
+				"SW" => "Bara la Antaktiki",
+				"IT" => [
+					"Antartide",
+					"Antartico"
+				],
+				"TR" => [
+					"Antarktika",
+					"Antartik"
+				]
 			],
 			"continent" => "Antarctica"
 		],
 		"AG" => [
 			"alpha2"    => "AG",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Antigua y Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
 				"EN" => [
 					"Antigua and Barbuda",
 					"Antigua",
 					"Barbuda"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => [
+					"Antigua-et-Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
+				"PT" => [
+					"Antígua e Barbuda",
+					"Antiga e Barbuda",
+					"Antígua",
+					"Barbuda"
+				],
+				"DE" => [
+					"Antigua und Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
+				"SW" => [
+					"Antigua na Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
+				"IT" => [
+					"Antigua e Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
+				"TR" => [
+					"Antigua ve Barbuda",
+					"Antigua",
+					"Barbuda"
+				],
 			],
 			"continent" => "North America"
 		],
 		"AR" => [
 			"alpha2"    => "AR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Argentina",
 				"EN" => "Argentina",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Argentine",
+				"PT" => "Argentina",
+				"DE" => "Argentinien",
+				"SW" => "Argentina",
+				"IT" => "Argentina",
+				"TR" => "Arjantin"
 			],
 			"continent" => "South America"
 		],
 		"AM" => [
 			"alpha2"    => "AM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Armenia",
 				"EN" => "Armenia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Arménie",
+				"PT" => [
+					"Arménia",
+					"Armênia"
+				],
+				"DE" => "Armenien",
+				"SW" => "Armenia",
+				"IT" => "Armenia",
+				"TR" => "Ermenistan"
 			],
 			"continent" => "Asia"
-		],
-		"AW" => [
-			"alpha2"    => "AW",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Aruba",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"AU" => [
 			"alpha2"    => "AU",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Australia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Australia",
+					"Isla Norfolk"
+				],
+				"EN" => [
+					"Australia",
+					"Norfolk Island"
+				],
+				"FR" => [
+					"Australie",
+					"Ile Norfolk"
+				],
+				"PT" => [
+					"Austrália",
+					"Ilha Norfolk"
+				],
+				"DE" => [
+					"Australien",
+					"Norfolkinsel"
+				],
+				"SW" => [
+					"Australia",
+					"Kisiwa cha Norfolk"
+				],
+				"IT" => [
+					"Australia",
+					"Isola Norfolk"
+				],
+				"TR" => [
+					"Avustralya",
+					"Norfolk Adası"
+				]
 			],
 			"continent" => "Oceania"
 		],
 		"AT" => [
 			"alpha2"    => "AT",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Austria",
 				"EN" => "Austria",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Autriche",
+				"PT" => "Áustria",
+				"DE" => "Österreich",
+				"SW" => "Austria",
+				"IT" => "Austria",
+				"TR" => "Avusturya"
 			],
 			"continent" => "Europe"
 		],
 		"AZ" => [
 			"alpha2"    => "AZ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Azerbaiyán",
 				"EN" => "Azerbaijan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Azerbaïdjan",
+				"PT" => [
+					"Azerbaijão",
+					"Azerbeijão"
+				],
+				"DE" => "Aserbaidschan",
+				"SW" => "Azerbaijan",
+				"IT" => "Azerbaigian",
+				"TR" => "Azerbaycan"
 			],
 			"continent" => "Asia"
 		],
 		"BS" => [
 			"alpha2"    => "BS",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bahamas",
 				"EN" => "Bahamas",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bahamas",
+				"PT" => [
+					"Baamas",
+					"Bahamas"
+				],
+				"DE" => "Bahamas",
+				"SW" => "Bahama",
+				"IT" => "Bahamas",
+				"TR" => "Bahama"
 			],
 			"continent" => "North America"
 		],
 		"BH" => [
 			"alpha2"    => "BH",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bahrein",
 				"EN" => "Bahrain",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bahreïn",
+				"PT" => [
+					"Barein",
+					"Bareine",
+					"Barém"
+				],
+				"DE" => "Bahrain",
+				"SW" => "Bahrain",
+				"IT" => [
+					"Bahrein",
+					"Bahrain"
+				],
+				"TR" => "Bahreyn"
 			],
 			"continent" => "Asia"
 		],
 		"BD" => [
 			"alpha2"    => "BD",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bangladesh",
 				"EN" => "Bangladesh",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bangladesh",
+				"PT" => [
+					"Bangladesh",
+					"Bangladeche"
+				],
+				"DE" => "Bangladesch",
+				"SW" => "Bangladesh",
+				"IT" => "Bangladesh",
+				"TR" => "Bangladeş"
 			],
 			"continent" => "Asia"
 		],
 		"BB" => [
 			"alpha2"    => "BB",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Barbados",
 				"EN" => "Barbados",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Barbade",
+				"PT" => "Barbados",
+				"DE" => "Barbados",
+				"SW" => "Barbados",
+				"IT" => "Barbados",
+				"TR" => "Barbados"
 			],
 			"continent" => "North America"
 		],
 		"BY" => [
 			"alpha2"    => "BY",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bielorrusia",
 				"EN" => "Belarus",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Biélorussie",
+				"PT" => [
+					"Bielorrússia",
+					"Bielo-Rússia",
+					"Rússia Branca"
+				],
+				"DE" => [
+					"Weißrussland",
+					"Weißruthenien"
+				],
+				"SW" => "Belarus",
+				"IT" => "Bielorussia",
+				"TR" => [
+					"Beyaz Rusya",
+					"Belarus"
+				]
 			],
 			"continent" => "Europe"
 		],
 		"BE" => [
 			"alpha2"    => "BE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bélgica",
 				"EN" => "Belgium",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Belgique",
+				"PT" => "Bélgica",
+				"DE" => "Belgien",
+				"SW" => "Ubelgiji",
+				"IT" => "Belgio",
+				"TR" => "Belçika"
 			],
 			"continent" => "Europe"
 		],
 		"BZ" => [
 			"alpha2"    => "BZ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Belize",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Belice",
+					"Honduras Británica"
+				],
+				"EN" => [
+					"Belize",
+					"British Honduras"
+				],
+				"FR" => [
+					"Belize",
+					"Honduras britannique"
+				],
+				"PT" => [
+					"Belize",
+					"Honduras Britânicas"
+				],
+				"DE" => [
+					"Belize",
+					"Britisch-Honduras"
+				],
+				"SW" => "Belize",
+				"IT" => [
+					"Belize",
+					"Honduras Britannico"
+				],
+				"TR" => [
+					"Belize",
+					"Britanya Hondurası"
+				]
 			],
 			"continent" => "North America"
 		],
 		"BJ" => [
 			"alpha2"    => "BJ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Benín",
 				"EN" => "Benin",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bénin",
+				"PT" => "Benim",
+				"DE" => "Benin",
+				"SW" => "Benin",
+				"IT" => "Benin",
+				"TR" => "Benin"
 			],
 			"continent" => "Africa"
-		],
-		"BM" => [
-			"alpha2"    => "BM",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Bermuda",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"BT" => [
 			"alpha2"    => "BT",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bután",
 				"EN" => "Bhutan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bhoutan",
+				"PT" => "Butão",
+				"DE" => "Bhutan",
+				"SW" => "Bhutan",
+				"IT" => [
+					"Bhutan",
+					"Butan"
+				],
+				"TR" => "Bhutan"
 			],
 			"continent" => "Asia"
 		],
 		"BO" => [
 			"alpha2"    => "BO",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bolivia",
 				"EN" => "Bolivia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bolivie",
+				"PT" => "Bolívia",
+				"DE" => "Bolivien",
+				"SW" => "Bolivia",
+				"IT" => "Bolivia",
+				"TR" => "Bolivya"
 			],
 			"continent" => "South America"
 		],
 		"BA" => [
 			"alpha2"    => "BA",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Bosnia y Herzegovina",
+					"Bosnia",
+					"Herzegovina"
+				],
 				"EN" => [
 					"Bosnia and Herzegovina",
 					"Bosnia",
 					"Herzegovina",
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => [
+					"Bosnie-Herzégovine",
+					"Bosnie",
+					"Herzégovine"
+				],
+				"PT" => [
+					"Bósnia-Herzegovina",
+					"Bósnia e Herzegovina",
+					"Bósnia",
+					"Herzegovina"
+				],
+				"DE" => [
+					"Bosnien und Herzegowina",
+					"Bosnien-Herzegowina",
+					"Bosnien",
+					"Herzegowina"
+				],
+				"SW" => [
+					"Bosnia na Herzegovina",
+					"Bosnia",
+					"Herzegovina"
+				],
+				"IT" => [
+					"Bosnia ed Erzegovina",
+					"Bosnia",
+					"Erzegovina"
+				],
+				"TR" => [
+					"Bosna Hersek",
+					"Bosna",
+					"Hersek"
+				]
 			],
 			"continent" => "Europe"
 		],
 		"BW" => [
 			"alpha2"    => "BW",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Botswana",
 				"EN" => "Botswana",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Botswana",
+				"PT" => [
+					"Botsuana",
+					"Botswana"
+				],
+				"DE" => "Botswana",
+				"SW" => "Botswana",
+				"IT" => [
+					"Botswana",
+					"Beciuania"
+				],
+				"TR" => "Botsvana"
 			],
 			"continent" => "Africa"
-		],
-		"BV" => [
-			"alpha2"    => "BV",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Bouvet Island",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Antarctica"
 		],
 		"BR" => [
 			"alpha2"    => "BR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Brasil",
 				"EN" => "Brazil",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Brésil",
+				"PT" => "Brasil",
+				"DE" => "Brasilien",
+				"SW" => "Brazil",
+				"IT" => "Brasile",
+				"TR" => "Brezilya"
 			],
 			"continent" => "South America"
 		],
-		"IO" => [
-			"alpha2"    => "IO",
-			"name"      => [
-				"ES" => "",
-				"EN" => "British Indian Ocean Territory",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
-		],
 		"BN" => [
-			"alpha2" => "BN",
-			"name"   => [
-				"ES"        => "",
-				"EN"        => [
-					"Brunei",
-					"Brunei Darussalam"
-				],
-				"FR"        => "",
-				"PT"        => "",
-				"DE"        => "",
-				"SW"        => "",
-				"IT"        => "",
-				"TR"        => "",
-				"continent" => "Asia"
-			]
+			"alpha2"    => "BN",
+			"name"      => [
+				"ES" => "Brunei",
+				"EN" => "Brunei",
+				"FR" => "Brunei",
+				"PT" => "Brunei",
+				"DE" => "Brunei",
+				"SW" => "Brunei",
+				"IT" => "Brunei",
+				"TR" => "Bruney",
+			],
+			"continent" => "Asia",
 		],
 		"BG" => [
 			"alpha2"    => "BG",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Bulgaria",
 				"EN" => "Bulgaria",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Bulgarie",
+				"PT" => "Bulgária",
+				"DE" => "Bulgarien",
+				"SW" => "Bulgaria",
+				"IT" => "Bulgaria",
+				"TR" => "Bulgaristan"
 			],
 			"continent" => "Europe"
 		],
 		"BF" => [
 			"alpha2"    => "BF",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Burkina Faso",
 				"EN" => "Burkina Faso",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Burkina Faso",
+				"PT" => [
+					"Burquina Faso",
+					"Burkina Faso"
+				],
+				"DE" => "Burkina Faso",
+				"SW" => "Burkina Faso",
+				"IT" => "Burkina Faso",
+				"TR" => "Burkina Faso",
 			],
 			"continent" => "Africa"
 		],
 		"BI" => [
 			"alpha2"    => "BI",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Burundi",
 				"EN" => "Burundi",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Burundi",
+				"PT" => [
+					"Burundi",
+					"Burúndi"
+				],
+				"DE" => "Burundi",
+				"SW" => "Burundi",
+				"IT" => "Burundi",
+				"TR" => "Burundi"
 			],
 			"continent" => "Africa"
 		],
 		"KH" => [
 			"alpha2"    => "KH",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Cambodia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Camboya",
+				"EN" => [
+					"Cambodia",
+					"Kampuchea"
+				],
+				"FR" => "Cambodge",
+				"PT" => "Camboja",
+				"DE" => "Kambodscha",
+				"SW" => "Kamboja",
+				"IT" => "Cambogia",
+				"TR" => "Kamboçya"
 			],
 			"continent" => "Asia"
 		],
 		"CM" => [
 			"alpha2"    => "CM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Camerún",
 				"EN" => "Cameroon",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Cameroun",
+				"PT" => "Camarões",
+				"DE" => "Kamerun",
+				"SW" => "Cameroon",
+				"IT" => [
+					"Camerun",
+					"Camerùn",
+					"Càmerun"
+				],
+				"TR" => "Kamerun"
 			],
 			"continent" => "Africa"
 		],
 		"CA" => [
 			"alpha2"    => "CA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Canadá",
 				"EN" => "Canada",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Canada",
+				"PT" => "Canadá",
+				"DE" => "Kanada",
+				"SW" => "Kanada",
+				"IT" => "Canada",
+				"TR" => "Kanada"
 			],
 			"continent" => "North America"
 		],
 		"CV" => [
 			"alpha2"    => "CV",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Cabo Verde",
 				"EN" => "Cape Verde",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Cap-Vert",
+				"PT" => "Cabo Verde",
+				"DE" => "Kap Verde",
+				"SW" => "Cabo Verde",
+				"IT" => "Capo Verde",
+				"TR" => [
+					"Kabo Verde",
+					"Yeşil Burun"
+				]
 			],
 			"continent" => "Africa"
-		],
-		"KY" => [
-			"alpha2"    => "KY",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Cayman Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"CF" => [
 			"alpha2"    => "CF",
 			"name"      => [
-				"ES" => "",
+				"ES" => "República Centroafricana",
 				"EN" => "Central African Republic",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "République centrafricaine",
+				"PT" => "República Centro-Africana",
+				"DE" => "Zentralafrikanische Republik",
+				"SW" => "Jamhuri ya Afrika ya Kati",
+				"IT" => "Repubblica Centrafricana",
+				"TR" => "Orta Afrika Cumhuriyeti"
 			],
 			"continent" => "Africa"
 		],
 		"TD" => [
 			"alpha2"    => "TD",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Chad",
 				"EN" => "Chad",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
-		],
-		"CL" => [
-			"alpha2"    => "CL",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Chile",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "South America"
-		],
-		"CN" => [
-			"alpha2"    => "CN",
-			"name"      => [
-				"ES" => "",
-				"EN" => "China",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
-		],
-		"CX" => [
-			"alpha2"    => "CX",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Christmas Island",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
-		],
-		"CC" => [
-			"alpha2"    => "CC",
-			"name"      => [
-				"ES" => "",
-				"EN" => [
-					"Territory of the Cocos (Keeling) Islands",
-					"Cocos Islands",
-					"Keeling Islands"
-				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
-		],
-		"CO" => [
-			"alpha2"    => "CO",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Colombia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "South America"
-		],
-		"KM" => [
-			"alpha2"    => "KM",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Comoros",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
-		],
-		"CG" => [
-			"alpha2"    => "CG",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Congo",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
-		],
-		"CD" => [
-			"alpha2"    => "CD",
-			"name"      => [
-				"ES" => "",
-				"EN" => [
-					"DRC",
-					"Republic of Congo",
-					"The Democratic Republic of The Congo"
-				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
+				"FR" => "Tchad",
+				"PT" => "Chade",
+				"DE" => "Tschad",
+				"SW" => "Chad",
+				"IT" => "Ciad",
+				"TR" => "Çad"
 			],
 			"continent" => "Africa"
 		],
 		"CK" => [
 			"alpha2"    => "CK",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Islas Cook",
 				"EN" => "Cook Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Îles Cook",
+				"PT" => "Ilhas Cook",
+				"DE" => "Cookinseln",
+				"SW" => "Visiwa vya Cook",
+				"IT" => "Isole Cook",
+				"TR" => "Cook Adaları"
 			],
 			"continent" => "Oceania"
+		],
+		"CL" => [
+			"alpha2"    => "CL",
+			"name"      => [
+				"ES" => "Chile",
+				"EN" => "Chile",
+				"FR" => "Chili",
+				"PT" => "Chile",
+				"DE" => "Chile",
+				"SW" => "Chile",
+				"IT" => "Cile",
+				"TR" => "Şili"
+			],
+			"continent" => "South America"
+		],
+		"CN" => [
+			"alpha2"    => "CN",
+			"name"      => [
+				"ES" => [
+					"China",
+					"Hong Kong",
+					"Macao"
+				],
+				"EN" => [
+					"China",
+					"Hong Kong",
+					"Macau"
+				],
+				"FR" => [
+					"Chine",
+					"Hong-Kong",
+					"Hongkong",
+					"Macao"
+				],
+				"PT" => [
+					"China",
+					"Honguecongue",
+					"Hongue Congue",
+					"Macau"
+				],
+				"DE" => [
+					"China",
+					"Hongkong",
+					"Hong Kong",
+					"Macau",
+					"Macao"
+				],
+				"SW" => [
+					"China",
+					"Hong Kong",
+					"Macau"
+				],
+				"IT" => [
+					"Cina",
+					"Hongkong",
+					"Macao"
+				],
+				"TR" => [
+					"Çin",
+					"Hong Kong",
+					"Macau"
+				]
+			],
+			"continent" => "Asia"
+		],
+		"CO" => [
+			"alpha2"    => "CO",
+			"name"      => [
+				"ES" => "Colombia",
+				"EN" => "Colombia",
+				"FR" => "Colombie",
+				"PT" => "Colômbia",
+				"DE" => "Kolumbien",
+				"SW" => "Kolombia",
+				"IT" => "Colombia",
+				"TR" => "Kolombiya"
+			],
+			"continent" => "South America"
+		],
+		"KM" => [
+			"alpha2"    => "KM",
+			"name"      => [
+				"ES" => "Comoras",
+				"EN" => "Comoros",
+				"FR" => "Comores",
+				"PT" => "Comores",
+				"DE" => "Komoren",
+				"SW" => "Komori",
+				"IT" => "Unione delle Comore",
+				"TR" => "Komor Adaları"
+			],
+			"continent" => "Africa"
+		],
+		"CG" => [
+			"alpha2"    => "CG",
+			"name"      => [
+				"ES" => "Congo",
+				"EN" => "Congo",
+				"FR" => "Congo",
+				"PT" => "Congo",
+				"DE" => "Kongo",
+				"SW" => "Kongo",
+				"IT" => [
+					"Congo",
+					"Congo-Brazzaville",
+					"Congo Francese"
+				],
+				"TR" => "Kongo"
+			],
+			"continent" => "Africa"
 		],
 		"CR" => [
 			"alpha2"    => "CR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Costa Rica",
 				"EN" => "Costa Rica",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Costa Rica",
+				"PT" => "Costa Rica",
+				"DE" => "Costa Rica",
+				"SW" => "Kosta Rika",
+				"IT" => "Costa Rica",
+				"TR" => "Kosta Rika"
 			],
 			"continent" => "North America"
 		],
 		"CI" => [
 			"alpha2"    => "CI",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Costa de Marfil",
 				"EN" => "Cote D'ivoire",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Côte d'Ivoire",
+				"PT" => "Costa do Marfim",
+				"DE" => [
+					"Côte d'Ivoire",
+					"Elfenbeinküste"
+				],
+				"SW" => "Cote d'Ivoire",
+				"IT" => "Costa d'Avorio",
+				"TR" => "Fildişi Kıyısı"
 			],
 			"continent" => "Africa"
 		],
 		"HR" => [
 			"alpha2"    => "HR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Croacia",
 				"EN" => "Croatia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Croatie",
+				"PT" => "Croácia",
+				"DE" => "Kroatien",
+				"SW" => "Kroatia",
+				"IT" => "Croazia",
+				"TR" => "Hırvatistan"
 			],
 			"continent" => "Europe"
 		],
 		"CU" => [
 			"alpha2"    => "CU",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Cuba",
 				"EN" => "Cuba",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Cuba",
+				"PT" => "Cuba",
+				"DE" => "Kuba",
+				"SW" => "Kuba",
+				"IT" => "Cuba",
+				"TR" => "Küba"
 			],
 			"continent" => "North America"
 		],
 		"CY" => [
 			"alpha2"    => "CY",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Chipre",
 				"EN" => "Cyprus",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Chypre",
+				"PT" => "Chipre",
+				"DE" => "Zypern",
+				"SW" => "Kupro",
+				"IT" => "Cipro",
+				"TR" => "Kıbrıs"
 			],
 			"continent" => "Asia"
 		],
 		"CZ" => [
 			"alpha2"    => "CZ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Czech Republic",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"República Checa",
+					"Chequia",
+					"Bohemia"
+				],
+				"EN" => [
+					"Czech Republic",
+					"Czechia",
+					"Bohemia"
+				],
+				"FR" => [
+					"République tchèque",
+					"Tchéquie"
+				],
+				"PT" => [
+					"República Checa",
+					"República Tcheca",
+					"Chéquia",
+					"Tchéquia"
+				],
+				"DE" => [
+					"Tschechische Republik",
+					"Tschechien"
+				],
+				"SW" => "Ucheki",
+				"IT" => [
+					"Repubblica Ceca",
+					"Boemia"
+				],
+				"TR" => [
+					"Çek Cumhuriyeti",
+					"Çekya",
+					"Çekiye"
+				]
 			],
 			"continent" => "Europe"
+		],
+		"CD" => [
+			"alpha2"    => "CD",
+			"name"      => [
+				"ES" => [
+					"RDC",
+					"República del Congo",
+					"República Democrática del Congo",
+				],
+				"EN" => [
+					"DRC",
+					"Republic of Congo",
+					"The Democratic Republic of The Congo",
+				],
+				"FR" => [
+					"République démocratique du Congo",
+				    "RDC",
+				    "Congo-Kinshasa",
+				    "RD Congo"
+				],
+				"PT" => [
+					"República Democrática do Congo",
+				    "RDC",
+				    "RD Congo",
+				    "Congo-Kinshasa"
+				],
+				"DE" => [
+					"Demokratische Republik Kongo",
+				    "DR Kongo",
+				    "Kongo-Kinshasa"
+				],
+				"SW" => [
+					"Jamhuri ya Kidemokrasia ya Kongo",
+					"Kongo-Kinshasa"
+				],
+				"IT" => [
+					"Repubblica Democratica del Congo",
+					"Congo-Kinshasa",
+					"Congo-Léopoldville"
+				],
+				"TR" => "Demokratik Kongo Cumhuriyeti"
+			],
+			"continent" => "Africa"
 		],
 		"DK" => [
 			"alpha2"    => "DK",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Denmark",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Dinamarca",
+				    "Islas Feroe",
+				    "Groenlandia"
+				],
+				"EN" => [
+					"Denmark",
+					"Faroe Islands",
+					"Greenland"
+				],
+				"FR" => [
+					"Danemark",
+				    "Îles Féroé",
+				    "Groenland"
+				],
+				"PT" => [
+					"Dinamarca",
+				    "Ilhas Féroe",
+				    "Ilhas Faroé",
+				    "Gronelândia"
+				],
+				"DE" => [
+					"Dänemark",
+				    "Färöer",
+				    "Grönland"
+				],
+				"SW" => [
+					"Denmark",
+				    "Visiwa vya Faroe",
+				    "Grinlandi"
+				],
+				"IT" => [
+					"Danimarca",
+					"Isole Faroe",
+					"Groenlandia"
+				],
+				"TR" => [
+					"Danimarka",
+				    "Faroe Adaları",
+				    "Grönland"
+				]
 			],
 			"continent" => "Europe"
 		],
 		"DJ" => [
 			"alpha2"    => "DJ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Yibuti",
 				"EN" => "Djibouti",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Djibouti",
+				"PT" => [
+					"Djibouti",
+					"Djibuti",
+				    "Jibuti"
+				],
+				"DE" => "Dschibuti",
+				"SW" => "Jibuti",
+				"IT" => "Gibuti",
+				"TR" => "Cibuti"
 			],
 			"continent" => "Africa"
 		],
 		"DM" => [
 			"alpha2"    => "DM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Dominica",
 				"EN" => "Dominica",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Dominique",
+				"PT" => "Dominica",
+				"DE" => "Dominica",
+				"SW" => "Dominica",
+				"IT" => "Dominica",
+				"TR" => "Dominika"
 			],
 			"continent" => "North America"
 		],
 		"DO" => [
 			"alpha2"    => "DO",
 			"name"      => [
-				"ES" => "",
+				"ES" => "República Dominicana",
 				"EN" => "Dominican Republic",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "République dominicaine",
+				"PT" => "República Dominicana",
+				"DE" => "Dominikanische Republik",
+				"SW" => "Jamhuri ya Dominika",
+				"IT" => "Repubblica Dominicana",
+				"TR" => "Dominik Cumhuriyeti"
 			],
 			"continent" => "North America"
 		],
 		"EC" => [
 			"alpha2"    => "EC",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Ecuador",
 				"EN" => "Ecuador",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Équateur",
+				"PT" => "Equador",
+				"DE" => "Ecuador",
+				"SW" => "Ekuador",
+				"IT" => "Ecuador",
+				"TR" => "Ekvador"
 			],
 			"continent" => "South America"
 		],
 		"EG" => [
 			"alpha2"    => "EG",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Egipto",
 				"EN" => "Egypt",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Égypte",
+				"PT" => [
+					"Egito",
+					"Egipto"
+				],
+				"DE" => "Ägypten",
+				"SW" => "Misri",
+				"IT" => "Egitto",
+				"TR" => "Mısır"
 			],
 			"continent" => "Africa"
 		],
 		"SV" => [
 			"alpha2"    => "SV",
 			"name"      => [
-				"ES" => "",
+				"ES" => "El Salvador",
 				"EN" => "El Salvador",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Salvador",
+				"PT" => "El Salvador",
+				"DE" => "El Salvador",
+				"SW" => "El Salvador",
+				"IT" => "El Salvador",
+				"TR" => "El Salvador"
 			],
 			"continent" => "North America"
 		],
 		"GQ" => [
 			"alpha2"    => "GQ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Guinea Ecuatorial",
 				"EN" => "Equatorial Guinea",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Guinée Équatoriale",
+				"PT" => "Guiné Equatorial",
+				"DE" => "Äquatorialguinea",
+				"SW" => "Guinea ya Ikweta",
+				"IT" => "Guinea Equatoriale",
+				"TR" => "Ekvator Ginesi"
 			],
 			"continent" => "Africa"
 		],
 		"ER" => [
 			"alpha2"    => "ER",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Eritrea",
 				"EN" => "Eritrea",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Érythrée",
+				"PT" => [
+					"Eritréia",
+				    "Eritreia"
+				],
+				"DE" => "Eritrea",
+				"SW" => "Eritrea",
+				"IT" => "Eritrea",
+				"TR" => "Eritre"
 			],
 			"continent" => "Africa"
 		],
 		"EE" => [
 			"alpha2"    => "EE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Estonia",
 				"EN" => "Estonia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Estonie",
+				"PT" => [
+					"Estônia",
+				    "Estónia"
+				],
+				"DE" => "Estland",
+				"SW" => "Estonia",
+				"IT" => "Estonia",
+				"TR" => "Estonya"
 			],
 			"continent" => "Europe"
 		],
 		"ET" => [
 			"alpha2"    => "ET",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Etiopía",
 				"EN" => "Ethiopia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Éthiopie",
+				"PT" => "Etiópia",
+				"DE" => "Äthiopien",
+				"SW" => "Ethiopia",
+				"IT" => "Etiopia",
+				"TR" => "Etiyopya"
 			],
 			"continent" => "Africa"
-		],
-		"FK" => [
-			"alpha2"    => "FK",
-			"name"      => [
-				"ES" => "",
-				"EN" => [
-					"Falkland Islands",
-					"Falklands",
-					"Malvinas"
-				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
-			],
-			"continent" => "South America"
-		],
-		"FO" => [
-			"alpha2"    => "FO",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Faroe Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"FJ" => [
 			"alpha2"    => "FJ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Fiji",
 				"EN" => "Fiji",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Fidji",
+				"PT" => [
+					"Fiji",
+				    "Fidji",
+				    "Fidgi"
+				],
+				"DE" => "Fidschi",
+				"SW" => "Fiji",
+				"IT" => [
+					"Isole Figi",
+					"Figi",
+					"Fiji"
+				],
+				"TR" => "Fiji"
 			],
 			"continent" => "Oceania"
 		],
 		"FI" => [
 			"alpha2"    => "FI",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Finland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Finlandia",
+					"Islas Åland"
+				],
+				"EN" => [
+					"Finland",
+					"Åland"
+				],
+				"FR" => [
+					"Finlande",
+					"Iles d’Åland"
+				],
+				"PT" => [
+					"Finlândia",
+					"Alanda"
+				],
+				"DE" => [
+					"Finnland",
+					"Åland-Inseln"
+				],
+				"SW" => [
+					"Ufini",
+					"Visiwa vya Aland"
+				],
+				"IT" => [
+					"Finlandia",
+					"Isole Åland"
+				],
+				"TR" => [
+					"Finlandiya",
+					"Åland"
+				]
 			],
 			"continent" => "Europe"
 		],
 		"FR" => [
 			"alpha2"    => "FR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "France",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Francia",
+					"Polinesia Francesa",
+					"Nueva Caledonia",
+					"Wallis y Futuna"
+				],
+				"EN" => [
+					"France",
+					"French Polynesia",
+					"New Caledonia",
+					"Wallis and Futuna"
+				],
+				"FR" => [
+					"France",
+					"Polynésie française",
+					"Nouvelle-Calédonie",
+					"Wallis-et-Futuna"
+				],
+				"PT" => [
+					"França",
+					"Polinésia Francesa",
+					"Nova Caledónia",
+					"Nova Caledônia",
+					"Wallis e Futuna"
+				],
+				"DE" => [
+					"Frankreich",
+					"Französisch-Polynesien",
+					"Neukaledonien",
+					"Wallis und Futuna"
+				],
+				"SW" => [
+					"Ufaransa",
+					"Polynesia ya Kifaransa",
+					"Kaledonia Mpya",
+					"Wallis na Futuna"
+				],
+				"IT" => [
+					"Francia",
+					"Polinesia Francese",
+					"Nuova Caledonia",
+					"Wallis e Futuna"
+				],
+				"TR" => [
+					"Fransa",
+					"Fransız Polinezyası",
+					"Yeni Kaledonya",
+					"Wallis ve Futuna"
+				],
 			],
 			"continent" => "Europe"
-		],
-		"GF" => [
-			"alpha2"    => "GF",
-			"name"      => [
-				"ES" => "",
-				"EN" => "French Guiana",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "South America"
-		],
-		"PF" => [
-			"alpha2"    => "PF",
-			"name"      => [
-				"ES" => "",
-				"EN" => "French Polynesia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
-		],
-		"TF" => [
-			"alpha2"    => "TF",
-			"name"      => [
-				"ES" => "",
-				"EN" => "French Southern Territories",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Antarctica"
 		],
 		"GA" => [
 			"alpha2"    => "GA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Gabón",
 				"EN" => "Gabon",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Gabon",
+				"PT" => "Gabão",
+				"DE" => "Gabun",
+				"SW" => "Gabon",
+				"IT" => "Gabon",
+				"TR" => "Gabon"
 			],
 			"continent" => "Africa"
 		],
 		"GM" => [
 			"alpha2"    => "GM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Gambia",
 				"EN" => "Gambia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Gambie",
+				"PT" => "Gâmbia",
+				"DE" => "Gambia",
+				"SW" => "Gambia",
+				"IT" => "Gambia",
+				"TR" => "Gambiya"
 			],
 			"continent" => "Africa"
 		],
 		"GE" => [
 			"alpha2"    => "GE",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Georgia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Georgia",
+				"EN" => [
+					"Georgia",
+					"Gruzia"
+				],
+				"FR" => "Géorgie",
+				"PT" => "Geórgia",
+				"DE" => "Georgien",
+				"SW" => "Georgia",
+				"IT" => "Georgia",
+				"TR" => "Gürcistan"
 			],
 			"continent" => "Asia"
 		],
 		"DE" => [
 			"alpha2"    => "DE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Alemaña",
 				"EN" => "Germany",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Allemagne",
+				"PT" => "Alemanha",
+				"DE" => "Deutschland",
+				"SW" => "Ujerumani",
+				"IT" => "Germania",
+				"TR" => "Almanya"
 			],
 			"continent" => "Europe"
 		],
 		"GH" => [
 			"alpha2"    => "GH",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Ghana",
 				"EN" => "Ghana",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Ghana",
+				"PT" => "Gana",
+				"DE" => "Ghana",
+				"SW" => "Ghana",
+				"IT" => "Ghana",
+				"TR" => "Gana"
 			],
 			"continent" => "Africa"
-		],
-		"GI" => [
-			"alpha2"    => "GI",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Gibraltar",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"GR" => [
 			"alpha2"    => "GR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Grecia",
 				"EN" => "Greece",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Grèce",
+				"PT" => "Grécia",
+				"DE" => "Griechenland",
+				"SW" => "Ugiriki",
+				"IT" => "Grecia",
+				"TR" => "Yunanistan"
 			],
 			"continent" => "Europe"
-		],
-		"GL" => [
-			"alpha2"    => "GL",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Greenland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"GD" => [
 			"alpha2"    => "GD",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Granada",
 				"EN" => "Grenada",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Grenade",
+				"PT" => "Granada",
+				"DE" => "Grenada",
+				"SW" => "Grenada",
+				"IT" => "Grenada",
+				"TR" => "Grenada"
 			],
 			"continent" => "North America"
-		],
-		"GP" => [
-			"alpha2"    => "GP",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Guadeloupe",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
-		],
-		"GU" => [
-			"alpha2"    => "GU",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Guam",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"GT" => [
 			"alpha2"    => "GT",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Guatemala",
 				"EN" => "Guatemala",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Guatemala",
+				"PT" => "Guatemala",
+				"DE" => "Guatemala",
+				"SW" => "Guatemala",
+				"IT" => "Guatemala",
+				"TR" => "Guatemala"
 			],
 			"continent" => "North America"
-		],
-		"GG" => [
-			"alpha2"    => "GG",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Guernsey",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"GN" => [
 			"alpha2"    => "GN",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Guinea",
 				"EN" => "Guinea",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Guinée",
+				"PT" => [
+					"Guiné",
+				    "Guiné-Conacri",
+				    "Guiné-Conakri"
+				],
+				"DE" => "Guinea",
+				"SW" => "Guinea",
+				"IT" => "Guinea",
+				"TR" => "Gine"
 			],
 			"continent" => "Africa"
 		],
 		"GW" => [
 			"alpha2"    => "GW",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Guinea-Bissau",
 				"EN" => "Guinea-bissau",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Guinée-Bissau",
+				"PT" => "Guiné-Bissau",
+				"DE" => "Guinea-Bissau",
+				"SW" => [
+					"Guinea Bisau",
+					"Ginebisau"
+				],
+				"IT" => "Guinea-Bissau",
+				"TR" => "Gine-Bissau"
 			],
 			"continent" => "Africa"
 		],
 		"GY" => [
 			"alpha2"    => "GY",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Guyana",
 				"EN" => "Guyana",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Guyana",
+				"PT" => "Guiana",
+				"DE" => "Guyana",
+				"SW" => "Guyana",
+				"IT" => "Guyana",
+				"TR" => "Guyana"
 			],
 			"continent" => "South America"
 		],
 		"HT" => [
 			"alpha2"    => "HT",
-			"alpha3"    => "HTI",
-			"continent" => "North America"
-		],
-		"HM" => [
-			"alpha2"    => "HM",
 			"name"      => [
-				"ES" => "",
-				"EN" => [
-					"Heard Island and Mcdonald Islands",
-					"Heard Island",
-					"Mcdonald Islands"
-				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
+				"ES" => "Haití",
+				"EN" => "Haiti",
+				"FR" => "Haïti",
+				"PT" => "Haiti",
+				"DE" => "Haiti",
+				"SW" => "Haiti",
+				"IT" => "Haiti",
+				"TR" => "Haiti"
 			],
-			"continent" => "Antarctica"
+			"continent" => "North America"
 		],
 		"VA" => [
 			"alpha2"    => "VA",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Ciudad del Vaticano",
+				    "Santa Sede"
+				],
 				"EN" => [
 					"Vatican City State",
 					"Vatican",
 					"Holy See"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
+				"FR" => [
+					"Vatican",
+				    "Saint-Siège"
+				],
+				"PT" => [
+					"Vaticano",
+				    "Santa Sé"
+				],
+				"DE" => [
+					"Staat Vatikanstadt",
+					"Heiliger Stuhl"
+				],
+				"SW" => [
+					"Vatikani",
+					"Ukulu mtakatifu",
+					"Ukulu wa Kitume"
+				],
+				"IT" => [
+					"Città del Vaticano",
+				    "Santa Sede"
+				],
+				"TR" => [
+					"Vatikan",
+					"Kutsal Makam"
+				]
 			],
 			"continent" => "Europe"
 		],
 		"HN" => [
 			"alpha2"    => "HN",
 			"name"      => [
-				"ES" => "",
-				"EN" => "",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Honduras",
+				"EN" => "Honduras",
+				"FR" => "Honduras",
+				"PT" => "Honduras",
+				"DE" => "Honduras",
+				"SW" => "Honduras",
+				"IT" => "Honduras",
+				"TR" => "Honduras"
 			],
 			"continent" => "North America"
-		],
-		"HK" => [
-			"alpha2"    => "HK",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Honduras",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
 		],
 		"HU" => [
 			"alpha2"    => "HU",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Hong Kong",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Hungría",
+				"EN" => "Hungary",
+				"FR" => "Hongrie",
+				"PT" => "Hungria",
+				"DE" => "Ungarn ",
+				"SW" => "Hungaria",
+				"IT" => "Ungheria",
+				"TR" => "Macaristan"
 			],
 			"continent" => "Europe"
 		],
 		"IS" => [
 			"alpha2"    => "IS",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Hungary",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Islandia",
+				"EN" => "Iceland",
+				"FR" => "Islande",
+				"PT" => "Islândia",
+				"DE" => "Island",
+				"SW" => [
+					"Iceland",
+					"Aisilandi",
+					"Isilandi"
+				],
+				"IT" => "Islanda",
+				"TR" => "İzlanda"
 			],
 			"continent" => "Europe"
 		],
 		"IN" => [
 			"alpha2"    => "IN",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Iceland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "India",
+				"EN" => "India",
+				"FR" => "Inde",
+				"PT" => "Índia",
+				"DE" => "Indien",
+				"SW" => [
+					"Uhindi",
+				    "India"
+				],
+				"IT" => "India",
+				"TR" => "Hindistan"
 			],
 			"continent" => "Asia"
 		],
 		"ID" => [
 			"alpha2"    => "ID",
 			"name"      => [
-				"ES" => "",
-				"EN" => "India",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Indonesia",
+				"EN" => "Indonesia",
+				"FR" => "Indonésie",
+				"PT" => "Indonésia",
+				"DE" => "Indonesien",
+				"SW" => "Indonesia",
+				"IT" => "Indonesia",
+				"TR" => "Endonezya"
 			],
 			"continent" => "Asia"
 		],
 		"IR" => [
 			"alpha2"    => "IR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Indonesia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Irán",
+				"EN" => "Iran",
+				"FR" => "Iran",
+				"PT" => [
+					"Irã",
+					"Irão"
+				],
+				"DE" => "Iran",
+				"SW" => "Uajemi",
+				"IT" => "Iran",
+				"TR" => "İran"
 			],
 			"continent" => "Asia"
 		],
 		"IQ" => [
 			"alpha2"    => "IQ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Iran",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Iraq",
+				    "Irak"
+				],
+				"EN" => "Iraq",
+				"FR" => "Irak",
+				"PT" => "Iraque",
+				"DE" => "Irak",
+				"SW" => "Iraq",
+				"IT" => "Iraq",
+				"TR" => "Irak"
 			],
 			"continent" => "Asia"
 		],
 		"IE" => [
 			"alpha2"    => "IE",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Iraq",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
-		],
-		"IM" => [
-			"alpha2"    => "IM",
-			"name"      => [
-				"ES" => "",
+				"ES" => "Irlanda",
 				"EN" => "Ireland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Irlande",
+				"PT" => "Irlanda",
+				"DE" => "Irland",
+				"SW" => [
+					"Ayalandi",
+				    "Ueire"
+				],
+				"IT" => "Irlanda",
+				"TR" => "İrlanda"
 			],
 			"continent" => "Europe"
 		],
 		"IL" => [
 			"alpha2"    => "IL",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Isle of Man",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Israel",
+				"EN" => "Israel",
+				"FR" => "Israël",
+				"PT" => "Israel",
+				"DE" => "Israel",
+				"SW" => "Israel",
+				"IT" => "Israele",
+				"TR" => "İsrail"
 			],
 			"continent" => "Asia"
 		],
 		"IT" => [
 			"alpha2"    => "IT",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Israel",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Italia",
+				"EN" => "Italy",
+				"FR" => "Italie",
+				"PT" => "Itália",
+				"DE" => "Italien",
+				"SW" => "Italia",
+				"IT" => "Italia",
+				"TR" => "İtalya"
 			],
 			"continent" => "Europe"
 		],
 		"JM" => [
 			"alpha2"    => "JM",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Italy",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Jamaica",
+				"EN" => "Jamaica",
+				"FR" => "Jamaïque",
+				"PT" => "Jamaica",
+				"DE" => "Jamaika",
+				"SW" => "Jamaika",
+				"IT" => "Giamaica",
+				"TR" => "Jamaika"
 			],
 			"continent" => "North America"
 		],
 		"JP" => [
 			"alpha2"    => "JP",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Jamaica",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Japón",
+				"EN" => "Japan",
+				"FR" => "Japon",
+				"PT" => "Japão",
+				"DE" => "Japan",
+				"SW" => "Japani",
+				"IT" => "Giappone",
+				"TR" => "Japonya"
 			],
 			"continent" => "Asia"
-		],
-		"JE" => [
-			"alpha2"    => "JE",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Japan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"JO" => [
 			"alpha2"    => "JO",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Jersey",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Jordania",
+				    "Transjordania"
+				],
+				"EN" => [
+					"Jordan",
+					"Transjordan"
+				],
+				"FR" => [
+					"Jordanie",
+					"Transjordanie"
+				],
+				"PT" => [
+					"Jordânia",
+				    "Transjordânia"
+				],
+				"DE" => [
+					"Jordanien",
+				    "Transjordanien"
+				],
+				"SW" => "Yordani",
+				"IT" => [
+					"Giordania",
+					"Transgiordania"
+				],
+				"TR" => [
+					"Ürdün",
+				    "Mavera-i Ürdün"
+				]
 			],
 			"continent" => "Asia"
 		],
 		"KZ" => [
 			"alpha2"    => "KZ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Jordan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Kazajistán",
+				    "Kazajstán"
+				],
+				"EN" => "Kazakhstan",
+				"FR" => "Kazakhstan",
+				"PT" => [
+					"Cazaquistão",
+				    "Casaquistão"
+				],
+				"DE" => "Kasachstan",
+				"SW" => "Kazakhstan",
+				"IT" => "Kazakistan",
+				"TR" => "Kazakistan"
 			],
 			"continent" => "Asia"
 		],
 		"KE" => [
 			"alpha2"    => "KE",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Kazakhstan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Kenia",
+				"EN" => "Kenya",
+				"FR" => "Kenya",
+				"PT" => [
+					"Quênia",
+				    "Quénia"
+				],
+				"DE" => "Kenia",
+				"SW" => "Kenya",
+				"IT" => "Kenya",
+				"TR" => "Kenya"
 			],
 			"continent" => "Africa"
 		],
 		"KI" => [
 			"alpha2"    => "KI",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Kenya",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Kiribati",
+				"EN" => "Kiribati",
+				"FR" => "Kiribati",
+				"PT" => [
+					"Quiribati",
+				    "Kiribati"
+				],
+				"DE" => "Kiribati",
+				"SW" => "Kiribati",
+				"IT" => "Kiribati",
+				"TR" => "Kiribati"
 			],
 			"continent" => "Oceania"
 		],
 		"KP" => [
 			"alpha2"    => "KP",
 			"name"      => [
-				"ES" => [
+				"ES" => "Corea del Norte",
+				"EN" => [
 					"North Korea",
 					"Democratic People's Republic of Korea"
 				],
-				"EN" => "",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Corée du Nord",
+				"PT" => [
+					"Coréia do Norte",
+				    "Coreia do Norte"
+				],
+				"DE" => "Nordkorea",
+				"SW" => "Korea Kaskazini",
+				"IT" => "Corea del Nord",
+				"TR" => "Kuzey Kore"
 
 			],
 			"continent" => "Asia"
@@ -1705,17 +1826,20 @@ class Countries {
 		"KR" => [
 			"alpha2"    => "KR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Corea del Sur",
 				"EN" => [
 					"South Korea",
 					"Republic of Korea"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Corée du Sud",
+				"PT" => [
+					"Coréia do Sul",
+					"Coreia do Sul",
+				],
+				"DE" => "Südkorea",
+				"SW" => "Korea Kusini",
+				"IT" => "Corea del Sud",
+				"TR" => "Güney Kore"
 
 			],
 			"continent" => "Asia"
@@ -1723,45 +1847,63 @@ class Countries {
 		"KW" => [
 			"alpha2"    => "KW",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Kuwait",
 				"EN" => "Kuwait",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Koweït",
+				"PT" => [
+					"Koweit",
+				    "Coveoite",
+				    "Kuwait"
+				],
+				"DE" => "Kuwait",
+				"SW" => "Kuwait",
+				"IT" => "Kuwait",
+				"TR" => "Kuveyt"
 			],
 			"continent" => "Asia"
 		],
 		"KG" => [
 			"alpha2"    => "KG",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Kyrgyzstan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Kirguistán",
+				    "Kirguizistán",
+				    "Kirguisia"
+				],
+				"EN" => [
+					"Kyrgyzstan",
+					"Kirghizia"
+				],
+				"FR" => "Kirghizistan",
+				"PT" => [
+					"Quirguistão",
+				    "Quirguízia",
+				    "Quirguizistão"
+				],
+				"DE" => "Kirgisistan",
+				"SW" => "Kirgizia",
+				"IT" => [
+					"Kirghizistan",
+				    "Kirghizia"
+				],
+				"TR" => "Kırgızistan"
 			],
 			"continent" => "Asia"
 		],
 		"LA" => [
 			"alpha2"    => "LA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Laos",
 				"EN" => [
 					"Laos",
 					"Lao People's Democratic Republic"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Laos",
+				"PT" => "Laos",
+				"DE" => "Laos",
+				"SW" => "Laos",
+				"IT" => "Laos",
+				"TR" => "Laos"
 
 			],
 			"continent" => "Asia"
@@ -1769,678 +1911,762 @@ class Countries {
 		"LV" => [
 			"alpha2"    => "LV",
 			"name"      => [
-				"ES" => "",
-				"EN" => "",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Letonia",
+				"EN" => "Latvia",
+				"FR" => "Lettonie",
+				"PT" => [
+					"Letônia",
+				    "Letónia"
+				],
+				"DE" => "Lettland",
+				"SW" => "Latvia",
+				"IT" => "Lettonia",
+				"TR" => "Letonya"
 			],
 			"continent" => "Europe"
 		],
 		"LB" => [
 			"alpha2"    => "LB",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Latvia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Líbano",
+				"EN" => "Lebanon",
+				"FR" => "Liban",
+				"PT" => "Líbano",
+				"DE" => "Libanon",
+				"SW" => "Lebanoni",
+				"IT" => "Libano",
+				"TR" => "Lübnan"
 			],
 			"continent" => "Asia"
 		],
 		"LS" => [
 			"alpha2"    => "LS",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Lebanon",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Lesotho",
+					"Lesoto"
+				],
+				"EN" => "Lesotho",
+				"FR" => "Lesotho",
+				"PT" => "Lesoto",
+				"DE" => "Lesotho",
+				"SW" => "Lesotho",
+				"IT" => "Lesotho",
+				"TR" => "Lesotho"
 			],
 			"continent" => "Africa"
 		],
 		"LR" => [
 			"alpha2"    => "LR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Lesotho",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Liberia",
+				"EN" => "Liberia",
+				"FR" => "Liberia",
+				"PT" => "Libéria",
+				"DE" => "Liberia",
+				"SW" => "Liberia",
+				"IT" => "Liberia",
+				"TR" => "Liberya"
 			],
 			"continent" => "Africa"
 		],
 		"LY" => [
 			"alpha2"    => "LY",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Liberia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Libia",
+				"EN" => "Libya",
+				"FR" => "Libye",
+				"PT" => "Líbia",
+				"DE" => "Libyen",
+				"SW" => "Libya",
+				"IT" => "Libia",
+				"TR" => "Libya"
 			],
 			"continent" => "Africa"
 		],
 		"LI" => [
 			"alpha2"    => "LI",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Libya",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Liechtenstein",
+				"EN" => "Liechtenstein",
+				"FR" => "Liechtenstein",
+				"PT" => [
+					"Liechtenstein",
+				    "Listenstaina",
+				    "Listenstaine"
+				],
+				"DE" => "Liechtenstein",
+				"SW" => "Liechtenstein",
+				"IT" => "Liechtenstein",
+				"TR" => "Lihtenştayn"
 			],
 			"continent" => "Europe"
 		],
 		"LT" => [
 			"alpha2"    => "LT",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Liechtenstein",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Lituania",
+				"EN" => "Lithuania",
+				"FR" => "Lituanie",
+				"PT" => "Lituânia",
+				"DE" => "Litauen",
+				"SW" => "Lituanya",
+				"IT" => "Lituania",
+				"TR" => "Litvanya"
 			],
 			"continent" => "Europe"
 		],
 		"LU" => [
 			"alpha2"    => "LU",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Lithuania",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Luxemburgo",
+				"EN" => [
+					"Luxembourg",
+					"Luxemburg"
+				],
+				"FR" => "Luxembourg",
+				"PT" => "Luxemburgo",
+				"DE" => "Luxemburg",
+				"SW" => "Luxemburg",
+				"IT" => "Lussemburgo",
+				"TR" => "Lüksemburg"
 			],
 			"continent" => "Europe"
-		],
-		"MO" => [
-			"alpha2"    => "MO",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Luxembourg",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Asia"
 		],
 		"MK" => [
 			"alpha2"    => "MK",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Macao",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Macedonia",
+				"EN" => "Macedonia",
+				"FR" => "Macédoine",
+				"PT" => [
+					"Macedônia",
+				    "Macedónia"
+				],
+				"DE" => "Mazedonien",
+				"SW" => "Masedonia",
+				"IT" => "Macedonia",
+				"TR" => "Makedonya"
 			],
 			"continent" => "Europe"
 		],
 		"MG" => [
 			"alpha2"    => "MG",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Macedonia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Madagascar",
+				"EN" => "Madagascar",
+				"FR" => "Madagascar",
+				"PT" => [
+				    "Madagascar",
+				    "Madagáscar"
+				],
+				"DE" => "Madagaskar",
+				"SW" => "Madagaska",
+				"IT" => "Madagascar",
+				"TR" => "Madagaskar"
 			],
 			"continent" => "Africa"
 		],
 		"MW" => [
 			"alpha2"    => "MW",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Madagascar",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Malawi",
+				"EN" => "Malawi",
+				"FR" => "Malawi",
+				"PT" => [
+					"Malaui",
+				    "Malawi",
+				    "Malauí",
+				    "Maláui",
+				    "Malavi",
+				    "Malávia"
+				],
+				"DE" => "Malawi",
+				"SW" => "Malawi",
+				"IT" => "Malawi",
+				"TR" => [
+					"Malavi",
+				    "Malawi"
+				]
 			],
 			"continent" => "Africa"
 		],
 		"MY" => [
 			"alpha2"    => "MY",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Malawi",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Malasia",
+				"EN" => "Malaysia",
+				"FR" => "Malaisie",
+				"PT" => [
+					"Malaísia",
+				    "Malásia"
+				],
+				"DE" => "Malaysia",
+				"SW" => "Malaysia",
+				"IT" => [
+					"Malaysia",
+					"Malesia"
+				],
+				"TR" => "Malezya"
 			],
 			"continent" => "Asia"
 		],
 		"MV" => [
 			"alpha2"    => "MV",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Malaysia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Maldivas",
+				"EN" => "Maldives",
+				"FR" => "Maldives",
+				"PT" => "Maldivas",
+				"DE" => "Malediven",
+				"SW" => "Maldivi",
+				"IT" => "Maldive",
+				"TR" => "Maldivler"
 			],
 			"continent" => "Asia"
 		],
 		"ML" => [
 			"alpha2"    => "ML",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Maldives",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Malí",
+					"Mali"
+				],
+				"EN" => "Mali",
+				"FR" => "Mali",
+				"PT" => [
+					"Malí",
+					"Mali"
+				],
+				"DE" => "Mali",
+				"SW" => "Mali",
+				"IT" => "Mali",
+				"TR" => "Mali"
 			],
 			"continent" => "Africa"
 		],
 		"MT" => [
 			"alpha2"    => "MT",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mali",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Malta",
+				"EN" => "Malta",
+				"FR" => "Malte",
+				"PT" => "Malta",
+				"DE" => "Malta",
+				"SW" => "Malta",
+				"IT" => "Malta",
+				"TR" => "Malta"
 			],
 			"continent" => "Europe"
 		],
 		"MH" => [
 			"alpha2"    => "MH",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Malta",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Islas Marshall",
+				"EN" => "Marshall Islands",
+				"FR" => [
+					"Îles Marshall",
+				    "Marshal"
+				],
+				"PT" => "Ilhas Marshall",
+				"DE" => "Marshallinseln",
+				"SW" => "Visiwa vya Marshall",
+				"IT" => "Isole Marshall",
+				"TR" => "Marshall Adaları"
 			],
 			"continent" => "Oceania"
-		],
-		"MQ" => [
-			"alpha2"    => "MQ",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Marshall Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"MR" => [
 			"alpha2"    => "MR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Martinique",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Mauritania",
+				"EN" => "Mauritania",
+				"FR" => "Mauritanie",
+				"PT" => "Mauritânia",
+				"DE" => "Mauretanien",
+				"SW" => "Mauritania",
+				"IT" => "Mauritania",
+				"TR" => "Moritanya"
 			],
 			"continent" => "Africa"
 		],
 		"MU" => [
 			"alpha2"    => "MU",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mauritania",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
-		],
-		"YT" => [
-			"alpha2"    => "YT",
-			"name"      => [
-				"ES" => "",
+				"ES" => "Mauricio",
 				"EN" => "Mauritius",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Maurice",
+				"PT" => [
+					"Maurícias",
+					"Maurícia",
+				    "Maurício"
+				],
+				"DE" => "Mauritius",
+				"SW" => "Morisi",
+				"IT" => "Mauritius",
+				"TR" => "Mauritius"
 			],
 			"continent" => "Africa"
 		],
 		"MX" => [
 			"alpha2"    => "MX",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mayotte",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"México",
+					"Méjico"
+				],
+				"EN" => "Mexico",
+				"FR" => "Mexique",
+				"PT" => "México",
+				"DE" => "Mexiko",
+				"SW" => "Mexiko",
+				"IT" => "Messico",
+				"TR" => "Meksika"
 			],
 			"continent" => "North America"
 		],
 		"FM" => [
 			"alpha2"    => "FM",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mexico",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Micronesia",
+				"EN" => "Micronesia",
+				"FR" => "Micronésie",
+				"PT" => "Micronésia",
+				"DE" => "Mikronesien",
+				"SW" => "Mikronesia",
+				"IT" => "Micronesia",
+				"TR" => "Mikronezya"
 			],
 			"continent" => "Oceania"
 		],
 		"MD" => [
 			"alpha2"    => "MD",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Micronesia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Moldavia",
+					"Moldova"
+				],
+				"EN" => "Moldova",
+				"FR" => "Moldavie",
+				"PT" => [
+					"Moldávia",
+				    "Moldova"
+				],
+				"DE" => [
+					"Moldawien",
+				    "Moldau"
+				],
+				"SW" => "Moldova",
+				"IT" => [
+					"Moldavia",
+				    "Moldova"
+				],
+				"TR" => "Moldova"
 			],
 			"continent" => "Europe"
 		],
 		"MC" => [
 			"alpha2"    => "MC",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Moldova",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Mónaco",
+				"EN" => "Monaco",
+				"FR" => "Monaco",
+				"PT" => [
+					"Mônaco",
+					"Mónaco"
+				],
+				"DE" => "Monaco",
+				"SW" => "Monako",
+				"IT" => "Monaco",
+				"TR" => "Monako"
 			],
 			"continent" => "Europe"
 		],
 		"MN" => [
 			"alpha2"    => "MN",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Monaco",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Mongolia",
+				"EN" => "Mongolia",
+				"FR" => "Mongolie",
+				"PT" => "Mongólia",
+				"DE" => "Mongolei",
+				"SW" => "Mongolia",
+				"IT" => "Mongolia",
+				"TR" => "Moğolistan"
 			],
 			"continent" => "Asia"
 		],
 		"ME" => [
 			"alpha2"    => "ME",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mongolia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Montenegro",
+				"EN" => "Montenegro",
+				"FR" => "Monténégro",
+				"PT" => "Montenegro",
+				"DE" => "Montenegro",
+				"SW" => "Montenegro",
+				"IT" => "Montenegro",
+				"TR" => "Karadağ"
 			],
 			"continent" => "Europe"
-		],
-		"MS" => [
-			"alpha2"    => "MS",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Montenegro",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"MA" => [
 			"alpha2"    => "MA",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Montserrat",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Marruecos",
+				"EN" => "Morocco",
+				"FR" => "Maroc",
+				"PT" => "Marrocos",
+				"DE" => "Marokko",
+				"SW" => "Moroko",
+				"IT" => "Marocco",
+				"TR" => "Fas"
 			],
 			"continent" => "Africa"
 		],
 		"MZ" => [
 			"alpha2"    => "MZ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Morocco",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Mozambique",
+				"EN" => "Mozambique",
+				"FR" => "Mozambique",
+				"PT" => "Moçambique",
+				"DE" => "Mosambik",
+				"SW" => "Msumbiji",
+				"IT" => "Mozambico",
+				"TR" => "Mozambik"
 			],
 			"continent" => "Africa"
 		],
 		"MM" => [
 			"alpha2"    => "MM",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Mozambique",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Myanmar",
+					"Birmania"
+				],
+				"EN" => [
+					"Myanmar",
+					"Burma"
+				],
+				"FR" => [
+					"Myanmar",
+					"Birmanie"
+				],
+				"PT" => [
+					"Myanmar",
+					"Mianmá",
+					"Mianmar",
+					"Birmânia",
+					"Burma"
+				],
+				"DE" => [
+					"Myanmar",
+					"Birma"
+				],
+				"SW" => [
+					"Myanmar",
+				    "Burma",
+				    "Bama"
+				],
+				"IT" => [
+					"Myanmar",
+				    "Birmania"
+				],
+				"TR" => [
+					"Myanmar",
+					"Birmanya"
+				]
 			],
 			"continent" => "Asia"
 		],
 		"NA" => [
 			"alpha2"    => "NA",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Myanmar",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Namibia",
+				"EN" => "Namibia",
+				"FR" => "Namibie",
+				"PT" => "Namíbia",
+				"DE" => "Namibia",
+				"SW" => "Namibia",
+				"IT" => "Namibia",
+				"TR" => "Namibya"
 			],
 			"continent" => "Africa"
 		],
 		"NR" => [
 			"alpha2"    => "NR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Namibia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Nauru",
+				"EN" => "Nauru",
+				"FR" => "Nauru",
+				"PT" => "Nauru",
+				"DE" => "Nauru",
+				"SW" => "Nauru",
+				"IT" => "Nauru",
+				"TR" => "Nauru"
 			],
 			"continent" => "Oceania"
 		],
 		"NP" => [
 			"alpha2"    => "NP",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Nauru",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Nepal",
+				"EN" => "Nepal",
+				"FR" => "Népal",
+				"PT" => "Nepal",
+				"DE" => "Nepal",
+				"SW" => "Nepal",
+				"IT" => "Nepal",
+				"TR" => "Nepal"
 			],
 			"continent" => "Asia"
 		],
 		"NL" => [
 			"alpha2"    => "NL",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Países Bajos",
+					"Holanda",
+					"Aruba",
+					"Curazao",
+					"Sint Maarten"
+				],
 				"EN" => [
 					"Netherlands",
-					"Holland"
+					"Holland",
+					"Aruba",
+					"Curaçao",
+					"Sint Maarten"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => [
+			         "Pays-Bas",
+			         "Hollande",
+			         "Aruba",
+			         "Curaçao",
+			         "Saint-Martin"
+				],
+				"PT" => [
+			         "Países Baixos",
+			         "Holanda",
+			         "Aruba",
+			         "Curaçao",
+			         "São Martinho"
+				],
+				"DE" => [
+			         "Niederlande",
+			         "Holland",
+			         "Aruba",
+			         "Curaçao",
+			         "Sint Maarten"
+				],
+				"SW" => [
+			         "Uholanzi",
+			         "Holland",
+			         "Aruba",
+			         "Korsou",
+			         "Sint Maarten"
+				],
+				"IT" => [
+			         "Paesi Bassi",
+			         "Olanda",
+			         "Aruba",
+			         "Curaçao",
+			         "Sint Maarten"
+				],
+				"TR" => [
+			         "Hollanda",
+			         "Aruba",
+			         "Curaçao",
+			         "Sint Maarten"
+				]
 			],
 			"continent" => "Europe"
 		],
-		"NC" => [
-			"alpha2"    => "NC",
+		"NU" => [
+			"alpha2"    => "NU",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Nepal",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Niue",
+					"Niué"
+				],
+				"EN" => "Niue",
+				"FR" => [
+					"Niue",
+					"Niué",
+					"Nioué"
+				],
+				"PT" => [
+					"Niue",
+					"Niuê"
+				],
+				"DE" => "Niue",
+				"SW" => "Niue",
+				"IT" => "Niue",
+				"TR" => "Niue"
 			],
 			"continent" => "Oceania"
 		],
 		"NZ" => [
 			"alpha2"    => "NZ",
 			"name"      => [
-				"ES" => "",
-				"EN" => "New Caledonia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Nueva Zelanda",
+				    "Nueva Zelandia"
+				],
+				"EN" => "New Zealand",
+				"FR" => "Nouvelle-Zélande",
+				"PT" => "Nova Zelândia",
+				"DE" => "Neuseeland",
+				"SW" => "Nyuzilandi",
+				"IT" => "Nuova Zelanda",
+				"TR" => "Yeni Zelanda"
 			],
 			"continent" => "Oceania"
 		],
 		"NI" => [
 			"alpha2"    => "NI",
 			"name"      => [
-				"ES" => "",
-				"EN" => "New Zealand",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Nicaragua",
+				"EN" => "Nicaragua",
+				"FR" => "Nicaragua",
+				"PT" => "Nicarágua",
+				"DE" => "Nicaragua",
+				"SW" => "Nikaragua",
+				"IT" => "Nicaragua",
+				"TR" => "Nikaragua"
 			],
 			"continent" => "North America"
 		],
 		"NE" => [
 			"alpha2"    => "NE",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Nicaragua",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Níger",
+				"EN" => "Niger",
+				"FR" => "Niger",
+				"PT" => "Níger",
+				"DE" => "Niger",
+				"SW" => "Niger",
+				"IT" => "Niger",
+				"TR" => "Nijer"
 			],
 			"continent" => "Africa"
 		],
 		"NG" => [
 			"alpha2"    => "NG",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Niger",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Nigeria",
+				"EN" => "Nigeria",
+				"FR" => "Nigeria",
+				"PT" => "Nigéria",
+				"DE" => "Nigeria",
+				"SW" => [
+					"Nigeria",
+					"Naijeria"
+				],
+				"IT" => "Nigeria",
+				"TR" => "Nijerya"
 			],
 			"continent" => "Africa"
-		],
-		"NU" => [
-			"alpha2"    => "NU",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Nigeria",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
-		],
-		"NF" => [
-			"alpha2"    => "NF",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Niue",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
-		],
-		"MP" => [
-			"alpha2"    => "MP",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Norfolk Island",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"NO" => [
 			"alpha2"    => "NO",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Northern Mariana Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Noruega",
+				    "Svalbard"
+				],
+				"EN" => [
+					"Norway",
+					"Svalbard"
+				],
+				"FR" => [
+					"Norvège",
+					"Svalbard"
+				],
+				"PT" => [
+					"Noruega",
+					"Svalbard"
+				],
+				"DE" => [
+					"Norwegen",
+					"Svalbard",
+					"Spitzbergen"
+				],
+				"SW" => [
+					"Norwei",
+					"Svalbard"
+				],
+				"IT" => [
+					"Norvegia",
+					"Svalbard"
+				],
+				"TR" => [
+					"Norveç",
+					"Svalbard"
+				],
 			],
 			"continent" => "Europe"
 		],
 		"OM" => [
 			"alpha2"    => "OM",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Norway",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Omán",
+				"EN" => "Oman",
+				"FR" => "Oman",
+				"PT" => [
+					"Omã",
+					"Omão"
+				],
+				"DE" => "Oman",
+				"SW" => "Omani",
+				"IT" => "Oman",
+				"TR" => "Umman"
 			],
 			"continent" => "Asia"
 		],
 		"PK" => [
 			"alpha2"    => "PK",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Oman",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Pakistán",
+				"EN" => "Pakistan",
+				"FR" => "Pakistan",
+				"PT" => "Paquistão",
+				"DE" => "Pakistan",
+				"SW" => "Pakistan",
+				"IT" => "Pakistan",
+				"TR" => "Pakistan"
 			],
 			"continent" => "Asia"
 		],
 		"PW" => [
 			"alpha2"    => "PW",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Pakistan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Palau",
+				"EN" => "Palau",
+				"FR" => "Palaos",
+				"PT" => "Palau",
+				"DE" => "Palau",
+				"SW" => "Palau",
+				"IT" => "Palau",
+				"TR" => "Palau"
 			],
 			"continent" => "Oceania"
 		],
 		"PS" => [
 			"alpha2"    => "PS",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Palestina",
 				"EN" => [
 					"Palestine",
 					"Palestinia"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Palestine",
+				"PT" => "Palestina",
+				"DE" => "Palästina",
+				"SW" => "Palestina",
+				"IT" => "Palestina",
+				"TR" => "Filistin"
 
 			],
 			"continent" => "Asia"
@@ -2448,185 +2674,164 @@ class Countries {
 		"PA" => [
 			"alpha2"    => "PA",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Palau",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Panamá",
+				"EN" => "Panama",
+				"FR" => "Panamá",
+				"PT" => "Panamá",
+				"DE" => "Panama",
+				"SW" => "Panama",
+				"IT" => "Panamá",
+				"TR" => "Panama"
 			],
 			"continent" => "North America"
 		],
 		"PG" => [
 			"alpha2"    => "PG",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Panama",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Papúa Nueva Guinea",
+				"EN" => "Papua New Guinea",
+				"FR" => "Papouasie-Nouvelle-Guinée",
+				"PT" => [
+					"Papua-Nova Guiné",
+				    "Papuásia-Nova Guiné"
+				],
+				"DE" => "Papua-Neuguinea",
+				"SW" => [
+					"Papua Guinea Mpya",
+					"Papua Niugini"
+				],
+				"IT" => "Papua-Nuova Guinea",
+				"TR" => "Papua Yeni Gine"
 			],
 			"continent" => "Oceania"
 		],
 		"PY" => [
 			"alpha2"    => "PY",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Papua New Guinea",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Paraguay",
+				"EN" => "Paraguay",
+				"FR" => "Paraguay",
+				"PT" => "Paraguai",
+				"DE" => "Paraguay",
+				"SW" => [
+					"Paraguay",
+					"Paragwai"
+				],
+				"IT" => "Paraguay",
+				"TR" => "Paraguay"
 			],
 			"continent" => "South America"
 		],
 		"PE" => [
 			"alpha2"    => "PE",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Paraguay",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Perú",
+				"EN" => "Peru",
+				"FR" => "Pérou",
+				"PT" => "Peru",
+				"DE" => "Peru",
+				"SW" => "Peru",
+				"IT" => "Perù",
+				"TR" => "Peru"
 			],
 			"continent" => "South America"
 		],
 		"PH" => [
 			"alpha2"    => "PH",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Peru",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Filipinas",
+				"EN" => "Philippines",
+				"FR" => "Philippines",
+				"PT" => "Filipinas",
+				"DE" => "Philippinen",
+				"SW" => "Ufilipino",
+				"IT" => "Filippine",
+				"TR" => "Filipinler"
 			],
 			"continent" => "Asia"
-		],
-		"PN" => [
-			"alpha2"    => "PN",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Philippines",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"PL" => [
 			"alpha2"    => "PL",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Pitcairn",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Polonia",
+				"EN" => "Poland",
+				"FR" => "Pologne",
+				"PT" => [
+					"Polônia",
+				    "Polónia"
+				],
+				"DE" => "Polen",
+				"SW" => "Poland",
+				"IT" => "Polonia",
+				"TR" => "Polonya"
 			],
 			"continent" => "Europe"
 		],
 		"PT" => [
 			"alpha2"    => "PT",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Poland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Portugal",
+				"EN" => "Portugal",
+				"FR" => "Portugal",
+				"PT" => "Portugal",
+				"DE" => "Portugal",
+				"SW" => "Ureno",
+				"IT" => "Portogallo",
+				"TR" => "Portekiz"
 			],
 			"continent" => "Europe"
-		],
-		"PR" => [
-			"alpha2"    => "PR",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Portugal",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"QA" => [
 			"alpha2"    => "QA",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Puerto Rico",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Qatar",
+				"EN" => "Qatar",
+				"FR" => "Qatar",
+				"PT" => [
+					"Qatar",
+				    "Catar"
+				],
+				"DE" => "Katar",
+				"SW" => "Qatar",
+				"IT" => "Qatar",
+				"TR" => "Katar"
 			],
 			"continent" => "Asia"
-		],
-		"RE" => [
-			"alpha2"    => "RE",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Qatar",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
 		],
 		"RO" => [
 			"alpha2"    => "RO",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Reunion",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Rumania",
+				    "Rumanía"
+				],
+				"EN" => "Romania",
+				"FR" => "Roumanie",
+				"PT" => [
+					"Romênia",
+				    "Roménia"
+				],
+				"DE" => "Rumänien",
+				"SW" => "Romania",
+				"IT" => "Romania",
+				"TR" => "Romanya"
 			],
 			"continent" => "Europe"
 		],
 		"RU" => [
 			"alpha2"    => "RU",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Rusia",
 				"EN" => [
 					"Russia",
 					"Russian Federation"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Russie",
+				"PT" => "Rússia",
+				"DE" => "Russland",
+				"SW" => "Urusi",
+				"IT" => "Russia",
+				"TR" => "Rusya"
 
 			],
 			"continent" => "Europe"
@@ -2634,437 +2839,426 @@ class Countries {
 		"RW" => [
 			"alpha2"    => "RW",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Romania",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
-		],
-		"SH" => [
-			"alpha2"    => "SH",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Saint Helena",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Ruanda",
+				"EN" => "Rwanda",
+				"FR" => [
+					"Rwanda",
+				    "Rouanda"
+				],
+				"PT" => "Ruanda",
+				"DE" => "Ruanda",
+				"SW" => [
+					"Rwanda",
+					"Ruanda"
+				],
+				"IT" => "Ruanda",
+				"TR" => "Ruanda"
 			],
 			"continent" => "Africa"
 		],
 		"KN" => [
 			"alpha2"    => "KN",
 			"name"      => [
-				"ES" => "",
+				"ES" => "San Cristóbal y Nieves",
 				"EN" => "Saint Kitts and Nevis",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Saint-Christophe-et-Niévès",
+				"PT" => [
+					"Saint Kitts e Nevis",
+				    "São Cristóvão e Nevis"
+				],
+				"DE" => "Saint Kitts und Nevis",
+				"SW" => "Saint Kitts na Nevis",
+				"IT" => "Saint Kitts e Nevis",
+				"TR" => [
+					"Saint Kitts ve Nevis",
+				    "Saint Christopher ve Nevis"
+				]
 			],
 			"continent" => "North America"
 		],
 		"LC" => [
 			"alpha2"    => "LC",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Santa Lucía",
 				"EN" => "Saint Lucia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
-		],
-		"PM" => [
-			"alpha2"    => "PM",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Saint Pierre and Miquelon",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Sainte-Lucie",
+				"PT" => "Santa Lúcia",
+				"DE" => "Saint Lucia",
+				"SW" => "Saint Lucia",
+				"IT" => "Santa Lucia",
+				"TR" => "Saint Lucia"
 			],
 			"continent" => "North America"
 		],
 		"VC" => [
 			"alpha2"    => "VC",
 			"name"      => [
-				"ES" => "",
+				"ES" => "San Vicente y las Granadinas",
 				"EN" => "Saint Vincent and The Grenadines",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Saint-Vincent-et-les Grenadines",
+				"PT" => "São Vicente e as Granadinas",
+				"DE" => "Saint Vincent und die Grenadinen",
+				"SW" => "Saint Vincent na Grenadini",
+				"IT" => "Saint Vincent e Grenadine",
+				"TR" => "Saint Vincent ve Grenadinler"
 			],
 			"continent" => "North America"
 		],
 		"WS" => [
 			"alpha2"    => "WS",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Samoa",
 				"EN" => "Samoa",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Samoa",
+				"PT" => "Samoa",
+				"DE" => "Samoa",
+				"SW" => "Samoa",
+				"IT" => "Samoa",
+				"TR" => "Samoa"
 			],
 			"continent" => "Oceania"
 		],
 		"SM" => [
 			"alpha2"    => "SM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "San Marino",
 				"EN" => "San Marino",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Saint-Marin",
+				"PT" => [
+				    "San Marino",
+				    "São Marinho",
+				    "São Marino"
+				],
+				"DE" => "San Marino",
+				"SW" => "San Marino",
+				"IT" => "San Marino",
+				"TR" => "San Marino"
 			],
 			"continent" => "Europe"
 		],
 		"ST" => [
 			"alpha2"    => "ST",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Sao Tome and Principe",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Santo Tomé y Príncipe",
+				"EN" => [
+					"Sao Tome and Principe",
+					"São Tomé and Príncipe"
+				],
+				"FR" => "São Tomé-et-Príncipe",
+				"PT" => "São Tomé and Príncipe",
+				"DE" => "São Tomé und Príncipe",
+				"SW" => [
+					"Sao Tome na Principe",
+					"São Tomé na Príncipe"
+				],
+				"IT" => "Sao Tomé e Principe",
+				"TR" => "São Tomé ve Príncipe"
 			],
 			"continent" => "Africa"
 		],
 		"SA" => [
 			"alpha2"    => "SA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Arabia Saudita",
 				"EN" => "Saudi Arabia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Arabie Saoudite",
+				"PT" => "Arábia Saudita",
+				"DE" => "Saudi-Arabien",
+				"SW" => "Saudia",
+				"IT" => "Arabia Saudita",
+				"TR" => "Suudi Arabistan"
 			],
 			"continent" => "Asia"
 		],
 		"SN" => [
 			"alpha2"    => "SN",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Senegal",
 				"EN" => "Senegal",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Sénégal",
+				"PT" => "Senegal",
+				"DE" => "Senegal",
+				"SW" => "Senegal",
+				"IT" => "Senegal",
+				"TR" => "Senegal"
 			],
 			"continent" => "Africa"
 		],
 		"RS" => [
 			"alpha2"    => "RS",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Serbia",
 				"EN" => "Serbia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Serbie",
+				"PT" => "Sérvia",
+				"DE" => "Serbien",
+				"SW" => "Serbia",
+				"IT" => "Serbia",
+				"TR" => "Sırbistan"
 			],
 			"continent" => "Europe"
 		],
 		"SC" => [
 			"alpha2"    => "SC",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Seychelles",
 				"EN" => "Seychelles",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Seychelles",
+				"PT" => [
+					"Seychelles",
+					"Seicheles"
+				],
+				"DE" => "Seychellen",
+				"SW" => "Shelisheli",
+				"IT" => "Seychelles",
+				"TR" => "Seyşeller"
 			],
 			"continent" => "Africa"
 		],
 		"SL" => [
 			"alpha2"    => "SL",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Sierra Leona",
 				"EN" => "Sierra Leone",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Sierra Leone",
+				"PT" => "Serra Leoa",
+				"DE" => "Sierra Leone",
+				"SW" => "Sierra Leone",
+				"IT" => "Sierra Leone",
+				"TR" => "Sierra Leone"
 			],
 			"continent" => "Africa"
 		],
 		"SG" => [
 			"alpha2"    => "SG",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Singapur",
 				"EN" => "Singapore",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Singapour",
+				"PT" => [
+					"Singapura",
+				    "Cingapura"
+				],
+				"DE" => "Singapur",
+				"SW" => "Singapuri",
+				"IT" => "Singapore",
+				"TR" => "Singapur"
 			],
 			"continent" => "Asia"
 		],
 		"SK" => [
 			"alpha2"    => "SK",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Eslovaquia",
 				"EN" => "Slovakia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Slovaquie",
+				"PT" => "Eslováquia",
+				"DE" => "Slowakei",
+				"SW" => "Slovakia",
+				"IT" => "Slovacchia",
+				"TR" => "Slovakya"
 			],
 			"continent" => "Europe"
 		],
 		"SI" => [
 			"alpha2"    => "SI",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Eslovenia",
 				"EN" => "Slovenia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Slovénie",
+				"PT" => [
+					"Eslovênia",
+					"Eslovénia"
+				],
+				"DE" => "Slowenien",
+				"SW" => "Slovenia",
+				"IT" => "Slovenia",
+				"TR" => "Slovenya"
 			],
 			"continent" => "Europe"
 		],
 		"SB" => [
 			"alpha2"    => "SB",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Islas Salomón",
 				"EN" => "Solomon Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Îles Salomon",
+				"PT" => "Ilhas Salomão",
+				"DE" => "Salomonen",
+				"SW" => "Visiwa vya Solomon",
+				"IT" => "Isole Salomone",
+				"TR" => "Solomon Adaları"
 			],
 			"continent" => "Oceania"
 		],
 		"SO" => [
 			"alpha2"    => "SO",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Somalia",
 				"EN" => "Somalia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Somalie",
+				"PT" => "Somália",
+				"DE" => "Somalia",
+				"SW" => "Somalia",
+				"IT" => "Somalia",
+				"TR" => "Somali"
 			],
 			"continent" => "Africa"
 		],
 		"ZA" => [
 			"alpha2"    => "ZA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Sudáfrica",
 				"EN" => "South Africa",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Afrique du Sud",
+				"PT" => "África do Sul",
+				"DE" => "Südafrika",
+				"SW" => "Afrika Kusini",
+				"IT" => "Sud Africa",
+				"TR" => "Güney Afrika"
 			],
 			"continent" => "Africa"
 		],
 		"SS" => [
 			"alpha2"    => "SS",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Sudán del Sur",
 				"EN" => "South Sudan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Soudan du Sud",
+				"PT" => [
+					"Sudão do Sul",
+					"Sudão Meridional"
+				],
+				"DE" => "Südsudan",
+				"SW" => "Sudan Kusini",
+				"IT" => "Sudan del Sud",
+				"TR" => "Güney Sudan"
 			],
 			"continent" => "Africa"
 		],
-		"GS" => [
-			"alpha2"    => "GS",
-			"name"      => [
-				"ES" => "",
-				"EN" => "South Georgia and The South Sandwich Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Antarctica"
-		],
+
 		"ES" => [
 			"alpha2"    => "ES",
 			"name"      => [
-				"ES" => "",
+				"ES" => "España",
 				"EN" => "Spain",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Espagne",
+				"PT" => "Espanha",
+				"DE" => "Spanien",
+				"SW" => "Hispania",
+				"IT" => "Spagna",
+				"TR" => "İspanya"
 			],
 			"continent" => "Europe"
 		],
 		"LK" => [
 			"alpha2"    => "LK",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Sri Lanka",
 				"EN" => "Sri Lanka",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Sri Lanka",
+				"PT" => "Sri Lanka",
+				"DE" => "Sri Lanka",
+				"SW" => "Sri Lanka",
+				"IT" => "Sri Lanka",
+				"TR" => "Sri Lanka"
 			],
 			"continent" => "Asia"
 		],
 		"SD" => [
 			"alpha2"    => "SD",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Sudán",
 				"EN" => "Sudan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Soudan",
+				"PT" => "Sudão",
+				"DE" => "Sudan",
+				"SW" => "Sudan",
+				"IT" => "Sudan",
+				"TR" => "Sudan"
 			],
 			"continent" => "Africa"
 		],
 		"SR" => [
 			"alpha2"    => "SR",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Suriname",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Suriname",
+				"EN" => [
+					"Suriname",
+					"Surinam"
+				],
+				"FR" => "Suriname",
+				"PT" => "Suriname",
+				"DE" => "Suriname",
+				"SW" => "Surinam",
+				"IT" => "Suriname",
+				"TR" => "Surinam"
 			],
 			"continent" => "South America"
-		],
-		"SJ" => [
-			"alpha2"    => "SJ",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Svalbard and Jan Mayen",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Europe"
 		],
 		"SZ" => [
 			"alpha2"    => "SZ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Swazilandia",
 				"EN" => "Swaziland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Swaziland",
+				"PT" => "Suazilândia",
+				"DE" => "Swasiland",
+				"SW" => "Uswazi",
+				"IT" => "Swaziland",
+				"TR" => "Svaziland"
 			],
 			"continent" => "Africa"
 		],
 		"SE" => [
 			"alpha2"    => "SE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Suecia",
 				"EN" => "Sweden",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Suède",
+				"PT" => "Suécia",
+				"DE" => "Schweden",
+				"SW" => [
+					"Uswidi",
+				    "Sweden",
+				    "Swideni"
+				],
+				"IT" => "Svezia",
+				"TR" => "İsveç"
 			],
 			"continent" => "Europe"
 		],
 		"CH" => [
 			"alpha2"    => "CH",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Suiza",
 				"EN" => "Switzerland",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Suisse",
+				"PT" => "Suíça",
+				"DE" => "Schweiz",
+				"SW" => "Uswisi",
+				"IT" => "Svizzera",
+				"TR" => "İsviçre"
 			],
 			"continent" => "Europe"
 		],
 		"SY" => [
 			"alpha2"    => "SY",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Siria",
 				"EN" => [
 					"Syria",
 					"Syrian Arab Republic"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Syrie",
+				"PT" => "Síria",
+				"DE" => "Syrien",
+				"SW" => [
+					"Syria",
+				    "Siria"
+				],
+				"IT" => "Siria",
+				"TR" => "Suriye"
 
 			],
 			"continent" => "Asia"
@@ -3072,241 +3266,269 @@ class Countries {
 		"TW" => [
 			"alpha2"    => "TW",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Taiwán",
 				"EN" => "Taiwan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Taïwan",
+				"PT" => [
+					"Taiwan",
+				    "Taiuã"
+				],
+				"DE" => "Taiwan",
+				"SW" => "Taiwani",
+				"IT" => "Taiwan",
+				"TR" => "Tayvan"
 			],
 			"continent" => "Asia"
 		],
 		"TJ" => [
 			"alpha2"    => "TJ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Tayikistán",
 				"EN" => "Tajikistan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Tadjikistan",
+				"PT" => [
+					"Tajiquistão",
+				    "Tadiquistão",
+				    "Tadjiquistão"
+				],
+				"DE" => "Tadschikistan",
+				"SW" => "Tajikistan",
+				"IT" => "Tagikistan",
+				"TR" => "Tacikistan"
 			],
 			"continent" => "Asia"
 		],
 		"TZ" => [
 			"alpha2"    => "TZ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Tanzania",
 				"EN" => "Tanzania",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Tanzanie",
+				"PT" => "Tanzânia",
+				"DE" => "Tansania",
+				"SW" => "Tanzania",
+				"IT" => "Tanzania",
+				"TR" => "Tanzanya"
 			],
 			"continent" => "Africa"
 		],
 		"TH" => [
 			"alpha2"    => "TH",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Tailandia",
 				"EN" => "Thailand",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Thaïlande",
+				"PT" => "Tailândia",
+				"DE" => "Thailand",
+				"SW" => [
+					"Uthai",
+					"Thailand",
+					"Tailandi",
+					"Thailandi",
+					"Tailendi"
+				],
+				"IT" => "Tailandia",
+				"TR" => "Tayland"
 			],
 			"continent" => "Asia"
 		],
 		"TL" => [
 			"alpha2"    => "TL",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Timor-leste",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => [
+					"Timor-Leste",
+					"Timor Oriental"
+				],
+				"EN" => [
+					"East timor",
+					"Timor-Leste"
+				],
+				"FR" => "Timor Oriental",
+				"PT" => "Timor-Leste",
+				"DE" => "Timor-Leste",
+				"SW" => "Timor ya Mashariki",
+				"IT" => "Timor Est",
+				"TR" => "Doğu Timor"
 			],
 			"continent" => "Asia"
 		],
 		"TG" => [
 			"alpha2"    => "TG",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Togo",
 				"EN" => "Togo",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Togo",
+				"PT" => "Togo",
+				"DE" => "Togo",
+				"SW" => "Togo",
+				"IT" => "Togo",
+				"TR" => "Togo"
 			],
 			"continent" => "Africa"
-		],
-		"TK" => [
-			"alpha2"    => "TK",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Tokelau",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"TO" => [
 			"alpha2"    => "TO",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Tonga",
 				"EN" => "Tonga",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Tonga",
+				"PT" => "Tonga",
+				"DE" => "Tonga",
+				"SW" => "Tonga",
+				"IT" => "Tonga",
+				"TR" => "Tonga"
 			],
 			"continent" => "Oceania"
 		],
 		"TT" => [
 			"alpha2"    => "TT",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Trinidad y Tobago",
 				"EN" => "Trinidad and Tobago",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Trinité-et-Tobago",
+				"PT" => [
+					"Trindade e Tobago",
+				    "Trinidad e Tobago"
+				],
+				"DE" => "Trinidad und Tobago",
+				"SW" => "Trinidad na Tobago",
+				"IT" => "Trinidad e Tobago",
+				"TR" => "Trinidad ve Tobago"
 			],
 			"continent" => "North America"
 		],
 		"TN" => [
 			"alpha2"    => "TN",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Túnez",
 				"EN" => "Tunisia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Tunisie",
+				"PT" => "Tunísia",
+				"DE" => "Tunesien",
+				"SW" => "Tunisia",
+				"IT" => "Tunisia",
+				"TR" => "Tunus"
 			],
 			"continent" => "Africa"
 		],
 		"TR" => [
 			"alpha2"    => "TR",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Turquía",
 				"EN" => "Turkey",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Turquie",
+				"PT" => "Turquia",
+				"DE" => "Türkei",
+				"SW" => "Uturuki",
+				"IT" => "Turchia",
+				"TR" => "Türkiye"
 			],
 			"continent" => "Asia"
 		],
 		"TM" => [
 			"alpha2"    => "TM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Turkmenistán",
 				"EN" => "Turkmenistan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Turkménistan",
+				"PT" => [
+					"Turquemenistão",
+					"Turcomenistão",
+					"Turquimenistão",
+					"Turcoménia",
+					"Turcomênia",
+					"Turqueménia",
+					"Turquemênia"
+				],
+				"DE" => "Turkmenistan",
+				"SW" => "Turkmenistan",
+				"IT" => "Turkmenistan",
+				"TR" => "Türkmenistan "
 			],
 			"continent" => "Asia"
-		],
-		"TC" => [
-			"alpha2"    => "TC",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Turks and Caicos Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "North America"
 		],
 		"TV" => [
 			"alpha2"    => "TV",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Tuvalu",
 				"EN" => "Tuvalu",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Tuvalu",
+				"PT" => "Tuvalu",
+				"DE" => "Tuvalu",
+				"SW" => "Tuvalu",
+				"IT" => "Tuvalu",
+				"TR" => "Tuvalu"
 			],
 			"continent" => "Oceania"
 		],
 		"UG" => [
 			"alpha2"    => "UG",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Uganda",
 				"EN" => "Uganda",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Ouganda",
+				"PT" => "Uganda",
+				"DE" => "Uganda",
+				"SW" => "Uganda",
+				"IT" => "Uganda",
+				"TR" => "Uganda"
 			],
 			"continent" => "Africa"
 		],
 		"UA" => [
 			"alpha2"    => "UA",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Ucrania",
 				"EN" => "Ukraine",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Ukraine",
+				"PT" => "Ucrânia",
+				"DE" => "Ukraine",
+				"SW" => "Ukraine",
+				"IT" => "Ucraina",
+				"TR" => "Ukrayna"
 			],
 			"continent" => "Europe"
 		],
 		"AE" => [
 			"alpha2"    => "AE",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Emiratos Árabes Unidos",
+				    "Emiratos Árabes",
+				    "E.A.U.",
+				    "EAU"
+				],
 				"EN" => [
 					"United Arab Emirates",
-					"U.A.E."
+					"U.A.E.",
+				    "UAE"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => [
+					"Émirats arabes unis",
+				    "Émirats",
+					"É.A.U.",
+				    "ÉAU"
+				],
+				"PT" => [
+					"Emirados Árabes Unidos",
+					"E.A.U.",
+				    "EAU"
+				],
+				"DE" => [
+					"Vereinigte Arabische Emirate",
+					"V.A.E.",
+				    "VAE"
+				],
+				"SW" => "Falme za Kiarabu",
+				"IT" => [
+					"Emirati Arabi Uniti",
+					"Emirati Arabi"
+				],
+				"TR" => [
+					"Birleşik Arap Emirlikleri",
+					"B.A.E.",
+					"BAE"
+				]
 
 			],
 			"continent" => "Asia"
@@ -3314,7 +3536,23 @@ class Countries {
 		"GB" => [
 			"alpha2"    => "GB",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Reino Unido",
+					"Inglaterra",
+					"Gran Bretaña",
+					"Gales",
+					"Escocia",
+					"Irlanda del Norte",
+					"Anguila",
+					"Bermudas",
+					"Islas Caimán",
+					"Islas Malvinas",
+					"Gibraltar",
+					"Montserrat",
+					"Islas Pitcairn",
+					"Guernsey",
+					"Isla de Man",
+				],
 				"EN" => [
 					"United Kingdom",
 					"U.K.",
@@ -3323,225 +3561,350 @@ class Countries {
 					"Britain",
 					"Wales",
 					"Scotland",
-					"Great Britain"
+					"Great Britain",
+					"Northern Ireland",
+					"Anguilla",
+					"Bermuda",
+					"Cayman Islands",
+					"Falkland Islands",
+					"Gibraltar",
+					"Montserrat",
+					"Pitcairn Islands",
+					"Guernsey",
+					"Isle of Man",
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
+				"FR" => [
+					"Royaume-Uni",
+					"Grande-Bretagne",
+					"Angleterre",
+					"Écosse",
+					"Galles",
+					"Irlande du Nord",
+					"Grande-Bretagne",
+					"Anguilla",
+					"Bermudes",
+					"Îles Caïmans",
+					"Malouines",
+					"Gibraltar",
+					"Montserrat",
+					"Îles Pitcairn",
+					"Guernesey",
+					"Île de Man",
+				],
+				"PT" => [
+					"Reino Unido",
+					"Inglaterra",
+					"Gales",
+					"Escócia",
+					"Grã-Bretanha",
+					"Irlanda do Norte",
+					"Anguilla",
+					"Bermudas",
+					"Ilhas Cayman",
+					"Ilhas Falkland",
+					"Gibraltar",
+					"Montserrat",
+					"Ilhas Pitcairn",
+					"Guernsey",
+					"Ilha de Man",
+				],
+				"DE" => [
+					"Vereinigtes Königreich",
+					"England",
+					"Wales",
+					"Schottland",
+					"Nordirland",
+					"Great Britain",
+					"Anguilla",
+					"Bermuda",
+					"Cayman Islands",
+					"Kaimaninseln",
+					"Falklandinseln",
+					"Malwinen",
+					"Gibraltar",
+					"Montserrat",
+					"Pitcairninseln",
+					"Guernsey",
+					"Isle of Man",
+				    "Insel Man",
+				],
+				"SW" => [
+					"Ufalme wa Muungano",
+					"Uingereza",
+					"Welisi",
+					"Uskoti",
+					"Eire ya Kaskazini",
+					"Britania",
+					"Anguilla",
+					"Bermuda",
+					"Visiwa vya Cayman",
+					"Visiwa vya Falkland",
+					"Gibraltar",
+					"Montserrat",
+					"Pitcairn",
+					"Guernsey",
+					"Kisiwa cha Man",
+				],
+				"IT" => [
+					"Regno Unito",
+					"Gran Bretagna",
+					"Inghilterra",
+					"Galles",
+					"Scozia",
+					"Irlanda del Nord",
+					"Anguilla",
+					"Bermuda",
+					"Isole Cayman",
+					"Isole Falkland",
+					"Iosle Malvine",
+					"Gibilterra",
+					"Montserrat",
+					"Isole Pitcairn",
+					"Guernsey",
+					"Isola di Man",
+				],
+				"TR" => [
+					"Birleşik Krallık",
+					"İngiltere",
+					"Galler",
+					"İskoçya",
+					"Kuzey İrlanda",
+					"Büyük Britanya",
+					"Anguilla",
+					"Bermuda",
+					"Cayman Adaları",
+					"Falkland Adaları",
+					"Cebelitarık",
+					"Montserrat",
+					"Pitcairn Adaları",
+					"Guernsey",
+					"Man Adası",
+				]
 			],
 			"continent" => "Europe"
 		],
 		"US" => [
 			"alpha2"    => "US",
 			"name"      => [
-				"ES" => "",
+				"ES" => [
+					"Estados Unidos",
+					"EE UU",
+					"EEUU",
+					"EE.UU.",
+					"Puerto Rico",
+					"Islas Marianas del Norte",
+					"Guam",
+					"Samoa Americana"
+				],
 				"EN" => [
 					"United States",
 					"U.S.",
 					"U.S.A.",
-					"U.S. of A",
 					"United States of America",
-					"America",
-					"the US"
+					"the US",
 					// Written like this as without the article the simple "us" (we) would be a false positive.
+					"Puerto Rico",
+					"Northern Mariana Islands",
+					"Guam",
+					"American Samoa"
 				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
+				"FR" => [
+					"États-Unis d'Amérique",
+					"États-Unis",
+					"Porto Rico",
+				    "Îles Mariannes du Nord",
+				    "Guam",
+				    "Samoa américaines"
+				],
+				"PT" => [
+					"Estados Unidos da América",
+					"Estados Unidos",
+					"Porto Rico",
+					"Marianas Setentrionais",
+					"Guam",
+					"Guão",
+					"Guame",
+					"Samoa Americana"
+				],
+				"DE" => [
+					"Vereinigte Staaten von Amerika",
+					"Vereinigte Staaten",
+					"Puerto Rico",
+					"Portoriko",
+				    "Nördliche Marianen",
+				    "Guam",
+				    "Amerikanisch-Samoa"
+				],
+				"SW" => [
+					"Muungano wa Madola ya Amerika",
+					"Marekani",
+					"Puerto Rico",
+				    "Visiwa vya Mariana ya Kaskazini",
+				    "Guam",
+				    "Samoa ya Marekani"
+				],
+				"IT" => [
+					"Stati Uniti d'America",
+					"Stati Uniti",
+					"Puerto Rico",
+				    "Isole Marianne Settentrionali",
+				    "Guam",
+				    "Samoa Americane"
+				],
+				"TR" => [
+					"Amerika Birleşik Devletleri",
+					"Birleşik Devletler",
+					"ABD",
+					"Porto Riko",
+				    "Kuzey Mariana Adaları",
+				    "Guam",
+				    "Amerikan Samoası"
+				]
 			],
 			"continent" => "North America"
-		],
-		"UM" => [
-			"alpha2"    => "UM",
-			"name"      => [
-				"ES" => "",
-				"EN" => "United States Minor Outlying Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
 		],
 		"UY" => [
 			"alpha2"    => "UY",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Uruguay",
 				"EN" => "Uruguay",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Uruguay",
+				"PT" => "Uruguai",
+				"DE" => "Uruguay",
+				"SW" => "Uruguay",
+				"IT" => "Uruguay",
+				"TR" => "Uruguay"
 			],
 			"continent" => "South America"
 		],
 		"UZ" => [
 			"alpha2"    => "UZ",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Uzbekistán",
 				"EN" => "Uzbekistan",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Ouzbékistan",
+				"PT" => [
+					"Uzbequistão",
+					"Usbequistão"
+				],
+				"DE" => "Usbekistan",
+				"SW" => "Uzbekistan",
+				"IT" => "Uzbekistan",
+				"TR" => "Özbekistan"
 			],
 			"continent" => "Asia"
 		],
 		"VU" => [
 			"alpha2"    => "VU",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Vanuatu",
 				"EN" => "Vanuatu",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Vanuatu",
+				"PT" => "Vanuatu",
+				"DE" => "Vanuatu",
+				"SW" => "Vanuatu",
+				"IT" => "Vanuatu",
+				"TR" => "Vanuatu"
 			],
 			"continent" => "Oceania"
 		],
 		"VE" => [
 			"alpha2"    => "VE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Venezuela",
 				"EN" => "Venezuela",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Venezuela",
+				"PT" => "Venezuela",
+				"DE" => "Venezuela",
+				"SW" => "Venezuela",
+				"IT" => "Venezuela",
+				"TR" => "Venezuela"
 			],
 			"continent" => "South America"
 		],
 		"VN" => [
 			"alpha2"    => "VN",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Vietnam",
 				"EN" => "Vietnam",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => [
+					"Viêt Nam",
+				    "Viet Nam",
+				    "Vietnam"
+				],
+				"PT" => [
+					"Vietnam",
+					"Vietnã",
+				    "Vietname"
+				],
+				"DE" => "Vietnam",
+				"SW" => "Vietnam",
+				"IT" => "Vietnam",
+				"TR" => "Vietnam"
 			],
 			"continent" => "Asia"
 		],
-		"VG" => [
-			"alpha2"    => "VG",
+		"XK" => [
+			"alpha2"    => "XK",
 			"name"      => [
-				"ES" => "",
-				"EN" => "British Virgin Islands",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Kosovo",
+				"EN" => "Kosovo",
+				"FR" => "Kosovo",
+				"PT" => "Kosovo",
+				"DE" => "Kosovo",
+				"SW" => "Kosovo",
+				"IT" => "Kosovo",
+				"TR" => "Kosova"
 			],
-			"continent" => "North America"
-		],
-		"VI" => [
-			"alpha2"    => "VI",
-			"name"      => [
-				"ES" => "",
-				"EN" => [
-					"U.S. Virgin Islands",
-					"American Virgin Islands"
-				],
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-
-			],
-			"continent" => "North America"
-		],
-		"WF" => [
-			"alpha2"    => "WF",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Wallis and Futuna",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Oceania"
-		],
-		"EH" => [
-			"alpha2"    => "EH",
-			"name"      => [
-				"ES" => "",
-				"EN" => "Western Sahara",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
-			],
-			"continent" => "Africa"
+			"continent" => "Europe"
 		],
 		"YE" => [
 			"alpha2"    => "YE",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Yemen",
 				"EN" => "Yemen",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Yémen",
+				"PT" => [
+					"Iémen",
+				    "Iêmen"
+				],
+				"DE" => "Jemen",
+				"SW" => "Yemen",
+				"IT" => "Yemen",
+				"TR" => "Yemen"
 			],
 			"continent" => "Asia"
 		],
 		"ZM" => [
 			"alpha2"    => "ZM",
 			"name"      => [
-				"ES" => "",
+				"ES" => "Zambia",
 				"EN" => "Zambia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"FR" => "Zambie",
+				"PT" => "Zâmbia",
+				"DE" => "Sambia",
+				"SW" => "Zambia",
+				"IT" => "Zambia",
+				"TR" => "Zambiya"
 			],
 			"continent" => "Africa"
 		],
 		"ZW" => [
 			"alpha2"    => "ZW",
 			"name"      => [
-				"ES" => "",
-				"EN" => "Zambia",
-				"FR" => "",
-				"PT" => "",
-				"DE" => "",
-				"SW" => "",
-				"IT" => "",
-				"TR" => ""
+				"ES" => "Zimbabwe",
+				"EN" => "Zimbabwe",
+				"FR" => "Zimbabwe",
+				"PT" => [
+					"Zimbabue",
+				    "Zimbábue",
+				    "Zimbabué",
+				    "Zimbabwe"
+				],
+				"DE" => "Simbabwe",
+				"SW" => "Zimbabwe",
+				"IT" => "Zimbabwe",
+				"TR" => "Zimbabve"
 			],
 			"continent" => "Africa"
 		]
@@ -3557,7 +3920,7 @@ class Countries {
 	 */
 	public static function get($keyField = "alpha2", $requestedField = "name")
 	{
-		$supportedFields = ["alpha2", "alpha3", "name", "continent"];
+		$supportedFields = ["alpha2", "name"];
 		//check if field to be used as array key is passed
 		if (!in_array($keyField, $supportedFields))
 		{
@@ -3597,9 +3960,9 @@ class Countries {
 	 */
 	public static function get2d(
 		$keyField = "alpha2",
-		$requestedFields = ["alpha2", "alpha3", "name", "continent"]
+		$requestedFields = ["alpha2", "name"/*, "continent"*/]
 	) {
-		$supportedFields = ["alpha2", "alpha3", "name", "continent"];
+		$supportedFields = ["alpha2", "name"/*, "continent"*/];
 		//check if field to be used as array key is passed
 		if (!in_array($keyField, $supportedFields))
 		{
@@ -3656,7 +4019,7 @@ class Countries {
 	*/
 	public static function getFromContinent($keyField = "alpha2", $requestedField = "name", $continent = null)
 	{
-		$supportedFields = ["alpha2", "alpha3", "name", "continent"];
+		$supportedFields = ["alpha2", "name", "continent"];
 		$supportedContinents = ["Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America"];
 
 		//check if field to be used as array key is passed
