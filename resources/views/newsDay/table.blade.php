@@ -12,7 +12,14 @@
 		</div>
 		<div class="col-12 text-center py-5 mx-auto">
 			<h5>
-				The most covered country yesterday was: {{ $countries[key($latest)]['name'][0] }}
+				The most covered country yesterday
+				was: {{
+					is_array($countries[key($latest)]['name']['EN']) ?
+					$countries[key($latest)]['name']['EN'][0] :
+					$countries[key($latest)]['name']['EN']
+				}}
+				{{--				$countries[key($latest)]['name']['EN'][0] :--}}
+				{{--$countries[key($latest)]['name']['EN'] }}--}}
 			</h5>
 			<div id="mostMentionedCountryContainer" style="height: 20rem">
 			</div>
@@ -26,28 +33,30 @@
 			</tr>
 			</thead>
 			<tbody>
-			@foreach($latest as $country => $amount)
-				<tr id="{{ $country }}Row">
-						@if($lastTwoDays[$country][0] > $lastTwoDays[$country][1])
+			@foreach($latest as $countryCode => $amount)
+				<tr id="{{ $countryCode }}Row">
+					@if($lastTwoDays[$countryCode][0] > $lastTwoDays[$countryCode][1])
 						<td class="text-center align-middle green">
 							&#9650;
 						</td>
-						@elseif($lastTwoDays[$country][0] < $lastTwoDays[$country][1])
+					@elseif($lastTwoDays[$countryCode][0] < $lastTwoDays[$countryCode][1])
 						<td class="text-center align-middle red">
 							&#9660;
 						</td>
-						@else
+					@else
 						<td class="text-center align-middle blue">
 							&#9635;
 						</td>
-						@endif
+					@endif
 
-					<td class="text-center">{{ $countries[$country]["name"][0] }}</td>
+					<td class="text-center">{{ is_array($countries[$countryCode]['name']['EN']) ?
+					$countries[$countryCode]['name']['EN'][0] :
+					$countries[$countryCode]['name']['EN'] }}</td>
 					<td class="text-center">{{ $amount }}</td>
 				</tr>
 				<script>
-                    $('#{{ $country }}Row').click(function () {
-                        displayCountryModal('{{$country}}');
+                    $('#{{ $countryCode }}Row').click(function () {
+                        displayCountryModal('{{  $countryCode }}');
                         $('#countryModal').modal();
                     });
 				</script>
@@ -108,7 +117,11 @@
                 enabled: false
             },
             series: [{
-                name: '{{ $countries[key($latest)]['name'][0] }}',
+                name: '{{
+					is_array($countries[key($latest)]['name']['EN']) ?
+					$countries[key($latest)]['name']['EN'][0] :
+					$countries[key($latest)]['name']['EN']
+				}}',
                 data: mostMentionedArrayData.slice(0, 30) // We only want the last month of coverage.
             }]
         });

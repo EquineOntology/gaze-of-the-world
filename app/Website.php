@@ -18,22 +18,40 @@ class Website
      */
     public $feedUrl = '';
 
+	/**
+	 * @var  string  The language of a website.
+	 */
+    public $language = '';
+
+	/**
+	 * @var  string  The country of a website.
+	 */
+	public $country = '';
+
     /**
      * @var  SimplePie  The SimplePie instance of the website's feed.
      */
     public $feed;
 
 
-    /**
-     * Website constructor.
-     *
-     * @param  string  $name
-     * @param  string  $feedUrl
-     */
-    public function __construct($name, $feedUrl = '')
+	/**
+	 * Website constructor.
+	 *
+	 * @param  string $name
+	 * @param  string $feedUrl
+	 * @param  string $language Website language. Default is English.
+	 * @param  string $country  Website country. No default.
+	 */
+    public function __construct($name, $feedUrl = '', $language = '', $country = '')
     {
         $this->name = $name;
         $this->feedUrl = $feedUrl;
+        if($language == '') {
+        	$language = 'EN';
+        }
+        $this->language = $language;
+
+	    $this->country = $country;
 
         if($feedUrl) {
             $this->feed = new \SimplePie();
@@ -103,7 +121,7 @@ class Website
     {
         $mentions = [];
         foreach ($countries as $key => $names) {
-
+        	$names = is_array($names[$this->language]) ? $names[$this->language] : [$names[$this->language]];
             foreach ($names as $name) {
 
                 $exp = '/ ' . $name . ' /i';
