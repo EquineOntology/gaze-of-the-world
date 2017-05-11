@@ -3700,6 +3700,7 @@ class Countries {
 					"United States",
 					"U.S.",
 					"U.S.A.",
+					"USA",
 					"United States of America",
 					"the US",
 					// Written like this as without the article the simple "us" (we) would be a false positive.
@@ -3711,6 +3712,7 @@ class Countries {
 				"FR" => [
 					"États-Unis d'Amérique",
 					"États-Unis",
+					"USA",
 					"Porto Rico",
 				    "Îles Mariannes du Nord",
 				    "Guam",
@@ -3719,6 +3721,7 @@ class Countries {
 				"PT" => [
 					"Estados Unidos da América",
 					"Estados Unidos",
+					"USA",
 					"Porto Rico",
 					"Marianas Setentrionais",
 					"Guam",
@@ -3729,6 +3732,7 @@ class Countries {
 				"DE" => [
 					"Vereinigte Staaten von Amerika",
 					"Vereinigte Staaten",
+					"USA",
 					"Puerto Rico",
 					"Portoriko",
 				    "Nördliche Marianen",
@@ -3739,6 +3743,7 @@ class Countries {
 					"Muungano wa Madola ya Amerika",
 					"Marekani",
 					"Puerto Rico",
+					"USA",
 				    "Visiwa vya Mariana ya Kaskazini",
 				    "Guam",
 				    "Samoa ya Marekani"
@@ -3746,6 +3751,7 @@ class Countries {
 				"IT" => [
 					"Stati Uniti d'America",
 					"Stati Uniti",
+					"USA",
 					"Puerto Rico",
 				    "Isole Marianne Settentrionali",
 				    "Guam",
