@@ -48,7 +48,11 @@ class WebsitesSeeder extends Seeder {
 			'AU'
 		],
 		'theatlantic.com'       => ['https://www.theatlantic.com/feed/channel/international/'],
-		'cbc.ca'                => ['http://www.cbc.ca/cmlink/rss-world'],
+		'cbc.ca'                => [
+			'http://www.cbc.ca/cmlink/rss-world',
+		    'CA',
+			'EN'
+		],
 		'chinadaily.com.cn'     => ['http://www.chinadaily.com.cn/rss/world_rss.xml'],
 		'thehill.com'           => ['http://thehill.com/taxonomy/term/43/feed'],
 		'hindustantimes.com'    => ['http://www.hindustantimes.com/rss/world/rssfeed.xml'],
@@ -93,6 +97,154 @@ class WebsitesSeeder extends Seeder {
 		],
 		'bignewsnetwork.com'    => ['http://feeds.bignewsnetwork.com/category/c08dd24cec417021'],
 		'news.google.com'       => ['https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=w&siidp=a892d2018e82a999047693ed29f8258ca06a&ict=ln&output=rss'],
+
+	    // French
+		'lemonde.fr' => [
+			'http://www.lemonde.fr/international/rss_full.xml',
+			'FR',
+			'FR'
+		],
+		'lefigaro.fr' => [
+			'http://www.lefigaro.fr/rss/figaro_international.xml',
+			'FR',
+			'FR'
+		],
+		'rfi.fr' => [
+			'http://www.rfi.fr/general/rss',
+			'',
+			'FR'
+		],
+
+
+	    // German
+		'welt.de' => [
+			'https://www.welt.de/feeds/latest.rss',
+			'DE',
+			'DE'
+		],
+		'spiegel.de' => [
+			'http://www.spiegel.de/schlagzeilen/tops/index.rss',
+			'DE',
+			'DE'
+		],
+	    'orf.at' => [
+	    	'http://rss.orf.at/news.xml',
+	        'AT',
+	        'DE'
+	    ],
+		'derstandard.at' => [
+			'https://derstandard.at/?page=rss&ressort=seite1',
+			'AT',
+			'DE'
+		],
+
+		// Italian
+		'repubblica.it' => [
+			'http://www.repubblica.it/rss/esteri/rss2.0.xml?ref=RHFT',
+			'IT',
+			'IT'
+		],
+		'corriere.it'   => [
+			'http://xml.corriereobjects.it/rss/esteri.xml',
+			'IT',
+			'IT'
+		],
+		'ansa.it'       => [
+			'http://www.ansa.it/sito/notizie/mondo/mondo_rss.xml',
+			'IT',
+			'IT'
+		],
+
+	    // Portuguese
+	    'globo.com' => [
+	        'http://g1.globo.com/dynamo/mundo/rss2.xml',
+	        'BR',
+	        'PT'
+	    ],
+		'folha.uol.com.br' => [
+			'http://feeds.folha.uol.com.br/mundo/rss091.xml',
+			'BR',
+			'PT'
+		],
+
+		// Spanish
+		'elpais.com'          => [
+			'https://ep00.epimg.net/rss/internacional/portada.xml',
+			'ES',
+			'ES'
+		],
+		'elmundo.es'          => [
+			'http://estaticos.elmundo.es/elmundo/rss/internacional.xml',
+			'ES',
+			'ES'
+		],
+		'elconfidencial.com'  => [
+			'http://rss.elconfidencial.com/mundo/',
+			'ES',
+			'ES'
+		],
+		'abc.es'              => [
+			'http://www.abc.es/rss/feeds/abc_Internacional.xml',
+			'',
+			'ES'
+		],
+		'lavanguardia.com'    => [
+			'http://www.lavanguardia.com/mvc/feed/rss/internacional',
+			'ES',
+			'ES'
+		],
+		'20minutos.es'        => [
+			'http://www.20minutos.es/rss/internacional/',
+			'',
+			'ES'
+		],
+		'clarin.com'          => [
+			'https://www.clarin.com/rss/mundo/',
+			'AR',
+			'ES'
+		],
+		'elintransigente.com' => [
+			'http://www.elintransigente.com/rss/feed.html?r=527',
+			'AR',
+			'ES'
+		],
+		'lanacion.com.ar'     => [
+			'http://contenidos.lanacion.com.ar/herramientas/rss-categoria_id=7',
+			'AR',
+			'ES'
+		],
+		'lanacion.com.ar'     => [
+			'http://tn.com.ar/feed/internacional',
+			'AR',
+			'ES'
+		],
+
+	    // Turkish
+		'sabah.com.tr' => [
+			'http://www.sabah.com.tr/rss/dunya.xml',
+			'TR',
+			'TR'
+		],
+		'onedio.com' => [
+			'https://onedio.com/support/rss.xml?category=4fa8fda4ed765b1122000011',
+			'TR',
+			'TR'
+		],
+		'milliyet.com.tr' => [
+			'http://www.milliyet.com.tr/rss/rssNew/dunyaRss.xml',
+			'TR',
+			'TR'
+		],
+		'yenisafak.com' => [
+			'http://www.yenisafak.com/rss?xml=dunya',
+			'TR',
+			'TR'
+		],
+		'hurriyet.com.tr' => [
+			'http://www.hurriyet.com.tr/rss/dunya',
+			'TR',
+			'TR'
+		],
 	];
 	private $blacklist = [
 		'reddit.com'             => '',
@@ -227,7 +379,62 @@ class WebsitesSeeder extends Seeder {
 		// No feeds.
 		'thetimes.co.uk'         => 'GB',
 		// They killed their RSS.
-
+		'blastingnews.com'       => '',
+		// No feeds.
+		'20minutes.fr'           => ['FR', 'FR'],
+	    // No feeds.
+		'ilfattoquotidiano.it'   => ['IT', 'IT'],
+	    // No "World" feed.
+	    'dagospia.com'           => ['IT', 'IT'],
+	    // No feeds.
+	    'caffeinamagazine.it'    => ['IT', 'IT'],
+	    // No feeds.
+	    'focus.de'               => ['DE', 'DE'],
+	    // No "World" feed.
+	    'bild.de'                => ['DE', 'DE'],
+	    // No "World" feed.
+	    'krone.at'               => ['AT', 'DE'],
+	    // No feeds.
+	    'infobae.com'            => '',
+	    // No "World" feed.
+		'lagaceta.com.ar'        => ['AR', 'ES'],
+		// No feeds.
+		'metropoles.com'         => ['BR', 'PT'],
+		// No "World" feed.
+	    'afrikmag.com'           => ['', 'FR'],
+		// No feeds.
+	    'igihe.com'              => '',
+		// No feeds.
+		'igihe.bi'               => '',
+		// No feeds.
+		'iwacu-burundi.org'      => '',
+		// No "World" feed.
+	    'bujumburanewsblog.wordpress.com' => '',
+		// No "World" feed.
+		'bujumbura.be'           => '',
+		// No "World" feed.
+	    'mediacongo.net'         => ['', 'FR'],
+	    // No feeds.
+		'radiookapi.net'         => ['', 'FR'],
+		// No "World" feed.
+		'newvision.co.ug'        => ['UG', 'EN'],
+		// Feed behind authentication.
+		'monitor.co.ug'          => ['UG', 'EN'],
+		// RSS dead.
+		'dailymail.co.uk'        => ['GB', 'EN'],
+		// World feed dead.
+		'howwe.biz'              => ['', 'EN'],
+		// No "World" feed.
+		'redpepper.co.ug'        => ['UG', 'EN'],
+		// No feeds.
+		'sap.mz'                 => ['MZ', 'PT'],
+		// No feeds.
+		'publico.pt' => ['PT', 'PT'],
+		// No "World" feed.
+		'jn.pt' => ['PT', 'PT'],
+		// "World" feed broken.
+		'ensonhaber.com' => ['TR', 'TR'],
+		// Feeds broken.
 	];
 
 	/**
@@ -244,19 +451,21 @@ class WebsitesSeeder extends Seeder {
 					         'name'       => $name,
 					         'feedUrl'    => $attributes[0],
 					         'country'    => isset($attributes[1]) ? $attributes[1] : null,
+					         'language'   => isset($attributes[2]) ? $attributes[2] : null,
 					         'usable'     => true,
 					         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
 					         'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
 				         ]);
 		}
 
-		foreach ($this->blacklist as $name => $country)
+		foreach ($this->blacklist as $name => $attributes)
 		{
 			DB::table('websites')
 				->insert([
 					         'name'       => $name,
 					         'feedUrl'    => '',
-					         'country'    => $country,
+					         'country'    => isset($attributes[1]) ? $attributes[1] : null,
+					         'language'   => isset($attributes[2]) ? $attributes[2] : null,
 					         'usable'     => false,
 					         'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
 					         'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
