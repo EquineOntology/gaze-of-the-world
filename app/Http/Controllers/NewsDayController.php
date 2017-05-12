@@ -62,7 +62,7 @@ class NewsDayController extends Controller {
 
 		$lastTwoDays = $this->getLastTwoDays($allMentions);
 
-		return view('newsDay.table')
+		return view('main')
 			->with('latest', $latest)
 			->with('mostMentioned', $timeSeries[key($latest)])
 			->with('lastTwoDays', $lastTwoDays);
@@ -137,7 +137,7 @@ class NewsDayController extends Controller {
 
 		$lastTwoDays = $this->getLastTwoDays($mentions);
 
-		return view('newsDay.table')
+		return view('main')
 			->with('latest', $latest)
 			->with('mostMentioned', $timeSeries[key($latest)])
 			->with('lastTwoDays', $lastTwoDays);
