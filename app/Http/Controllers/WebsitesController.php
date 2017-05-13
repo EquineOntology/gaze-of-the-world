@@ -13,12 +13,11 @@ class WebsitesController extends Controller {
 	 * Count mentions of the provided countries in all top100 feeds.
 	 *
 	 * @param  $countries
+	 * @param  $sites
 	 * @return array|mixed
 	 */
-	public static function getLatestMentions($countries)
+	public static function getLatestMentions($countries, $sites)
 	{
-		$sites = self::getTopActiveSites();
-
 		$mentions = [];
 		foreach ($sites as $site)
 		{
@@ -35,14 +34,14 @@ class WebsitesController extends Controller {
 	 *
 	 * @return array
 	 */
-	private static function getTopActiveSites()
+	public static function getTopActiveSites()
 	{
 
 		// $topSites = Alexer::getTopNewsSites(); // Alexer-related code
 
 		$sitesWithFeed = DB::table('websites')
 			->where('usable', true)
-			->select('name', 'feedUrl', 'language')
+			->select('name', 'feedUrl', 'language', 'country')
 			->get();
 
 		$sitesWithFeed = $sitesWithFeed->mapWithKeys(function ($item)
@@ -50,7 +49,8 @@ class WebsitesController extends Controller {
 			return [
 				$item->name => [
 					'url'      => $item->feedUrl,
-					'language' => $item->language
+					'language' => $item->language,
+				    'country'  => $item->country
 				]
 			];
 		});
@@ -63,7 +63,7 @@ class WebsitesController extends Controller {
 		$websites = [];
 		foreach ($sitesWithFeed as $name => $data)
 		{
-			$websites[] = new Website($name, $data['url'], $data['language']);
+			$websites[] = new Website($name, $data['url'], $data['language'], $data['country']);
 		}
 		// Alexer-related code
 		// foreach ($topActiveSites as $name => $url) {

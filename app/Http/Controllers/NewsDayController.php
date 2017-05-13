@@ -35,10 +35,16 @@ class NewsDayController extends Controller
 
 		$lastTwoDays = $this->getLastTwoDays($allMentions);
 
+		$volume = DB::table('news_volume')
+			->select(['total', 'relevant', 'sources'])
+			->where('date', Carbon::yesterday()->toDateString())
+			->get();
+
 		return view('main')
 			->with('latest', $latest)
 			->with('mostMentioned', $timeSeries[key($latest)])
-			->with('lastTwoDays', $lastTwoDays);
+			->with('lastTwoDays', $lastTwoDays)
+			->with('volume', $volume[0]);
 	}
 
 	/**
@@ -97,28 +103,6 @@ class NewsDayController extends Controller
 	}
 
 	/**
-	 * Display all countries as of the latest feed reading.
-	 *
-	 */
-	public function showAll()
-	{
-		$mentions = $this->getOrderedMentions();
-		$latest = $this->getLatestMentions($mentions);
-
-		$mentions = $mentions->all();
-		$timeSeries = $this->populateTimeSeries($mentions);
-
-		$lastTwoDays = $this->getLastTwoDays($mentions);
-
-		return view('main')
-			->with('latest', $latest)
-			->with('mostMentioned', $timeSeries[key($latest)])
-			->with('lastTwoDays', $lastTwoDays);
-
-	}
-
-
-	/**
 	 * Populate a timeSeries array with only the last two days.
 	 *
 	 * @param  $mentions
@@ -143,7 +127,8 @@ class NewsDayController extends Controller
 					continue;
 				}
 
-				if(!isset($timeSeries[$country])) {
+				if (!isset($timeSeries[$country]))
+				{
 					$timeSeries[$country] = [];
 				}
 				array_push($timeSeries[$country], $count);
@@ -152,5 +137,31 @@ class NewsDayController extends Controller
 		}
 
 		return $timeSeries;
+	}
+
+	/**
+	 * Display all countries as of the latest feed reading.
+	 *
+	 */
+	public function showAll()
+	{
+		$mentions = $this->getOrderedMentions();
+		$latest = $this->getLatestMentions($mentions);
+
+		$mentions = $mentions->all();
+		$timeSeries = $this->populateTimeSeries($mentions);
+
+		$lastTwoDays = $this->getLastTwoDays($mentions);
+
+		$volume = DB::table('news_volume')
+			->select(['total', 'relevant', 'sources'])
+			->where('date', Carbon::yesterday()->toDateString())
+			->get();
+
+		return view('main')
+			->with('latest', $latest)
+			->with('mostMentioned', $timeSeries[key($latest)])
+			->with('lastTwoDays', $lastTwoDays)
+			->with('volume', $volume[0]);
 	}
 }

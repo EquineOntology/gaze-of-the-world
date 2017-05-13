@@ -33,6 +33,16 @@ class Website
      */
     public $feed;
 
+	/**
+	 * @var  int  Total number of articles in a feed in the past day.
+	 */
+	public $totalNewsVolume = 0;
+
+	/**
+	 * @var  int  Total articles mentioning at least one country in the past day.
+	 */
+	public $relevantNewsVolume = 0;
+
 
 	/**
 	 * Website constructor.
@@ -71,6 +81,8 @@ class Website
     public function countCountryMentionsInFeed($countries)
     {
         $articles = $this->getLatestArticles($this->feed);
+
+        $this->totalNewsVolume = sizeof($articles);
 
         $feedMentions = [];
         foreach ($articles as $name => $article) {
@@ -121,6 +133,8 @@ class Website
     {
         $mentions = [];
         foreach ($countries as $key => $names) {
+        	$hasCountryMentions = false;
+
         	$names = is_array($names[$this->language]) ? $names[$this->language] : [$names[$this->language]];
             foreach ($names as $name) {
 
@@ -131,16 +145,24 @@ class Website
                 }
                 if (preg_match($exp, $item["title"])) {
                     $mentions[$key] += 1;
-                    break;
+	                $hasCountryMentions = true;
+	                break;
 
                 } elseif (preg_match($exp, $item["content"])) {
                     $mentions[$key] += 1;
-                    break;
+	                $hasCountryMentions = true;
+	                break;
 
                 } elseif ($item["description"] != $item["content"] && preg_match($exp, $item["description"])) {
                     $mentions[$key] += 1;
-                    break;
+	                $hasCountryMentions = true;
+	                break;
                 }
+            }
+
+            // If at least a contry was mentioned, we count this as a relevant article to us.
+            if ($hasCountryMentions) {
+            	$this->relevantNewsVolume += 1;
             }
         }
 
