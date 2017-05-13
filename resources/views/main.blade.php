@@ -2,29 +2,33 @@
 
 @section('content')
 	<div class="container">
-		<div class="text-center">
-			<h1>Gaze of the World</h1>
-			This is the list of countries mentioned the most by Alexa's Top News sites.<br>
-			Data is compiled through a site's "International" or "World" RSS feed (if they have a suitable one, that
-			is).
-			<br>
-			Click on a country to see how its coverage has changed over time.
-		</div>
-		<div class="col-12 text-center py-5 mx-auto">
-			<h5>
-				The most covered country yesterday
-				was: {{
+		<div>
+			<div class="row text-center pt-4">
+				<h3 class="mx-auto">
+						<b>{{ $volume->total }}</b> articles were analyzed from <b>{{ $volume->sources }}</b>
+						sources.<br><b>{{ $volume->relevant }} ({{ floor($volume->relevant * 100 / $volume->total) }}%)</b>
+						articles mentioned one or more countries.
+				</h3>
+			</div>
+			<h1 class="text-center">
+				The world is gazing upon <b>{{
 					is_array($countries[key($latest)]['name']['EN']) ?
 					$countries[key($latest)]['name']['EN'][0] :
 					$countries[key($latest)]['name']['EN']
-				}}
-				{{--				$countries[key($latest)]['name']['EN'][0] :--}}
-				{{--$countries[key($latest)]['name']['EN'] }}--}}
-			</h5>
-			<div id="mostMentionedCountryContainer" style="height: 20rem">
-			</div>
+				}}</b>
+			</h1>
 		</div>
-		<table class="table mx-auto table-hover">
+		<div class="text-center mx-auto">
+			<div id="mostMentionedCountryContainer" style="height: 20rem"></div>
+		</div>
+		<hr class="pt-4">
+		<div class="my-3 text-center">
+			This list compiles the data from Alexa's Top News sites, through their "World" RSS feeds.
+			<br>
+			Click on a country to see how its coverage has changed over time.
+		</div>
+
+		<table class="table mx-auto table-hover my-4">
 			<thead>
 			<tr>
 				<th class="text-center">Trend</th>
