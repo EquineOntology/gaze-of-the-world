@@ -10,7 +10,7 @@ class Gaze
 
         $mentions = \CFratta\GazeOfTheWorld\Http\Controllers\WebsitesController::getLatestMentions($countries);
 
-	    \CFratta\GazeOfTheWorld\Http\Controllers\NewsDayController::saveNewsDay($mentions);
+	    $newsDay = new NewsDay();
+	    $newsDay->saveNewsDay($mentions);
     }
-
 }

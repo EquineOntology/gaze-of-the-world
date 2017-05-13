@@ -6,35 +6,8 @@ use Carbon\Carbon;
 use CFratta\GazeOfTheWorld\NewsDay;
 use Illuminate\Support\Facades\DB;
 
-class NewsDayController extends Controller {
-
-	/**
-	 * Save the current news day to the database.
-	 *
-	 * @param  $mentions
-	 */
-	public static function saveNewsDay($mentions)
-	{
-		$newsDay = new NewsDay();
-		$newsDay->setAttribute('date', Carbon::yesterday()->toDateString());
-		foreach ($mentions as $code => $number)
-		{
-			$newsDay->$code = $number;
-		}
-
-		$newsDay->save();
-	}
-
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return \Illuminate\Http\Response
-	 */
-	public function index()
-	{
-		//
-	}
-
+class NewsDayController extends Controller
+{
 	/**
 	 * Display the top 10 countries as of the latest feed reading.
 	 *
