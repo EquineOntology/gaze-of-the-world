@@ -5,17 +5,23 @@
 		<div>
 			<div class="row text-center pt-4">
 				<h3 class="mx-auto">
-						<b>{{ $volume->total }}</b> articles were analyzed from <b>{{ $volume->sources }}</b>
-						sources.<br><b>{{ $volume->relevant }} ({{ floor($volume->relevant * 100 / $volume->total) }}%)</b>
-						articles mentioned one or more countries.
+					<b>{{ $volume->total }}</b> articles were analyzed from <b>{{ $volume->sources }}</b>
+					sources.<br><b>{{ $volume->relevant }} ({{ floor($volume->relevant * 100 / $volume->total) }}%)</b>
+					articles mentioned one or more countries.
 				</h3>
 			</div>
 			<h1 class="text-center">
-				The world is gazing upon <b>{{
-					is_array($countries[key($latest)]['name']['EN']) ?
-					$countries[key($latest)]['name']['EN'][0] :
-					$countries[key($latest)]['name']['EN']
-				}}</b>
+				The world is gazing upon
+				<b>
+					{{
+						in_array(key($latest), ['CZ', 'CK', 'CF', 'BS', 'CD', 'DO', 'VA', 'MH', 'NL', 'SC', 'SB', 'AE', 'GB', 'US']) ? 'the' : ''
+					}}
+					{{
+						is_array($countries[key($latest)]['name']['EN']) ?
+						$countries[key($latest)]['name']['EN'][0] :
+						$countries[key($latest)]['name']['EN']
+					}}
+				</b>
 			</h1>
 		</div>
 		<div class="text-center mx-auto">
