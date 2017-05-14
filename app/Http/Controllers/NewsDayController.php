@@ -3,7 +3,6 @@
 namespace CFratta\GazeOfTheWorld\Http\Controllers;
 
 use Carbon\Carbon;
-use CFratta\GazeOfTheWorld\NewsDay;
 use Illuminate\Support\Facades\DB;
 
 class NewsDayController extends Controller
