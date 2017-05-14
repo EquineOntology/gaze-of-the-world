@@ -962,26 +962,26 @@ class Countries {
 					"República Democrática del Congo",
 				],
 				"EN" => [
+					"Democratic Republic of The Congo",
 					"DRC",
-					"Republic of Congo",
-					"The Democratic Republic of The Congo",
+					"Republic of Congo"
 				],
 				"FR" => [
 					"République démocratique du Congo",
-				    "RDC",
-				    "Congo-Kinshasa",
-				    "RD Congo"
+					"RDC",
+					"Congo-Kinshasa",
+					"RD Congo"
 				],
 				"PT" => [
 					"República Democrática do Congo",
-				    "RDC",
-				    "RD Congo",
-				    "Congo-Kinshasa"
+					"RDC",
+					"RD Congo",
+					"Congo-Kinshasa"
 				],
 				"DE" => [
 					"Demokratische Republik Kongo",
-				    "DR Kongo",
-				    "Kongo-Kinshasa"
+					"DR Kongo",
+					"Kongo-Kinshasa"
 				],
 				"SW" => [
 					"Jamhuri ya Kidemokrasia ya Kongo",
@@ -1001,8 +1001,8 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Dinamarca",
-				    "Islas Feroe",
-				    "Groenlandia"
+					"Islas Feroe",
+					"Groenlandia"
 				],
 				"EN" => [
 					"Denmark",
@@ -1011,24 +1011,24 @@ class Countries {
 				],
 				"FR" => [
 					"Danemark",
-				    "Îles Féroé",
-				    "Groenland"
+					"Îles Féroé",
+					"Groenland"
 				],
 				"PT" => [
 					"Dinamarca",
-				    "Ilhas Féroe",
-				    "Ilhas Faroé",
-				    "Gronelândia"
+					"Ilhas Féroe",
+					"Ilhas Faroé",
+					"Gronelândia"
 				],
 				"DE" => [
 					"Dänemark",
-				    "Färöer",
-				    "Grönland"
+					"Färöer",
+					"Grönland"
 				],
 				"SW" => [
 					"Denmark",
-				    "Visiwa vya Faroe",
-				    "Grinlandi"
+					"Visiwa vya Faroe",
+					"Grinlandi"
 				],
 				"IT" => [
 					"Danimarca",
@@ -1037,8 +1037,8 @@ class Countries {
 				],
 				"TR" => [
 					"Danimarka",
-				    "Faroe Adaları",
-				    "Grönland"
+					"Faroe Adaları",
+					"Grönland"
 				]
 			],
 			"continent" => "Europe"
@@ -1052,7 +1052,7 @@ class Countries {
 				"PT" => [
 					"Djibouti",
 					"Djibuti",
-				    "Jibuti"
+					"Jibuti"
 				],
 				"DE" => "Dschibuti",
 				"SW" => "Jibuti",
@@ -1156,7 +1156,7 @@ class Countries {
 				"FR" => "Érythrée",
 				"PT" => [
 					"Eritréia",
-				    "Eritreia"
+					"Eritreia"
 				],
 				"DE" => "Eritrea",
 				"SW" => "Eritrea",
@@ -1173,7 +1173,7 @@ class Countries {
 				"FR" => "Estonie",
 				"PT" => [
 					"Estônia",
-				    "Estónia"
+					"Estónia"
 				],
 				"DE" => "Estland",
 				"SW" => "Estonia",
@@ -1204,8 +1204,8 @@ class Countries {
 				"FR" => "Fidji",
 				"PT" => [
 					"Fiji",
-				    "Fidji",
-				    "Fidgi"
+					"Fidji",
+					"Fidgi"
 				],
 				"DE" => "Fidschi",
 				"SW" => "Fiji",
@@ -1434,8 +1434,8 @@ class Countries {
 				"FR" => "Guinée",
 				"PT" => [
 					"Guiné",
-				    "Guiné-Conacri",
-				    "Guiné-Conakri"
+					"Guiné-Conacri",
+					"Guiné-Conakri"
 				],
 				"DE" => "Guinea",
 				"SW" => "Guinea",
@@ -1494,20 +1494,19 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Ciudad del Vaticano",
-				    "Santa Sede"
+					"Santa Sede"
 				],
 				"EN" => [
-					"Vatican City State",
 					"Vatican",
 					"Holy See"
 				],
 				"FR" => [
 					"Vatican",
-				    "Saint-Siège"
+					"Saint-Siège"
 				],
 				"PT" => [
 					"Vaticano",
-				    "Santa Sé"
+					"Santa Sé"
 				],
 				"DE" => [
 					"Staat Vatikanstadt",
@@ -1520,7 +1519,7 @@ class Countries {
 				],
 				"IT" => [
 					"Città del Vaticano",
-				    "Santa Sede"
+					"Santa Sede"
 				],
 				"TR" => [
 					"Vatikan",
@@ -1585,7 +1584,7 @@ class Countries {
 				"DE" => "Indien",
 				"SW" => [
 					"Uhindi",
-				    "India"
+					"India"
 				],
 				"IT" => "India",
 				"TR" => "Hindistan"
@@ -1628,7 +1627,7 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Iraq",
-				    "Irak"
+					"Irak"
 				],
 				"EN" => "Iraq",
 				"FR" => "Irak",
@@ -1650,7 +1649,7 @@ class Countries {
 				"DE" => "Irland",
 				"SW" => [
 					"Ayalandi",
-				    "Ueire"
+					"Ueire"
 				],
 				"IT" => "Irlanda",
 				"TR" => "İrlanda"
@@ -1718,7 +1717,7 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Jordania",
-				    "Transjordania"
+					"Transjordania"
 				],
 				"EN" => [
 					"Jordan",
@@ -1730,11 +1729,11 @@ class Countries {
 				],
 				"PT" => [
 					"Jordânia",
-				    "Transjordânia"
+					"Transjordânia"
 				],
 				"DE" => [
 					"Jordanien",
-				    "Transjordanien"
+					"Transjordanien"
 				],
 				"SW" => "Yordani",
 				"IT" => [
@@ -1743,7 +1742,7 @@ class Countries {
 				],
 				"TR" => [
 					"Ürdün",
-				    "Mavera-i Ürdün"
+					"Mavera-i Ürdün"
 				]
 			],
 			"continent" => "Asia"
@@ -1753,13 +1752,13 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Kazajistán",
-				    "Kazajstán"
+					"Kazajstán"
 				],
 				"EN" => "Kazakhstan",
 				"FR" => "Kazakhstan",
 				"PT" => [
 					"Cazaquistão",
-				    "Casaquistão"
+					"Casaquistão"
 				],
 				"DE" => "Kasachstan",
 				"SW" => "Kazakhstan",
@@ -1776,7 +1775,7 @@ class Countries {
 				"FR" => "Kenya",
 				"PT" => [
 					"Quênia",
-				    "Quénia"
+					"Quénia"
 				],
 				"DE" => "Kenia",
 				"SW" => "Kenya",
@@ -1793,7 +1792,7 @@ class Countries {
 				"FR" => "Kiribati",
 				"PT" => [
 					"Quiribati",
-				    "Kiribati"
+					"Kiribati"
 				],
 				"DE" => "Kiribati",
 				"SW" => "Kiribati",
@@ -1813,7 +1812,7 @@ class Countries {
 				"FR" => "Corée du Nord",
 				"PT" => [
 					"Coréia do Norte",
-				    "Coreia do Norte"
+					"Coreia do Norte"
 				],
 				"DE" => "Nordkorea",
 				"SW" => "Korea Kaskazini",
@@ -1852,8 +1851,8 @@ class Countries {
 				"FR" => "Koweït",
 				"PT" => [
 					"Koweit",
-				    "Coveoite",
-				    "Kuwait"
+					"Coveoite",
+					"Kuwait"
 				],
 				"DE" => "Kuwait",
 				"SW" => "Kuwait",
@@ -1867,8 +1866,8 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Kirguistán",
-				    "Kirguizistán",
-				    "Kirguisia"
+					"Kirguizistán",
+					"Kirguisia"
 				],
 				"EN" => [
 					"Kyrgyzstan",
@@ -1877,14 +1876,14 @@ class Countries {
 				"FR" => "Kirghizistan",
 				"PT" => [
 					"Quirguistão",
-				    "Quirguízia",
-				    "Quirguizistão"
+					"Quirguízia",
+					"Quirguizistão"
 				],
 				"DE" => "Kirgisistan",
 				"SW" => "Kirgizia",
 				"IT" => [
 					"Kirghizistan",
-				    "Kirghizia"
+					"Kirghizia"
 				],
 				"TR" => "Kırgızistan"
 			],
@@ -1916,7 +1915,7 @@ class Countries {
 				"FR" => "Lettonie",
 				"PT" => [
 					"Letônia",
-				    "Letónia"
+					"Letónia"
 				],
 				"DE" => "Lettland",
 				"SW" => "Latvia",
@@ -1992,8 +1991,8 @@ class Countries {
 				"FR" => "Liechtenstein",
 				"PT" => [
 					"Liechtenstein",
-				    "Listenstaina",
-				    "Listenstaine"
+					"Listenstaina",
+					"Listenstaine"
 				],
 				"DE" => "Liechtenstein",
 				"SW" => "Liechtenstein",
@@ -2041,7 +2040,7 @@ class Countries {
 				"FR" => "Macédoine",
 				"PT" => [
 					"Macedônia",
-				    "Macedónia"
+					"Macedónia"
 				],
 				"DE" => "Mazedonien",
 				"SW" => "Masedonia",
@@ -2057,8 +2056,8 @@ class Countries {
 				"EN" => "Madagascar",
 				"FR" => "Madagascar",
 				"PT" => [
-				    "Madagascar",
-				    "Madagáscar"
+					"Madagascar",
+					"Madagáscar"
 				],
 				"DE" => "Madagaskar",
 				"SW" => "Madagaska",
@@ -2075,18 +2074,18 @@ class Countries {
 				"FR" => "Malawi",
 				"PT" => [
 					"Malaui",
-				    "Malawi",
-				    "Malauí",
-				    "Maláui",
-				    "Malavi",
-				    "Malávia"
+					"Malawi",
+					"Malauí",
+					"Maláui",
+					"Malavi",
+					"Malávia"
 				],
 				"DE" => "Malawi",
 				"SW" => "Malawi",
 				"IT" => "Malawi",
 				"TR" => [
 					"Malavi",
-				    "Malawi"
+					"Malawi"
 				]
 			],
 			"continent" => "Africa"
@@ -2099,7 +2098,7 @@ class Countries {
 				"FR" => "Malaisie",
 				"PT" => [
 					"Malaísia",
-				    "Malásia"
+					"Malásia"
 				],
 				"DE" => "Malaysia",
 				"SW" => "Malaysia",
@@ -2166,7 +2165,7 @@ class Countries {
 				"EN" => "Marshall Islands",
 				"FR" => [
 					"Îles Marshall",
-				    "Marshal"
+					"Marshal"
 				],
 				"PT" => "Ilhas Marshall",
 				"DE" => "Marshallinseln",
@@ -2199,7 +2198,7 @@ class Countries {
 				"PT" => [
 					"Maurícias",
 					"Maurícia",
-				    "Maurício"
+					"Maurício"
 				],
 				"DE" => "Mauritius",
 				"SW" => "Morisi",
@@ -2250,16 +2249,16 @@ class Countries {
 				"FR" => "Moldavie",
 				"PT" => [
 					"Moldávia",
-				    "Moldova"
+					"Moldova"
 				],
 				"DE" => [
 					"Moldawien",
-				    "Moldau"
+					"Moldau"
 				],
 				"SW" => "Moldova",
 				"IT" => [
 					"Moldavia",
-				    "Moldova"
+					"Moldova"
 				],
 				"TR" => "Moldova"
 			],
@@ -2366,12 +2365,12 @@ class Countries {
 				],
 				"SW" => [
 					"Myanmar",
-				    "Burma",
-				    "Bama"
+					"Burma",
+					"Bama"
 				],
 				"IT" => [
 					"Myanmar",
-				    "Birmania"
+					"Birmania"
 				],
 				"TR" => [
 					"Myanmar",
@@ -2440,45 +2439,45 @@ class Countries {
 					"Sint Maarten"
 				],
 				"FR" => [
-			         "Pays-Bas",
-			         "Hollande",
-			         "Aruba",
-			         "Curaçao",
-			         "Saint-Martin"
+					"Pays-Bas",
+					"Hollande",
+					"Aruba",
+					"Curaçao",
+					"Saint-Martin"
 				],
 				"PT" => [
-			         "Países Baixos",
-			         "Holanda",
-			         "Aruba",
-			         "Curaçao",
-			         "São Martinho"
+					"Países Baixos",
+					"Holanda",
+					"Aruba",
+					"Curaçao",
+					"São Martinho"
 				],
 				"DE" => [
-			         "Niederlande",
-			         "Holland",
-			         "Aruba",
-			         "Curaçao",
-			         "Sint Maarten"
+					"Niederlande",
+					"Holland",
+					"Aruba",
+					"Curaçao",
+					"Sint Maarten"
 				],
 				"SW" => [
-			         "Uholanzi",
-			         "Holland",
-			         "Aruba",
-			         "Korsou",
-			         "Sint Maarten"
+					"Uholanzi",
+					"Holland",
+					"Aruba",
+					"Korsou",
+					"Sint Maarten"
 				],
 				"IT" => [
-			         "Paesi Bassi",
-			         "Olanda",
-			         "Aruba",
-			         "Curaçao",
-			         "Sint Maarten"
+					"Paesi Bassi",
+					"Olanda",
+					"Aruba",
+					"Curaçao",
+					"Sint Maarten"
 				],
 				"TR" => [
-			         "Hollanda",
-			         "Aruba",
-			         "Curaçao",
-			         "Sint Maarten"
+					"Hollanda",
+					"Aruba",
+					"Curaçao",
+					"Sint Maarten"
 				]
 			],
 			"continent" => "Europe"
@@ -2512,7 +2511,7 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Nueva Zelanda",
-				    "Nueva Zelandia"
+					"Nueva Zelandia"
 				],
 				"EN" => "New Zealand",
 				"FR" => "Nouvelle-Zélande",
@@ -2574,7 +2573,7 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Noruega",
-				    "Svalbard"
+					"Svalbard"
 				],
 				"EN" => [
 					"Norway",
@@ -2693,7 +2692,7 @@ class Countries {
 				"FR" => "Papouasie-Nouvelle-Guinée",
 				"PT" => [
 					"Papua-Nova Guiné",
-				    "Papuásia-Nova Guiné"
+					"Papuásia-Nova Guiné"
 				],
 				"DE" => "Papua-Neuguinea",
 				"SW" => [
@@ -2758,7 +2757,7 @@ class Countries {
 				"FR" => "Pologne",
 				"PT" => [
 					"Polônia",
-				    "Polónia"
+					"Polónia"
 				],
 				"DE" => "Polen",
 				"SW" => "Poland",
@@ -2789,7 +2788,7 @@ class Countries {
 				"FR" => "Qatar",
 				"PT" => [
 					"Qatar",
-				    "Catar"
+					"Catar"
 				],
 				"DE" => "Katar",
 				"SW" => "Qatar",
@@ -2803,13 +2802,13 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Rumania",
-				    "Rumanía"
+					"Rumanía"
 				],
 				"EN" => "Romania",
 				"FR" => "Roumanie",
 				"PT" => [
 					"Romênia",
-				    "Roménia"
+					"Roménia"
 				],
 				"DE" => "Rumänien",
 				"SW" => "Romania",
@@ -2843,7 +2842,7 @@ class Countries {
 				"EN" => "Rwanda",
 				"FR" => [
 					"Rwanda",
-				    "Rouanda"
+					"Rouanda"
 				],
 				"PT" => "Ruanda",
 				"DE" => "Ruanda",
@@ -2864,14 +2863,14 @@ class Countries {
 				"FR" => "Saint-Christophe-et-Niévès",
 				"PT" => [
 					"Saint Kitts e Nevis",
-				    "São Cristóvão e Nevis"
+					"São Cristóvão e Nevis"
 				],
 				"DE" => "Saint Kitts und Nevis",
 				"SW" => "Saint Kitts na Nevis",
 				"IT" => "Saint Kitts e Nevis",
 				"TR" => [
 					"Saint Kitts ve Nevis",
-				    "Saint Christopher ve Nevis"
+					"Saint Christopher ve Nevis"
 				]
 			],
 			"continent" => "North America"
@@ -2925,9 +2924,9 @@ class Countries {
 				"EN" => "San Marino",
 				"FR" => "Saint-Marin",
 				"PT" => [
-				    "San Marino",
-				    "São Marinho",
-				    "São Marino"
+					"San Marino",
+					"São Marinho",
+					"São Marino"
 				],
 				"DE" => "San Marino",
 				"SW" => "San Marino",
@@ -3037,7 +3036,7 @@ class Countries {
 				"FR" => "Singapour",
 				"PT" => [
 					"Singapura",
-				    "Cingapura"
+					"Cingapura"
 				],
 				"DE" => "Singapur",
 				"SW" => "Singapuri",
@@ -3220,8 +3219,8 @@ class Countries {
 				"DE" => "Schweden",
 				"SW" => [
 					"Uswidi",
-				    "Sweden",
-				    "Swideni"
+					"Sweden",
+					"Swideni"
 				],
 				"IT" => "Svezia",
 				"TR" => "İsveç"
@@ -3255,7 +3254,7 @@ class Countries {
 				"DE" => "Syrien",
 				"SW" => [
 					"Syria",
-				    "Siria"
+					"Siria"
 				],
 				"IT" => "Siria",
 				"TR" => "Suriye"
@@ -3271,7 +3270,7 @@ class Countries {
 				"FR" => "Taïwan",
 				"PT" => [
 					"Taiwan",
-				    "Taiuã"
+					"Taiuã"
 				],
 				"DE" => "Taiwan",
 				"SW" => "Taiwani",
@@ -3288,8 +3287,8 @@ class Countries {
 				"FR" => "Tadjikistan",
 				"PT" => [
 					"Tajiquistão",
-				    "Tadiquistão",
-				    "Tadjiquistão"
+					"Tadiquistão",
+					"Tadjiquistão"
 				],
 				"DE" => "Tadschikistan",
 				"SW" => "Tajikistan",
@@ -3388,7 +3387,7 @@ class Countries {
 				"FR" => "Trinité-et-Tobago",
 				"PT" => [
 					"Trindade e Tobago",
-				    "Trinidad e Tobago"
+					"Trinidad e Tobago"
 				],
 				"DE" => "Trinidad und Tobago",
 				"SW" => "Trinidad na Tobago",
@@ -3494,30 +3493,30 @@ class Countries {
 			"name"      => [
 				"ES" => [
 					"Emiratos Árabes Unidos",
-				    "Emiratos Árabes",
-				    "E.A.U.",
-				    "EAU"
+					"Emiratos Árabes",
+					"E.A.U.",
+					"EAU"
 				],
 				"EN" => [
 					"United Arab Emirates",
 					"U.A.E.",
-				    "UAE"
+					"UAE"
 				],
 				"FR" => [
 					"Émirats arabes unis",
-				    "Émirats",
+					"Émirats",
 					"É.A.U.",
-				    "ÉAU"
+					"ÉAU"
 				],
 				"PT" => [
 					"Emirados Árabes Unidos",
 					"E.A.U.",
-				    "EAU"
+					"EAU"
 				],
 				"DE" => [
 					"Vereinigte Arabische Emirate",
 					"V.A.E.",
-				    "VAE"
+					"VAE"
 				],
 				"SW" => "Falme za Kiarabu",
 				"IT" => [
@@ -3626,7 +3625,7 @@ class Countries {
 					"Pitcairninseln",
 					"Guernsey",
 					"Isle of Man",
-				    "Insel Man",
+					"Insel Man",
 				],
 				"SW" => [
 					"Ufalme wa Muungano",
@@ -3714,9 +3713,9 @@ class Countries {
 					"États-Unis",
 					"USA",
 					"Porto Rico",
-				    "Îles Mariannes du Nord",
-				    "Guam",
-				    "Samoa américaines"
+					"Îles Mariannes du Nord",
+					"Guam",
+					"Samoa américaines"
 				],
 				"PT" => [
 					"Estados Unidos da América",
@@ -3735,36 +3734,36 @@ class Countries {
 					"USA",
 					"Puerto Rico",
 					"Portoriko",
-				    "Nördliche Marianen",
-				    "Guam",
-				    "Amerikanisch-Samoa"
+					"Nördliche Marianen",
+					"Guam",
+					"Amerikanisch-Samoa"
 				],
 				"SW" => [
 					"Muungano wa Madola ya Amerika",
 					"Marekani",
 					"Puerto Rico",
 					"USA",
-				    "Visiwa vya Mariana ya Kaskazini",
-				    "Guam",
-				    "Samoa ya Marekani"
+					"Visiwa vya Mariana ya Kaskazini",
+					"Guam",
+					"Samoa ya Marekani"
 				],
 				"IT" => [
 					"Stati Uniti d'America",
 					"Stati Uniti",
 					"USA",
 					"Puerto Rico",
-				    "Isole Marianne Settentrionali",
-				    "Guam",
-				    "Samoa Americane"
+					"Isole Marianne Settentrionali",
+					"Guam",
+					"Samoa Americane"
 				],
 				"TR" => [
 					"Amerika Birleşik Devletleri",
 					"Birleşik Devletler",
 					"ABD",
 					"Porto Riko",
-				    "Kuzey Mariana Adaları",
-				    "Guam",
-				    "Amerikan Samoası"
+					"Kuzey Mariana Adaları",
+					"Guam",
+					"Amerikan Samoası"
 				]
 			],
 			"continent" => "North America"
@@ -3835,13 +3834,13 @@ class Countries {
 				"EN" => "Vietnam",
 				"FR" => [
 					"Viêt Nam",
-				    "Viet Nam",
-				    "Vietnam"
+					"Viet Nam",
+					"Vietnam"
 				],
 				"PT" => [
 					"Vietnam",
 					"Vietnã",
-				    "Vietname"
+					"Vietname"
 				],
 				"DE" => "Vietnam",
 				"SW" => "Vietnam",
@@ -3872,7 +3871,7 @@ class Countries {
 				"FR" => "Yémen",
 				"PT" => [
 					"Iémen",
-				    "Iêmen"
+					"Iêmen"
 				],
 				"DE" => "Jemen",
 				"SW" => "Yemen",
@@ -3903,9 +3902,9 @@ class Countries {
 				"FR" => "Zimbabwe",
 				"PT" => [
 					"Zimbabue",
-				    "Zimbábue",
-				    "Zimbabué",
-				    "Zimbabwe"
+					"Zimbábue",
+					"Zimbabué",
+					"Zimbabwe"
 				],
 				"DE" => "Simbabwe",
 				"SW" => "Zimbabwe",
