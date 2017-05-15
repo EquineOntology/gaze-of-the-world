@@ -33,7 +33,7 @@ class Gaze {
 		$volume = [
 			'total'    => 0,
 			'relevant' => 0,
-			'sources'  => sizeof($sites)
+			'sources'  => 0
 		];
 		$emptyFeeds = [];
 		foreach ($sites as $site)
@@ -41,12 +41,13 @@ class Gaze {
 			if ($volume['total'] != 0)
 			{
 				$volume['total'] += $site->totalNewsVolume;
+				$volume['relevant'] += $site->relevantNewsVolume;
+				$volume['sources'] += 1;
 			}
 			else
 			{
 				$emptyFeeds[] = $site;
 			}
-			$volume['relevant'] += $site->relevantNewsVolume;
 		}
 		$newsDay->saveVolume($volume);
 
