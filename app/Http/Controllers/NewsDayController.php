@@ -19,6 +19,11 @@ class NewsDayController extends Controller
 
 		$countriesInTop10 = array_keys($latest);
 		$allMentions = $mentions->all();
+
+		// We save the date to get the correct source data.
+		$date = $mentions[0]->date;
+
+		// We then remove the "date" datapoint from each day for correct parsing.
 		foreach ($allMentions as $day => $data)
 		{
 			foreach ($data as $key => $value)
@@ -36,7 +41,7 @@ class NewsDayController extends Controller
 
 		$volume = DB::table('news_volume')
 			->select(['total', 'relevant', 'sources'])
-			->where('date', Carbon::yesterday()->toDateString())
+			->whereDate('date', $date)
 			->get();
 
 		return view('main')
