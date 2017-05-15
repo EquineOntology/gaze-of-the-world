@@ -38,7 +38,7 @@ class Gaze {
 		$emptyFeeds = [];
 		foreach ($sites as $site)
 		{
-			if ($volume['total'] != 0)
+			if ($site->totalNewsVolume != 0)
 			{
 				$volume['total'] += $site->totalNewsVolume;
 				$volume['relevant'] += $site->relevantNewsVolume;
