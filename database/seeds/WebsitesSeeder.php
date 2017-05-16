@@ -12,14 +12,20 @@ class WebsitesSeeder extends Seeder {
 		],
 		'theguardian.com'       => [
 			'https://www.theguardian.com/world/rss',
-			'GB'
+			'GB',
+		    'EN'
 		],
-		'cnn.com'               => ['https://rss.cnn.com/rss/edition_world.rss'],
+		'cnn.com'               => [
+			'http://rss.cnn.com/rss/edition_world.rss',
+		    'US',
+		    'EN'
+		],
 		'bbc.co.uk'             => [
 			'https://feeds.bbci.co.uk/news/world/rss.xml?edition=uk',
-			'GB'
+			'GB',
+		    'EN'
 		],
-		'huffingtonpost.com'    => ['https://www.huffingtonpost.com/feeds/verticals/world/index.xml'],
+		'huffingtonpost.com'    => ['http://www.huffingtonpost.com/feeds/verticals/world/index.xml'],
 		'foxnews.com'           => [
 			'http://feeds.foxnews.com/foxnews/world',
 			'US'
@@ -45,7 +51,8 @@ class WebsitesSeeder extends Seeder {
 		'dw.com'                => ['http://rss.dw.com/rdf/rss-en-world'],
 		'news.com.au'           => [
 			'http://www.news.com.au/world/rss',
-			'AU'
+			'AU',
+		    'EN'
 		],
 		'theatlantic.com'       => ['https://www.theatlantic.com/feed/channel/international/'],
 		'cbc.ca'                => [
@@ -59,7 +66,7 @@ class WebsitesSeeder extends Seeder {
 		'smh.com.au'            => ['http://www.smh.com.au/rssheadlines/nsw/article/rss.xml'],
 		'aljazeera.com'         => ['http://www.aljazeera.com/xml/rss/all.xml'],
 		'economist.com'         => ['http://www.economist.com/sections/international/rss.xml'],
-		'ap.org'                => ['http://hosted.ap.org/lineups/WORLDHEADS.rss?SITE=AP&SECTION=HOME'],
+		'ap.org'                => ['http://hosted.ap.org/lineups/WORLDHEADS.rss'],
 		'dailycaller.com'       => ['https://feeds.feedburner.com/dailycaller-world'],
 		'theglobeandmail.com'   => ['http://www.theglobeandmail.com/news/world/?service=rss'],
 		'france24.com'          => ['http://www.france24.com/en/top-stories/rss'],
@@ -91,10 +98,6 @@ class WebsitesSeeder extends Seeder {
 			'AU'
 		],
 		'un.org'                => ['https://www.un.org/apps/news/rss/rss_top.asp'],
-		'jpost.com'             => [
-			'http://www.jpost.com/Rss/RssFeedsPolitiqueetsocial.aspx',
-			'IL'
-		],
 		'bignewsnetwork.com'    => ['http://feeds.bignewsnetwork.com/category/c08dd24cec417021'],
 		'news.google.com'       => ['https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=w&siidp=a892d2018e82a999047693ed29f8258ca06a&ict=ln&output=rss'],
 
@@ -113,6 +116,11 @@ class WebsitesSeeder extends Seeder {
 			'http://www.rfi.fr/general/rss',
 			'',
 			'FR'
+		],
+		'jpost.com' => [
+			'http://www.jpost.com/Rss/RssFeedsPolitiqueetsocial.aspx',
+			'IL',
+		    'FR'
 		],
 
 
