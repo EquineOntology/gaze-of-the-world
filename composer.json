@@ -1,6 +1,6 @@
 {
     "name": "cfratta/gazeoftheworld",
-    "description": "See where the world is looking, judging by media coverage.",
+    "description": "Visual trends in news about nations.",
     "license": "MIT",
     "type": "project",
     "require": {
@@ -8,8 +8,7 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "paquettg/php-html-parser": "^1.7",
-        "simplepie/simplepie": "^1.4",
-        "spatie/laravel-mailable-test": "^1.0"
+        "simplepie/simplepie": "^1.4"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.3",
