@@ -41,45 +41,55 @@
 			Click on a country to see how its coverage has changed over time.
 		</div>
 
-		<table class="table mx-auto table-hover my-4">
-			<thead>
-			<tr>
-				<th class="text-center">Trend</th>
-				<th class="text-center">Country</th>
-				<th class="text-center">Mentions</th>
-			</tr>
-			</thead>
-			<tbody>
-			@foreach($latest as $countryCode => $amount)
-				<tr id="{{ $countryCode }}Row">
-					@if($lastTwoDays[$countryCode][0] > $lastTwoDays[$countryCode][1])
-						<td class="text-center align-middle green">
-							&#9650;
-						</td>
-					@elseif($lastTwoDays[$countryCode][0] < $lastTwoDays[$countryCode][1])
-						<td class="text-center align-middle red">
-							&#9660;
-						</td>
-					@else
-						<td class="text-center align-middle blue">
-							&#9635;
-						</td>
-					@endif
+		<div class="row">
+			<div class="col-12 col-md-10 offset-md-1">
+				<table class="table table-sm table-hover mx-auto my-4">
+					<thead>
+					<tr class="row">
+						<th class="col-2 text-center">Trend</th>
+						<th class="col-4 text-center">Country</th>
+						<th class="col-3 text-center">Raw mentions</th>
+						<th class="col-3 text-center">Percentage</th>
+					</tr>
+					</thead>
+					<tbody>
+					@foreach($latest as $countryCode => $amount)
+						<tr class="row" id="{{ $countryCode }}Row">
+							@if($lastTwoDays[$countryCode][0] > $lastTwoDays[$countryCode][1])
+								<td class="col-2 text-center align-middle green">
+									&#9650;
+								</td>
+							@elseif($lastTwoDays[$countryCode][0] < $lastTwoDays[$countryCode][1])
+								<td class="col-2 text-center align-middle red">
+									&#9660;
+								</td>
+							@else
+								<td class="col-2 text-center align-middle blue">
+									&#9635;
+								</td>
+							@endif
 
-					<td class="text-center">{{ is_array($countries[$countryCode]['name']['EN']) ?
-					$countries[$countryCode]['name']['EN'][0] :
-					$countries[$countryCode]['name']['EN'] }}</td>
-					<td class="text-center">{{ $amount }}</td>
-				</tr>
-				<script>
-                    $('#{{ $countryCode }}Row').click(function () {
-                        displayCountryModal('{{  $countryCode }}');
-                        $('#countryModal').modal();
-                    });
-				</script>
-			@endforeach
-			</tbody>
-		</table>
+							<td class="col-4 text-center">
+								{{
+									is_array($countries[$countryCode]['name']['EN']) ?
+									$countries[$countryCode]['name']['EN'][0] :
+									$countries[$countryCode]['name']['EN']
+								}}
+							</td>
+							<td class="col-3 text-center">{{ $amount }}</td>
+							<td class="col-3 text-center">{{ floor($amount / $volume->relevant * 100) }}%</td>
+						</tr>
+						<script>
+                            $('#{{ $countryCode }}Row').click(function () {
+                                displayCountryModal('{{  $countryCode }}');
+                                $('#countryModal').modal();
+                            });
+						</script>
+					@endforeach
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
 	<script>
         // Get country data so that it's ready when a user clicks on the modal.
