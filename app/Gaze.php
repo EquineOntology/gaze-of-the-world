@@ -82,6 +82,6 @@ class Gaze {
 	 */
 	private static function warnAboutEmptyFeeds($feeds)
 	{
-		Mail::to(config('APP_MAINTAINER'))->send(new FeedsEmpty($feeds));
+		Mail::to(config('mail.maintainer'))->send(new FeedsEmpty($feeds));
 	}
 }

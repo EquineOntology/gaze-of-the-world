@@ -120,4 +120,17 @@ return [
         ],
     ],
 
+
+    /*
+	|--------------------------------------------------------------------------
+	| App maintainer
+	|--------------------------------------------------------------------------
+	|
+	| The person that should be contacted if there's something wrong with
+    | the web application.
+	|
+	*/
+
+    'maintainer' => env('APP_MAINTAINER', 'hello@example.com'),
+
 ];
