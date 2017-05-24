@@ -7,9 +7,9 @@
 				<div class="row text-center pt-4">
 					<h3 class="mx-auto">
 						<b>{{ $volume->total }}</b> articles were analyzed from <b>{{ $volume->sources }}</b>
-						sources.<br><b>{{ $volume->relevant }} ({{ floor($volume->relevant * 100 / $volume->total) }}
-							%)</b>
-						articles mentioned one or more countries.
+						sources.<br>
+						<b>{{ $volume->relevant }} ({{ floor($volume->relevant * 100 / $volume->total) }}%)</b> articles
+						mentioned one or more countries.
 					</h3>
 				</div>
 				<h1 class="text-center">
