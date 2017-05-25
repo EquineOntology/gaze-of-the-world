@@ -16,7 +16,7 @@ class NewsDay extends Model
 
     public $timestamps = false;
 
-	/**#
+	/**
 	 * Save the current news day to the database.
 	 *
 	 * @param  $mentions
@@ -48,4 +48,16 @@ class NewsDay extends Model
 	        'sources' => $volume['sources']
 	    ]);
     }
+
+
+	/**
+	 * Save info about the deviations of coverage volume.
+	 *
+	 * @param  $deltas  The latest deviation for each country.
+	 */
+	public function saveDeltas($deltas)
+	{
+		$deltas['date'] = Carbon::yesterday()->toDateString();
+		DB::table('news_delta')->insert($deltas);
+	}
 }
