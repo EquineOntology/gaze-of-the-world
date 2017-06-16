@@ -4,32 +4,58 @@ use Carbon\Carbon;
 use CFratta\GazeOfTheWorld\Countries;
 use Illuminate\Database\Seeder;
 
-class NewsDeltaSeeder extends Seeder
-{
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-    	$countries = Countries::get2d();
+class NewsDeltaSeeder extends Seeder {
 
-	    $row = ['date' => Carbon::yesterday()->toDateString()];
+	/**
+	 * Calculate the daily mean news volume for each country for all the days in the DB.
+	 *
+	 * @return void
+	 */
+	public function run()
+	{
+		$countries = Countries::get2d();
 
-	    foreach($countries as $code => $info)
-	    {
-    		$countryData = DB::table('news_data')->select($code)->get();
+		$newsData = DB::table('news_data')->orderBy('date', 'asc')->select('*')->get()->toArray();
+		$rowCount = sizeof($newsData);
 
-    		// Get total mentions of country.
-    		$countryTotal = $countryData->reduce(function($carry, $item) use($code){
-    			return $carry + $item->$code;
-		    });
+		$totals = [];
+		$newsDelta = [];
+		for ($i = 0; $i < $rowCount; $i ++)
+		{
+			$date = $newsData[$i]->date;
 
-    		// Divide them by the days recorded to get the
-    		$row[$code] = round($countryTotal/$countryData->count(), 8);
-	    }
+			$newsDelta[$i]['date'] = $date;
 
-	    DB::table('news_delta')->insert($row);
-    }
+			if ($i != 0)
+			{
+				// dd($newsData);
+				foreach ($countries as $code => $info)
+				{
+					// Add up total mentions of country.
+					$totals[$code] += $newsData[$i]->$code;;
+
+					// $countryData->reduce(function ($carry, $item) use ($code)
+					// {
+					// 	return $carry + $item->$code;
+					// });
+
+					// Divide them by the days recorded to get the
+					$newsDelta[$i][$code] = round($totals[$code] / ($i + 1), 8);
+				}
+			}
+			else
+			{
+				foreach ($countries as $code => $info)
+				{
+					$newsDelta[0][$code] = $newsData[$i]->$code;
+					$totals[$code] = $newsData[$i]->$code;
+				}
+			}
+		}
+
+		foreach ($newsDelta as $deltas)
+		{
+			DB::table('news_delta')->insert($deltas);
+		}
+	}
 }
