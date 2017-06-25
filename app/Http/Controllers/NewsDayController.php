@@ -205,7 +205,7 @@ class NewsDayController extends Controller
 	}
 
 	private function getDeltas() {
-		return DB::table('news_delta')->select(['*'])->get();
+		return DB::table('news_delta')->orderBy('date', 'desc')->get();
 	}
 
 

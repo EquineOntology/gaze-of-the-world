@@ -79,8 +79,14 @@
 								}}
 							</td>
 							<td class="col-2 text-center">{{ $amount }}</td>
-							<td class="col-2 text-center">{{ $deltas[0]->$countryCode }}</td>
-							<td class="col-2 text-center">{{ $amount - $deltas[0]->$countryCode }}</td>
+							<td class="col-2 text-center">{{ round($deltas[0]->$countryCode, 2) }}</td>
+							<td class="col-2 text-center">
+								{{
+									round($amount - $deltas[0]->$countryCode, 2) < 0 ?
+									round($amount - $deltas[0]->$countryCode, 2) :
+									'+' . round($amount - $deltas[0]->$countryCode, 2)
+								}}
+							</td>
 							<td class="col-2 text-center">{{ floor($amount / $volume->relevant * 100) }}%</td>
 						</tr>
 						<script>
