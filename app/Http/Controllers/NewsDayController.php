@@ -18,8 +18,7 @@ class NewsDayController extends Controller
 		$deltas = $this->getDeltas();
 		$date = $mentions[0]->date;
 		$lastTwoDeltaDays = $this->getLastTwoDeltaDays($deltas, $date);
-		$gazedUpon = $this->calculateGazedUpon($mentions, $lastTwoDeltaDays);
-
+		$gazedUpon = array_slice($this->calculateGazedUpon($mentions, $lastTwoDeltaDays), 0, 10);
 		$latestMentions = $this->getLatestMentions($mentions);
 
 		$countriesInTop10 = [];
@@ -30,9 +29,6 @@ class NewsDayController extends Controller
 
 		$top10Codes = array_keys($latestMentions);
 		$allMentions = $mentions->all();
-
-		// We save the date to get the correct source data.
-		$date = $mentions[0]->date;
 
 		// We then remove the "date" datapoint from each day for correct parsing.
 		foreach ($allMentions as $day => $data)
@@ -162,7 +158,20 @@ class NewsDayController extends Controller
 	public function showAll()
 	{
 		$mentions = $this->getOrderedMentions();
-		$latest = $this->getLatestMentions($mentions);
+
+		$deltas = $this->getDeltas();
+		$date = $mentions[0]->date;
+		$lastTwoDeltaDays = $this->getLastTwoDeltaDays($deltas, $date);
+		$gazedUpon = $this->calculateGazedUpon($mentions, $lastTwoDeltaDays);
+
+		$latestMentions = $this->getLatestMentions($mentions);
+
+		$gazedUponWithMentions = [];
+		foreach ($gazedUpon as $country => $data)
+		{
+			$gazedUponWithMentions[$country] = $latestMentions[$country];
+		}
+
 
 		$mentions = $mentions->all();
 		$timeSeries = $this->populateTimeSeries($mentions);
@@ -175,8 +184,9 @@ class NewsDayController extends Controller
 			->get();
 
 		return view('main')
-			->with('latest', $latest)
-			->with('mostMentioned', $timeSeries[key($latest)])
+			->with('latest', $gazedUponWithMentions)
+			->with('mostMentioned', $timeSeries[key($gazedUponWithMentions)])
+			->with('deltas', $deltas->toArray())
 			->with('lastTwoDays', $lastTwoDays)
 			->with('volume', $volume[0]);
 	}
@@ -201,7 +211,7 @@ class NewsDayController extends Controller
 
 		arsort($rankedCountries);
 
-		return array_slice($rankedCountries, 0, 10);
+		return $rankedCountries;
 	}
 
 	private function getDeltas() {
