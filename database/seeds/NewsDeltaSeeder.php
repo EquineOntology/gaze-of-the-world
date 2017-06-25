@@ -39,7 +39,7 @@ class NewsDeltaSeeder extends Seeder {
 					// 	return $carry + $item->$code;
 					// });
 
-					// Divide them by the days recorded to get the
+					// Divide them by the days recorded to get the deviation for today.
 					$newsDelta[$i][$code] = round($totals[$code] / ($i + 1), 8);
 				}
 			}

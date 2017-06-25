@@ -3,6 +3,7 @@
 namespace CFratta\GazeOfTheWorld\Http\Controllers;
 
 use Carbon\Carbon;
+use CFratta\GazeOfTheWorld\Countries;
 use Illuminate\Support\Facades\DB;
 
 class NewsDayController extends Controller
@@ -14,10 +15,20 @@ class NewsDayController extends Controller
 	public function showTop10()
 	{
 		$mentions = $this->getOrderedMentions();
+		$deltas = $this->getDeltas();
+		$date = $mentions[0]->date;
+		$lastTwoDeltaDays = $this->getLastTwoDeltaDays($deltas, $date);
+		$gazedUpon = $this->calculateGazedUpon($mentions, $lastTwoDeltaDays);
 
-		$latest = array_slice($this->getLatestMentions($mentions), 0, 10);
+		$latestMentions = $this->getLatestMentions($mentions);
 
-		$countriesInTop10 = array_keys($latest);
+		$countriesInTop10 = [];
+		foreach ($gazedUpon as $country => $data)
+		{
+			$countriesInTop10[$country] = $latestMentions[$country];
+		}
+
+		$top10Codes = array_keys($latestMentions);
 		$allMentions = $mentions->all();
 
 		// We save the date to get the correct source data.
@@ -28,7 +39,7 @@ class NewsDayController extends Controller
 		{
 			foreach ($data as $key => $value)
 			{
-				if (!in_array($key, $countriesInTop10) && $key != 'date')
+				if (!in_array($key, $top10Codes) && $key != 'date')
 				{
 					unset($data->$key);
 				}
@@ -45,8 +56,9 @@ class NewsDayController extends Controller
 			->get();
 
 		return view('main')
-			->with('latest', $latest)
-			->with('mostMentioned', $timeSeries[key($latest)])
+			->with('latest', $countriesInTop10)
+			->with('mostMentioned', $timeSeries[key($countriesInTop10)])
+			->with('deltas', $deltas->toArray())
 			->with('lastTwoDays', $lastTwoDays)
 			->with('volume', $volume[0]);
 	}
@@ -137,7 +149,7 @@ class NewsDayController extends Controller
 				}
 				array_push($timeSeries[$country], $count);
 			}
-			$i ++;
+			$i++;
 		}
 
 		return $timeSeries;
@@ -167,5 +179,55 @@ class NewsDayController extends Controller
 			->with('mostMentioned', $timeSeries[key($latest)])
 			->with('lastTwoDays', $lastTwoDays)
 			->with('volume', $volume[0]);
+	}
+
+	/**
+	 * Calculate the most gazed upon countries.
+	 *
+	 * @param $mentions
+	 * @param $deltas
+	 * @return array
+	 */
+	private function calculateGazedUpon($mentions, $deltas) {
+
+		$latestMentions = $this->getLatestMentions($mentions);
+		$countries = Countries::get2d();
+		$rankedCountries = [];
+		foreach($countries as $code => $data) {
+			$divisor = $deltas[0]->$code != 0 ? $deltas[0]->$code : 1;
+			$deviation = $deltas[1]->$code / $divisor;
+			$rankedCountries[$code] = $latestMentions[$code] * $deviation;
+		}
+
+		arsort($rankedCountries);
+
+		return array_slice($rankedCountries, 0, 10);
+	}
+
+	private function getDeltas() {
+		return DB::table('news_delta')->select(['*'])->get();
+	}
+
+
+	/**
+	 * @param Collection $deltas
+	 * @param $date
+	 * @return mixed
+	 */
+	private function getLastTwoDeltaDays($deltas, $date){
+		$dayBeforeDate = Carbon::parse($date)->subDay()->toDateString();
+		$deltas = collect($deltas);
+		$deltas = $deltas->filter(function($delta) use ($date, $dayBeforeDate){
+			return ($delta->date == $date || $delta->date == $dayBeforeDate);
+		})->toArray();
+
+		foreach (['deltaId', 'date'] as $key)
+		{
+			unset($deltas[0]->$key);
+			unset($deltas[1]->$key);
+		}
+
+		$reindexed = array_values($deltas);
+		return $reindexed;
 	}
 }

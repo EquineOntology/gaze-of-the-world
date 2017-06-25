@@ -46,38 +46,42 @@
 				<table class="table table-sm table-hover mx-auto my-4">
 					<thead>
 					<tr class="row">
-						<th class="col-2 text-center">Trend</th>
-						<th class="col-4 text-center">Country</th>
-						<th class="col-3 text-center">Raw mentions</th>
-						<th class="col-3 text-center">Percentage</th>
+						<th class="col-1 text-center">Trend</th>
+						<th class="col-3 text-center">Country</th>
+						<th class="col-2 text-center">Raw mentions</th>
+						<th class="col-2 text-center">Mean mentions</th>
+						<th class="col-2 text-center">Difference from mean</th>
+						<th class="col-2 text-center">Percentage of overall news</th>
 					</tr>
 					</thead>
 					<tbody>
 					@foreach($latest as $countryCode => $amount)
 						<tr class="row" id="{{ $countryCode }}Row">
 							@if($lastTwoDays[$countryCode][0] > $lastTwoDays[$countryCode][1])
-								<td class="col-2 text-center align-middle green">
+								<td class="col-1 text-center align-middle green">
 									&#9650;
 								</td>
 							@elseif($lastTwoDays[$countryCode][0] < $lastTwoDays[$countryCode][1])
-								<td class="col-2 text-center align-middle red">
+								<td class="col-1 text-center align-middle red">
 									&#9660;
 								</td>
 							@else
-								<td class="col-2 text-center align-middle blue">
+								<td class="col-1 text-center align-middle blue">
 									&#9635;
 								</td>
 							@endif
 
-							<td class="col-4 text-center">
+							<td class="col-3 text-center">
 								{{
 									is_array($countries[$countryCode]['name']['EN']) ?
 									$countries[$countryCode]['name']['EN'][0] :
 									$countries[$countryCode]['name']['EN']
 								}}
 							</td>
-							<td class="col-3 text-center">{{ $amount }}</td>
-							<td class="col-3 text-center">{{ floor($amount / $volume->relevant * 100) }}%</td>
+							<td class="col-2 text-center">{{ $amount }}</td>
+							<td class="col-2 text-center">{{ $deltas[0]->$countryCode }}</td>
+							<td class="col-2 text-center">{{ $amount - $deltas[0]->$countryCode }}</td>
+							<td class="col-2 text-center">{{ floor($amount / $volume->relevant * 100) }}%</td>
 						</tr>
 						<script>
                             $('#{{ $countryCode }}Row').click(function () {
