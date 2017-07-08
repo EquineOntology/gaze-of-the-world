@@ -49,7 +49,7 @@
 						<th class="col-1 text-center">Trend</th>
 						<th class="col-3 text-center">Country</th>
 						<th class="col-2 text-center">Raw mentions</th>
-						<th class="col-2 text-center">Mean mentions</th>
+						<th class="col-2 text-center">Mention mean</th>
 						<th class="col-2 text-center">Difference from mean</th>
 						<th class="col-2 text-center">Percentage of overall news</th>
 					</tr>
