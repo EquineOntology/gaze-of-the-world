@@ -33,6 +33,7 @@
 	@yield('after_head_scripts')
 </head>
 <body>
+<div class="logo"></div>
 <div id="app">
 	@yield('content')
 </div>
