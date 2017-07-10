@@ -13,3 +13,8 @@ h1 {
 .red {
     color: red;
 }
+
+body {
+    background-image: url('/public/img/gaze.svg');
+    background-blend-mode: lighten;
+}
