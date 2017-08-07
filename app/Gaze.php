@@ -138,7 +138,7 @@ class Gaze
 
         $previousTweet = null;
         while ($currentChars > 0 && $top10Index < sizeof($info)) {
-            $nextLine = ($top10Index + 1) . ". $info[$top10Index]\n";
+            $nextLine = ($top10Index + 1) . ". #$info[$top10Index]\n";
 
             if ($currentChars - strlen($nextLine) < 0) {
                 Twitter::postTweet(['status' => $tweet]);
