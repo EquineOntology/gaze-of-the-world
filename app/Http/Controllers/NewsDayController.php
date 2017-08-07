@@ -206,7 +206,7 @@ class NewsDayController extends Controller
 		foreach($countries as $code => $data) {
 			$divisor = $deltas[0]->$code != 0 ? $deltas[0]->$code : 1;
 			$deviation = $deltas[1]->$code / $divisor;
-			$rankedCountries[$code] = $latestMentions[$code] * $deviation;
+			$rankedCountries[$code] = $latestMentions[$code] * ($deviation * 2);
 		}
 
 		arsort($rankedCountries);
