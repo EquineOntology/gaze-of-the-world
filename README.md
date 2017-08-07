@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/HHErebus/gaze-of-the-world/master/public/img/logo_600.png)
+![logo](https://raw.githubusercontent.com/HHErebus/gaze-of-the-world/master/public/img/logo.png)
 # Gaze of the World
 _Visual trends in news about nations_
 
