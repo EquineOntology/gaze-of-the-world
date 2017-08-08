@@ -137,9 +137,9 @@ class Gaze
         }
 
         $previousTweet = null;
-        $twitterifiedName = '#' . str_replace(' ', '', $info[$top10Index]);
 
         while ($currentChars > 0 && $top10Index < sizeof($info)) {
+            $twitterifiedName = '#' . str_replace(' ', '', $info[$top10Index]);
             $nextLine = ($top10Index + 1) . ". $twitterifiedName\n";
 
             if ($currentChars - strlen($nextLine) < 0) {
