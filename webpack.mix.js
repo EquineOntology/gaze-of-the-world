@@ -1,4 +1,4 @@
-const { mix } = require('laravel-mix');
+let mix = require('laravel-mix');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,12 +11,8 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.scripts([
-        'resources/assets/js/gaze.js'
-    ], 'public/js/gaze.js')
+mix.js('resources/assets/js/gaze.js', 'public/js/gaze.js')
 
-    .styles([
-        'resources/assets/css/gaze.css'
-    ], 'public/css/gaze.css')
+    .copy('resources/assets/css/gaze.css', 'public/css/gaze.css')
 
     .version();
