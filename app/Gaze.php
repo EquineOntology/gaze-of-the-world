@@ -129,7 +129,7 @@ class Gaze
 
         $tweet .= "The most mentioned countries on " . Carbon::yesterday()->toFormattedDateString() . " were:\n\n";
 
-        $maxChars = 140;
+        $maxChars = 280;
         $top10Index = 0;
         // If it's the first tweet we can't forget we added the intro already.
         if ($top10Index == 0) {
